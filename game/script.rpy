@@ -7,7 +7,7 @@ default test_score = 0
 
 label start:
     "..."
-    scene deep
+    scene bg deep
     with fade
     "..."
     m "This is space, the place where humanity wish to explore."
@@ -21,7 +21,7 @@ label act1:
     m "..."
     j "I see that you are enjoying the view." with hpunch
 
-    scene deepship
+    scene bg deepship
     with zoomout
     pause
     show jaden normal
@@ -135,8 +135,13 @@ label end_act1:
             with moveoutleft
 
 label act2:
-    scene facility
+    scene bg facility
     with fade
+    j ""
+    
     j "Isn't that right, Android?"
+    
+    scene bg awaken facility
+
     a "Affirmative."
 
