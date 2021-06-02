@@ -85,3 +85,42 @@ label end_interview:
         with moveoutleft
         "Zapped" with vpunch
         jump start
+
+label end_act1:
+    j "Finally, a worthy human with a clean mindset."
+    j "Welcome to the tweleve."
+    j "Let me tell you more about the Tweleve..."
+    j "There are twelve of us from each species that are deemed too powerful for the universe, with the exception of you."
+    j "We all could fight a pointless battle, but we instead choose to work together to eliminate all the nuisance in our universe."
+    j "Our job is to destroy all life that are deemed too dangerous to be left unchecked."
+
+    hide jaden happy
+    show jaden normal
+
+    j "We were so good at our job that we almost wiped out all life on this universe."
+    j "As you can tell, we run into some issues as what planet should be destroyed."
+    
+    hide jaden normal
+    show jaden happy
+
+    j "The solution was simple, have someone more weaker into this debate."
+    j "That is where you come in check."
+    j "To prevent another incident like this, you must make the call on who gets to life or die."
+    j "Humans are very weak compare to use, but they have strong sense of morals in their mind."
+    j "The tweleve could use someone like you for this position, what do you say"
+
+    menu:
+        "I refuse":
+            $ test_score -= test_score
+            j "Fuck, we were so close!" with hpunch
+            j "Kira do the memory wash again."
+            hide jaden normal
+            with moveoutleft
+            j "Sesitive creatures!"
+            jump start
+        "I accept":
+            j "Good we are on the role."    
+            j "Let me introduce you to the members of the tweleve."
+
+label act2:
+    j ""
