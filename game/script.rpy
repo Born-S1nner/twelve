@@ -84,6 +84,7 @@ label end_interview:
         hide jaden normal
         with moveoutleft
         "Zapped" with vpunch
+        j "Let's hope they get the questions right this time."
         jump start
 
 label end_act1:
@@ -92,35 +93,44 @@ label end_act1:
     j "Let me tell you more about the Tweleve..."
     j "There are twelve of us from each species that are deemed too powerful for the universe, with the exception of you."
     j "We all could fight a pointless battle, but we instead choose to work together to eliminate all the nuisance in our universe."
-    j "Our job is to destroy all life that are deemed too dangerous to be left unchecked."
+    j "Our job is to destroy all life that are deemed too dangerous or evil to be left unchecked."
 
     hide jaden happy
     show jaden normal
 
     j "We were so good at our job that we almost wiped out all life on this universe."
-    j "As you can tell, we run into some issues as what planet should be destroyed."
-    
+    j "As you can tell, we run into some issues as to what planet should be destroyed or who to spare."
+    j "Upon days of debating, I propose an anwser to our problem."
+
     hide jaden normal
     show jaden happy
 
-    j "The solution was simple, have someone more weaker into this debate."
+    j "The solution was simple, have someone more weaker to be part of the tweleve."
     j "That is where you come in check."
-    j "To prevent another incident like this, you must make the call on who gets to life or die."
-    j "Humans are very weak compare to use, but they have strong sense of morals in their mind."
-    j "The tweleve could use someone like you for this position, what do you say"
+    j "To prevent another incident like this, you must make the calls on who gets to life and who gets to die."
+    j "Humans are very weak compare to us, but they have strong sense of morals in their mind."
+    j "I believe that a human would be gret for this position."
+    j "The tweleve could use someone like you, what do you say?"
 
     menu:
         "I refuse":
             $ test_score -= test_score
+            hide jaden happy
+            show jaden normal
+
             j "Fuck, we were so close!" with hpunch
             j "Kira do the memory wash again."
+            
             hide jaden normal
             with moveoutleft
+            
             j "Sesitive creatures!"
             jump start
+
         "I accept":
             j "Good we are on the role."    
             j "Let me introduce you to the members of the tweleve."
-
+            hide jaden happy
+            with moveoutleft
 label act2:
     j ""
