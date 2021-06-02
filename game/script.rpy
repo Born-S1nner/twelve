@@ -1,5 +1,6 @@
 ﻿define m = Character("Me")
 define j = Character("Jaden", color="#009900")
+define a = Character("Andriod", color="#2eb8b8")
 
 default passed = 4
 default test_score = 0
@@ -132,5 +133,10 @@ label end_act1:
             j "Let me introduce you to the members of the tweleve."
             hide jaden happy
             with moveoutleft
+
 label act2:
-    j ""
+    scene facility
+    with fade
+    j "Isn't that right, Android?"
+    a "Affirmative."
+
