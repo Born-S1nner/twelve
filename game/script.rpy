@@ -167,4 +167,19 @@ label act2:
     scene bg awaken facility
     a "It appears that Morgana is back from Earth."
     scene bg facility
+
+    j "Ho, great timing."
+    j "Android show he to his office setup, I gotta handle some business with Morgana before he meets her."
     
+    scene bg awaken facility
+    a "It won't be a problem."
+    a "Just leave the task to me."
+    scene bg facility
+
+    j "I can alway count on you."
+    j "You hang out with Android, I'll be back for a moment."
+
+    hide jaden happy
+    with moveoutleft
+
+
