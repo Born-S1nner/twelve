@@ -182,4 +182,18 @@ label act2:
     hide jaden happy
     with moveoutleft
 
+label choice_1:
+    scene bg awaken facility
+    a "What do you want to do?"
+    scene bg facility
 
+    menu:
+        "Talk with Android":
+            jump android_interact
+        "Head to the office":
+            jump office
+
+label android_interact:
+    pass
+label office:
+    pass
