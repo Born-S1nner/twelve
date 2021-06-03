@@ -5,6 +5,8 @@ define a = Character("Andriod", color="#2eb8b8")
 default passed = 4
 default test_score = 0
 
+default android_respect = False
+
 label start:
     "..."
     scene bg deep
@@ -125,11 +127,11 @@ label end_act1:
             hide jaden normal
             with moveoutleft
             
-            j "Sesitive creatures!"
+            j "Sensitive creatures!"
             jump start
 
         "I accept":
-            j "Good we are on the role."    
+            j "Good, we are on the role."    
             j "Let me show you around this place."
             hide jaden happy
             with moveoutleft
@@ -140,10 +142,10 @@ label act2:
     show jaden happy
     with moveinleft
     
-    j "The deep is our one and only spacehip that we have during our crusade."
+    j "The deep is our one and only spacehip that we have as our headquarters."
     j "Normally, I would have all the twelve on board."
-    j "However, most of them are on important mission thoughout the galaxy."
-    j "You would see when they come back."
+    j "However, most of them are on important missions thoughout the galaxy."
+    j "You would see them when they come back."
     m "Would I be tasked to go out in space?"
     
     hide jaden happy
@@ -159,24 +161,31 @@ label act2:
     j "Isn't that right, Android?"
     
     scene bg awaken facility
+    show jaden happy
     a "Affirmative."
     scene bg facility
-
+    show jaden happy
+    
     j "That's right, Android is one with the ship, so be aware about keeping the deep clean."
 
     scene bg awaken facility
+    show jaden happy
     a "It appears that Morgana is back from Earth."
     scene bg facility
+    show jaden happy
 
     j "Ho, great timing."
     j "Android show he to his office setup, I gotta handle some business with Morgana before he meets her."
     
     scene bg awaken facility
+    show jaden happy
+    
     a "It won't be a problem."
     a "Just leave the task to me."
     scene bg facility
-
-    j "I can alway count on you."
+    show jaden happy
+    
+    j "I can always count on you."
     j "You hang out with Android, I'll be back for a moment."
 
     hide jaden happy
@@ -194,6 +203,7 @@ label choice_1:
             jump office
 
 label android_interact:
+    $ android_respect = True
     pass
 label office:
     pass
