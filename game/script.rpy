@@ -130,18 +130,26 @@ label end_act1:
 
         "I accept":
             j "Good we are on the role."    
-            j "Let me introduce you to the members of the tweleve."
+            j "Let me show you around this place."
             hide jaden happy
             with moveoutleft
 
 label act2:
     scene bg facility
     with fade
-    j ""
+    show jaden happy
     
+    j "Instead, you can just chill right here in the deep."
+    j "Andriod is in charge of the deep, so you can howl at her if you need help."
     j "Isn't that right, Android?"
     
     scene bg awaken facility
-
     a "Affirmative."
+    scene bg facility
 
+    j "That's right, Android is one with the ship, so be aware about keeping the deep clean."
+
+    scene bg awaken facility
+    a "It appears that Morgana is back from Earth."
+    scene bg facility
+    
