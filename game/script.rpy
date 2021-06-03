@@ -138,6 +138,21 @@ label act2:
     scene bg facility
     with fade
     show jaden happy
+    with moveinleft
+    
+    j "The deep is our one and only spacehip that we have during our crusade."
+    j "Normally, I would have all the twelve on board."
+    j "However, most of them are on important mission thoughout the galaxy."
+    j "You would see when they come back."
+    m "Would I be tasked to go out in space?"
+    
+    hide jaden happy
+    show jaden normal
+
+    j "No, humans can't survive the harsh conditions in space."
+    
+    hide jaden normal
+    show jaden happy
     
     j "Instead, you can just chill right here in the deep."
     j "Andriod is in charge of the deep, so you can howl at her if you need help."
