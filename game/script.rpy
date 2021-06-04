@@ -1,6 +1,7 @@
 ﻿define m = Character("Me")
 define j = Character("Jaden", color="#009900")
 define a = Character("Andriod", color="#2eb8b8")
+define mo = Character("Morgana", color="#9900cc")
 
 default passed = 4
 default test_score = 0
@@ -212,7 +213,7 @@ label choice_1:
             jump a_questions
         
         "Head to the office":
-            jump office
+            jump end_act2
 
 define q1_anwsered = False
 define q2_anwsered = False
@@ -279,6 +280,41 @@ label end_act2:
     a "We welcome you with open arms."
     m "Thank you. I'm glad to be part of the Tweleve."
     
+    "knock knock"
+    a "It must be Morgana."
+    m "Who?"
+    a "One of the member of the Tweleve."
+    a "She is what you humans call a Succubus. Best advise to not touch her."
+    m "Hold up, is she coming over here?"
+    a "Yes, I'll leave you two alone."
+    m "Wait, I-"
+    a "Android signed off."
+    m "Great."
+
+label mo_intro:
+    scene bg office
+    "knock knock knock"
+    m "Ah.. yes, come on in!"
+
+    show morgana normal
+    with moveinright
+
+    mo "What's with your lack of response."
+    mo "I've been knocking the door and you didn't anwser."
+    m "Sorry, I was ending my guidance with Android."
+
+    hide morgana normal
+    show morgana happy
+
+    mo "It's alright. I'll forgive you this once."
+    mo "Just don't keep me waiting next time, alright sweetie."
+    m "Yes, of course."
+
+    hide morgana happy
+    show morgana normal
+
+    mo "Now then, let me introduce myself."
+
 
 label ending:
     if badending:
