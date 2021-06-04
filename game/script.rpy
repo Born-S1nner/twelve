@@ -6,6 +6,7 @@ default passed = 4
 default test_score = 0
 
 default android_respect = False
+default badending = False
 
 label start:
     "..."
@@ -78,6 +79,7 @@ label end_interview:
         jump end_act1
     else:
         $ test_score -= test_score
+        $ badending = True
         hide jaden happy
         show jaden normal
         j "Sorry, you are still an ignorant simp that believes in every little thing."
@@ -88,7 +90,7 @@ label end_interview:
         with moveoutleft
         "Zapped" with vpunch
         j "Let's hope they get the questions right this time."
-        jump start
+        jump ending
 
 label end_act1:
     j "Finally, a worthy human with a clean mindset."
@@ -269,4 +271,9 @@ label office:
     scene bg facility
     m "Okay!"
 
-return
+label ending:
+    if badending:
+        "Bad ending"
+
+    "end"
+    return
