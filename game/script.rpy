@@ -120,6 +120,7 @@ label end_act1:
     menu:
         "I refuse":
             $ test_score -= test_score
+            $ badending = True
             hide jaden happy
             show jaden normal
 
@@ -130,7 +131,7 @@ label end_act1:
             with moveoutleft
             
             j "Sensitive creatures!"
-            jump start
+            jump ending
 
         "I accept":
             j "Good, we are on the role."    
@@ -229,7 +230,7 @@ label a_questions:
             $ q3_anwsered = True
             jump a3
         "Let's continue this some other time."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
-            jump office
+            jump end_act2
 
 label a1:
     scene bg awaken facility
@@ -265,11 +266,19 @@ label a3:
 
     jump a_questions
 
-label office:
+label end_act2:
     scene bg awaken facility
     a "Let me show you the way to your office."
     scene bg facility
     m "Okay!"
+
+    scene bg office
+    a "Here is your office."
+    m "Looks very organized for me."
+    a "Jaden has ensured to make you feel like home."
+    a "We welcome you with open arms."
+    m "Thank you. I'm glad to be part of the Tweleve."
+    
 
 label ending:
     if badending:
