@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 85: end of line expected.
-    with moveout left
-                 ^
-
-File "game/script.rpy", line 112: end of line expected.
-    with moveout left
-                 ^
+File "game/script.rpy", line 217: expected menuitem
+    if a1_unasked:
+    ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Tue Jun  1 22:39:03 2021
+Thu Jun  3 21:24:14 2021

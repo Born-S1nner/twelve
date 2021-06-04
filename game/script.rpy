@@ -175,7 +175,7 @@ label act2:
     show jaden happy
 
     j "Ho, great timing."
-    j "Android show he to his office setup, I gotta handle some business with Morgana before he meets her."
+    j "Android, show him to his office setup, I gotta handle some business with Morgana before he meets her."
     
     scene bg awaken facility
     show jaden happy
@@ -198,12 +198,75 @@ label choice_1:
 
     menu:
         "Talk with Android":
-            jump android_interact
+            $ android_respect = True
+            m "I actually want to learn more about you."
+
+            scene bg awaken facility
+            a "Interesting."
+            a "What do you want to learn about me?"
+            scene bg facility
+
+            jump a_questions
+        
         "Head to the office":
             jump office
 
-label android_interact:
-    $ android_respect = True
-    pass
+define q1_anwsered = False
+define q2_anwsered = False
+define q3_anwsered = False
+
+label a_questions:
+    menu:
+        "What are you exactly?" if q1_anwsered == False:
+            $ q1_anwsered = True
+            jump a1
+        "Do you have a body?" if q2_anwsered == False:
+            $ q2_anwsered = True
+            jump a2
+        "How do I call you for anything?" if q3_anwsered == False:
+            $ q3_anwsered = True
+            jump a3
+        "Let's continue this some other time."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+            jump office
+
+label a1:
+    scene bg awaken facility
+    a "I am an super advanced algrorithm with the largets data storage in the universe."
+    a "Any information across the universe is under my knowledge."
+    scene bg facility
+    
+    m "Can you put that in human terms?"
+    
+    scene bg awaken facility
+    a "Highly-advanced AI."
+    scene bg facility
+    
+    m "Got it!"
+
+    jump a_questions
+
+label a2:
+    scene bg awaken facility
+    a "Unfornately, my current body is going under maintance."
+    a "Either way, I don't see any point in having a human form."
+    scene bg facility
+    m "I guess no fan service."
+    
+    jump a_questions
+
+label a3:
+    scene bg awaken facility
+    a "Just simply call for me as I remain inside the deep most of the time."
+    a "I will notify you if I am absent."
+    scene bg facility
+    m "That's good to know."
+
+    jump a_questions
+
 label office:
-    pass
+    scene bg awaken facility
+    a "Let me show you the way to your office."
+    scene bg facility
+    m "Okay!"
+
+return
