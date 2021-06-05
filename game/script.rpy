@@ -83,12 +83,12 @@ label end_interview:
         $ test_score -= test_score
         $ badending = True
         hide jaden happy
-        show jaden normal
+        show jaden sad
         j "Sorry, you are still an ignorant simp that believes in every little thing."
         j "I don't take clout-chasing influencers into the twelve."
         j "I expected much from you."
         j "Kira, do the memory wash again."
-        hide jaden normal
+        hide jaden sad
         with moveoutleft
         "Zapped" with vpunch
         j "Let's hope they get the questions right this time."
@@ -124,12 +124,12 @@ label end_act1:
             $ test_score -= test_score
             $ badending = True
             hide jaden happy
-            show jaden normal
+            show jaden angry
 
             j "Fuck, we were so close!" with hpunch
             j "Kira do the memory wash again."
             
-            hide jaden normal
+            hide jaden angry
             with moveoutleft
             
             j "Sensitive creatures!"
@@ -154,11 +154,11 @@ label act2:
     m "Would I be tasked to go out in space?"
     
     hide jaden happy
-    show jaden normal
+    show jaden silly
 
     j "No, humans can't survive the harsh conditions in space."
     
-    hide jaden normal
+    hide jaden silly
     show jaden happy
     
     j "Instead, you can just chill right here in the deep."
@@ -373,7 +373,7 @@ label act3:
     mo "You can't hide the scent of a human, even with Kira's power."
     
     hide jaden normal
-    show jaden happy
+    show jaden silly
     
     j "It'll take a lot more to fool your senses."
 
