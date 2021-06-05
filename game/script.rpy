@@ -335,8 +335,31 @@ menu:
         jump joke
 
 label choke:
+    hide morgana happy
+    show morgana normal
+    mo "I see your not the type to take a joke."
+    m "It's not that, I just-"
+    mo "No need to explain yourself."
+    mo "I should be apologizing for getting into someone's space."
+    jump end_act2ii
 
 label joke:
+    mo "Let's just say I can make person feel like it's their first time?"
+    m "No please no, I wasn't th-thinking of doing a-anything to you." with hpunch
+    mo "haha, don't worry I was just joking around."
+    mo "It's always funny to tease a good hearted person."
+    m "Ah, I see. Good one."
+    jump end_act2ii
+
+label end_act2ii:
+    hide morgana happy
+    show morgana normal
+
+    mo "Anyway, we should meet up with jaden for your first day."
+    m "Yes, let's go."
+    hide morgana normal
+    with moveoutright
+    m "Good job me."
 
 label ending:
     if badending:
