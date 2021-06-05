@@ -314,7 +314,9 @@ label mo_intro:
     show morgana normal
 
     mo "Now then, let me introduce myself."
-
+    mo "Ny name is Morgana de Amon. A literal hellspawn from the planet Escuro."
+    mo "Though I may be classified as a demon lord, your lord views me as a Succubus."
+    mo "No, I am not a perverted masochist, but I can be a little sadistic sometimes."
 
 label ending:
     if badending:
