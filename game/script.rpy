@@ -361,6 +361,22 @@ label end_act2ii:
     with moveoutright
     m "Good job me."
 
+label act3:
+    scene bg deepship
+    show morgana happy
+    with moveinleft
+    mo "Guess who I found Jaden!"
+
+    show jaden normal
+    with moveinleft
+    j "I see you found him in his office already."
+    mo "You can't hide the scent of a human, even with Kira's power."
+    
+    hide jaden normal
+    show jaden happy
+    
+    j "It'll take a lot more to fool your senses."
+
 label ending:
     if badending:
         "Bad ending"
