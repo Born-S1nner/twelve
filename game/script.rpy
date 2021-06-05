@@ -7,6 +7,7 @@ default passed = 4
 default test_score = 0
 
 default android_respect = False
+default morgana_respect = True
 default badending = False
 
 label start:
@@ -317,6 +318,25 @@ label mo_intro:
     mo "Ny name is Morgana de Amon. A literal hellspawn from the planet Escuro."
     mo "Though I may be classified as a demon lord, your lord views me as a Succubus."
     mo "No, I am not a perverted masochist, but I can be a little sadistic sometimes."
+    mo "You should be thanking Kira for making you resistant to me."
+    mo "Normal humans would by dying of heart attack just from being around me."
+    m "I heard, I'll do the best I can to avoid any physical contact with you."
+    
+    hide morgana normal
+    show morgana happy
+    
+    mo "Oh, were you expecting more from me?"
+
+menu:
+    "No":
+        jump choke
+    "What do you mean?":
+        $ morgana_respect = True
+        jump joke
+
+label choke:
+
+label joke:
 
 label ending:
     if badending:
