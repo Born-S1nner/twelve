@@ -323,7 +323,7 @@ label mo_intro:
     m "I heard, I'll do the best I can to avoid any physical contact with you."
     
     hide morgana normal
-    show morgana happy
+    show morgana silly
     
     mo "Oh, were you expecting more from me?"
 
@@ -335,8 +335,8 @@ menu:
         jump joke
 
 label choke:
-    hide morgana happy
-    show morgana normal
+    hide morgana silly
+    show morgana angry
     mo "I see your not the type to take a joke."
     m "It's not that, I just-"
     mo "No need to explain yourself."
@@ -353,6 +353,7 @@ label joke:
 
 label end_act2ii:
     hide morgana happy
+    hide morgana angry
     show morgana normal
 
     mo "Anyway, we should meet up with jaden for your first day."
@@ -363,19 +364,25 @@ label end_act2ii:
 
 label act3:
     scene bg deepship
-    show morgana happy
-    with moveinleft
+    show morgana happy at right
+    with moveinright
     mo "Guess who I found Jaden!"
 
-    show jaden normal
+    show jaden normal at left
     with moveinleft
     j "I see you found him in his office already."
     mo "You can't hide the scent of a human, even with Kira's power."
     
     hide jaden normal
-    show jaden silly
+    show jaden silly at left
     
     j "It'll take a lot more to fool your senses."
+    mo "You know how it goes."
+    
+    hide jaden silly
+    show jaden normal at left
+    hide morgana happy
+    show morgana normal at right
 
 label ending:
     if badending:
