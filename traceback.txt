@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 216, in script
-    jump office
-ScriptError: could not find label 'office'.
+  File "game/script.rpy", line 444, in script
+    k "Sure thing, Android remove Urth's core."
+Exception: Sayer 'k' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 216, in script
-    jump office
-  File "renpy/ast.py", line 1711, in execute
-    rv = renpy.game.script.lookup(target)
-  File "renpy/script.py", line 910, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'office'.
+  File "game/script.rpy", line 444, in script
+    k "Sure thing, Android remove Urth's core."
+  File "renpy/ast.py", line 680, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'k' is not defined.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Tweleve 1.0
-Fri Jun  4 18:45:34 2021
+Tue Jun  8 16:30:08 2021

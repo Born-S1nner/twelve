@@ -410,14 +410,12 @@ label options:
         "Destroy the planet":
             $ jaden_respect == True
             $ morgana_respect == False
-            $test_score += 2
+            $test_score += 0
         "Save the planet":
             $ jaden_respect == False
             $ morgana_respect == True
-            $test_score += 0
+            $test_score += 2
         "...":
-            $ jaden_respect == False
-            $ morgana_respect == False
             $test_score += 4
     
     if test_score == 0:
@@ -443,7 +441,7 @@ label options:
         j "More humans should be walking on two feet by now. They could anywhere at this moment."
         m "Wait what do y-"
         mo "Fair point. Can you let Android do the task for now?"
-        k "Sure thing, Android remove Urth's core."
+        a "Sure thing, Android remove Urth's core."
         a "Sure thing"
         
         scene bg earthdestroy
@@ -484,7 +482,25 @@ label act3_end:
     m "Okay."
     hide morgana normal
     with moveoutright
+    hide jaden normal
+    show jaden happy
+    j "Should have you meet the healer of the Tweleve?"
+    m "Y'all got a healer?"
+    j "Well, he is technacilly a healer from the start, but he learned more than heal magic to become more powerful."
+    j "Normally, someone like him would be consider a threat, but he share the same values of surpresssing evil."
+    j "He's a broken man, so go easy on him when we meet him."
+    m "We are meeting him now!?"
+    j "When Morgana goes to sleep, Kira would show up to put her in a calm state."
+    j "He helps us reduce our catastrophic power level at minimum."
+    j "He is always busy with his own agenda, so right now might be a good chance to meet him."
+    j "Android, tell Kira that we are paying a visit."
+    a "Right on it, Jaden."
 
+label kira_intro:
+    scene bg facility
+    show jaden happy
+    j "He should be here somewhere..."
+    j "oh, there he is!"
 
 label ending:
     if badending:
