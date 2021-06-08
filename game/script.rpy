@@ -2,7 +2,7 @@
 define j = Character("Jaden", color="#009900")
 define a = Character("Andriod", color="#2eb8b8")
 define mo = Character("Morgana", color="#9900cc")
-define k = Character("Kira", color="#")
+define k = Character("Kira", color="#660000")
 
 default passed = 4
 default test_score = 0
@@ -502,6 +502,21 @@ label kira_intro:
     show jaden happy
     j "He should be here somewhere..."
     j "oh, there he is!"
+
+    show kira model at right
+    with moveinright
+
+    k "..."
+    j "Kira, you know that you must introduce youreself to the new brother."
+    k "You know how I feel about newcomers, especially humans."
+    j "You must understand the conditions for the Tweleve."
+    k "To remain sane, we must have the most moral kind, a human."
+    k "Well then I should greet myself."
+    k "I am Kira, the healer of the Tweleve and death to Evil."
+    m "It's an honor to meet you, Kira."
+    m "I heard you have protected me from many potential death."
+    k "I can't allow one of us to die."
+    k "I can sense a good nature in your soul."
 
 label ending:
     if badending:
