@@ -424,6 +424,7 @@ label options:
         hide morgana normal
         show jaden happy at left
         show morgana sad at right
+        
         j "Well know, I can see you don't just in their diverse mindsets."
         j "Having diferent minds could led to massive conflicts in the long run."
         j "I say we destroy the planet"
@@ -475,16 +476,19 @@ label act3_end:
     scene bg deeplightspeed
     show jaden normal at left
     show morgana normal at right
+
     mo "Welp, I got to get going to bed."
     j "Oh yeah, its almost time for your sleep."
     mo "Don't let the newbie get near my room or else he would sufficate."
     m "I'll do my best to stay away."
     mo "Good, see you when I'm awake again."
     m "Okay."
+
     hide morgana normal
     with moveoutright
     hide jaden normal
     show jaden happy
+
     j "Should have you meet the healer of the Tweleve?"
     m "Y'all got a healer?"
     j "Well, he is technacilly a healer from the start, but he learned more than heal magic to become more powerful."
