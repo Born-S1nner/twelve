@@ -6,6 +6,7 @@ define mo = Character("Morgana", color="#9900cc")
 default passed = 4
 default test_score = 0
 
+default jaden_respect = False
 default android_respect = False
 default morgana_respect = True
 default badending = False
@@ -383,6 +384,49 @@ label act3:
     show jaden normal at left
     hide morgana happy
     show morgana normal at right
+
+    j "Anyway, lets get down to some business."
+    mo "Fair point."
+    j "You must past on this first attempt on your wise decision."
+    j "Android, pull up to Urth."
+    a "On the way, Jaden."
+
+    scene bg earthview
+    show jaden normal at left
+    hide morgana happy
+    show morgana normal at right
+
+    pause
+    j "Over here is the planet known as Urth."
+    j "It is on stage 0 for the time being, but the inhabitants are quite leveled minded for a stage 0."
+    j "Each one of them has their own identity, tounge, ideas, and beliefs."
+    j "There are calm ones, weak ones, timid ones, neutral ones, sad ones, crazy ones, angry ones, evil ones, etc."
+    j "We have planned to destroy the planet, but we want to let you do their judgement."
+    j "What do you think we should do to the planet?"
+
+label options:
+    $ test_score -= test_score
+    menu:
+        "Destroy the planet":
+            $ jaden_respect == True
+            $ morgana_respect == False
+            $test_score += 2
+        "Save the planet":
+            $ jaden_respect == False
+            $ morgana_respect == True
+            $test_score += 0
+        "...":
+            $ jaden_respect == False
+            $ morgana_respect == False
+            $test_score += 4
+    
+    if test_score == 0:
+        f
+    elif test_score == 2:
+        l
+    else:
+        j "We can't have you sleeping in this important decision, you need to pick now."
+    
 
 label ending:
     if badending:
