@@ -421,11 +421,54 @@ label options:
             $test_score += 4
     
     if test_score == 0:
-        f
+        hide jaden normal
+        hide morgana normal
+        show jaden happy at left
+        show morgana sad at right
+        j "Well know, I can see you don't just in their diverse mindsets."
+        j "Having diferent minds could led to massive conflicts in the long run."
+        j "I say we destroy the planet"
+        
+        hide jaden happy
+        show jaden normal at left
+        
+        j "Wha't the matter, Morgana?"
+        mo "Oh nothing, it just feel a little sad to let food go to waster."
+        mo "Now in times, it's getting quite hard to find any fresh blood."
+        
+        hide jaden normal
+        show jaden happy at left
+
+        j "Now, now... time has passed by for a long time."
+        j "More humans should be walking on two feet by now. They could anywhere at this moment."
+        m "Wait what do y-"
+        mo "Fair point. Can you let Android do the task for now?"
+        k "Sure thing, Android remove Urth's core."
+        a "Sure thing"
+        
+        scene bg earthdestroy
+        show jaden happy at left
+        show morgana normal at right
+
+        j "Well then, should we continue the guide?"
+        m "Um... sure, let's get to business."
+
     elif test_score == 2:
-        l
+        hide jaden normal
+        hide morgana normal
+        show jaden sad at left
+        show morgana happy at right
+
+        j "I see, a pity to see your true nature."
+        mo "Now, now, you did agree to go along with your idea."
+        j "Fair point."
+        j "Just need to get over this addiction."
+        mo "Let's just come back to Urth in a few space to check on their expanding condition."
+        j "Alright, alright. Android, take us somewhere away from here."
+        a "Sure thing."
     else:
-        j "We can't have you sleeping in this important decision, you need to pick now."
+        j "We can't have you sleeping on this important decision, you need to pick."
+        jump options
     
 
 label ending:
