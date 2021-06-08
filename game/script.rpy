@@ -452,6 +452,8 @@ label options:
 
         j "Well then, should we continue the guide?"
         m "Um... sure, let's get to business."
+        j "Android, take us somewhere away from here."
+        a "Sure thing."
 
     elif test_score == 2:
         hide jaden normal
@@ -469,7 +471,20 @@ label options:
     else:
         j "We can't have you sleeping on this important decision, you need to pick."
         jump options
-    
+
+label act3_end:
+    scene bg deeplightspeed
+    show jaden normal at left
+    show morgana normal at right
+    mo "Welp, I got to get going to bed."
+    j "Oh yeah, its almost time for your sleep."
+    mo "Don't let the newbie get near my room or else he would sufficate."
+    m "I'll do my best to stay away."
+    mo "Good, see you when I'm awake again."
+    m "Okay."
+    hide morgana normal
+    with moveoutright
+
 
 label ending:
     if badending:
