@@ -2,6 +2,7 @@
 define j = Character("Jaden", color="#009900")
 define a = Character("Andriod", color="#2eb8b8")
 define mo = Character("Morgana", color="#9900cc")
+define k = Character("Kira", color="#")
 
 default passed = 4
 default test_score = 0
