@@ -555,7 +555,7 @@ label kira_intro:
 
     j "Well, that went calmer than I expect."
 
-label arrival:
+label act4:
     scene bg facility awaken
     show jaden normal
     a "Sally has just finished her mission and is on her way back to the Deep."
@@ -577,9 +577,42 @@ label arrival:
 label curious:
     m "Fuck it, I'm gonna do it."
     m "Who is Sally?"
+    
+    hide jaden happy
+    show jaden normal
+
+    j "what do you mean?"
+    jump arrival
 
 label silence:
+    $ jaden_respect = True
     m "I don't want to bother Jaden nor sound nosey."
+    m "It's best to remain si-"
+    hide jaden happy
+    show jaden normal
+    j "You know, it's okay to ask something if you have a question."
+    j "No one can tell you to be silent. You have every right to know."
+    j "Afterall, you are part of the Tweleve, and we don't discriminate anyone based on anything."
+    j "So tell me, whats on your mind?"
+    
+    jump arrival
+
+label arrival:
+    m "Well, I don't have a clue about Sally in general?"
+    j "Oh right, I have yet to introduce you to the remaining guys."
+    j "What do you know about Sally so far?"
+    m "I can only assume she is also a part of the Tweleve, but that's about it."
+    hide jaden normal
+    show jaden happy
+    j "Intresting, I don't want to ruin the surprise so tell you without spoiling the fun."
+    j "Just imagine her as a tiny genius."
+    hide jaden happy
+    show jaden normal
+    j "But don't mention anything about size to her. She will get cranky about it."
+    "VROOOOMMM"
+    hide jaden normal
+    show jaden silly
+    j "HO, here comes the genius herself, Sally!"
 
 label ending:
     if badending:
