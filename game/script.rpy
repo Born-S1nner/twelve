@@ -424,7 +424,7 @@ label options:
         hide morgana normal
         show jaden happy at left
         show morgana sad at right
-        
+
         j "Well know, I can see you don't just in their diverse mindsets."
         j "Having diferent minds could led to massive conflicts in the long run."
         j "I say we destroy the planet"
@@ -521,6 +521,19 @@ label kira_intro:
     m "I heard you have protected me from many potential death."
     k "I can't allow one of us to die."
     k "I can sense a good nature in your soul."
+    k "I have high hopes for you."
+    m "I shall live up to your expectation."
+
+    hide jaden happy
+    show jaden silly
+
+    j "Hey now, you shouldn't make him feel tense, Kira."
+    j "WE should treat him like a new younger brother."
+    j "It'll take time for him to get adjusted around here."
+    k "Will then, lets find out."
+    k "What would you do if you're friend backstabbed you and survived?"
+
+    menu:
 
 label ending:
     if badending:
