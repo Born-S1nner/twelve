@@ -9,7 +9,8 @@ default test_score = 0
 
 default jaden_respect = False
 default android_respect = False
-default morgana_respect = True
+default morgana_respect = False
+default kira_respect = False
 default badending = False
 
 label start:
@@ -528,12 +529,31 @@ label kira_intro:
     show jaden silly
 
     j "Hey now, you shouldn't make him feel tense, Kira."
-    j "WE should treat him like a new younger brother."
+    j "We should treat him like a new younger brother."
     j "It'll take time for him to get adjusted around here."
     k "Will then, lets find out."
     k "What would you do if you're friend backstabbed you and survived?"
 
     menu:
+        "Revenge":
+            $ Kira_respect = True
+        "Live a new life":
+            $ Kira_respect = False
+        "Kill yourself":
+            $ jaden_respect = False
+
+    j "Okay okay, let's not get too deep into what ifs."
+    k "I have to resupply my equipments for the next journey."
+    k "Hope we meet again human."
+    m "I wish the same."
+
+    hide kira
+    with moveoutright
+    pause
+    hide jade happy
+    show jaden normal
+
+    j "Well, that went calmer than I expect."
 
 label ending:
     if badending:
