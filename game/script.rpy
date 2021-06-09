@@ -555,6 +555,32 @@ label kira_intro:
 
     j "Well, that went calmer than I expect."
 
+label arrival:
+    scene bg facility awaken
+    show jaden normal
+    a "Sally has just finished her mission and is on her way back to the Deep."
+    scene bg facility
+    show jaden happy
+    j "Great timing."
+    j "Let us head back to the station and see what's up."
+
+    scene bg deepship
+    show jaden happy
+    pause
+    m "I wonder if it's a good idea to ask a question?"
+    menu:
+        "ask a question":
+            jump curious
+        "remain silent":
+            jump silence
+
+label curious:
+    m "Fuck it, I'm gonna do it."
+    m "Who is Sally?"
+
+label silence:
+    m "I don't want to bother Jaden nor sound nosey."
+
 label ending:
     if badending:
         "Bad ending"
