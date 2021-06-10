@@ -3,6 +3,7 @@ define j = Character("Jaden", color="#009900")
 define a = Character("Andriod", color="#2eb8b8")
 define mo = Character("Morgana", color="#9900cc")
 define k = Character("Kira", color="#660000")
+define s = Character("Sally", color="#cccc00")
 
 default passed = 4
 default test_score = 0
@@ -602,17 +603,44 @@ label arrival:
     j "Oh right, I have yet to introduce you to the remaining guys."
     j "What do you know about Sally so far?"
     m "I can only assume she is also a part of the Tweleve, but that's about it."
+    
     hide jaden normal
     show jaden happy
+    
     j "Intresting, I don't want to ruin the surprise so tell you without spoiling the fun."
     j "Just imagine her as a tiny genius."
+    
     hide jaden happy
     show jaden normal
+    
     j "But don't mention anything about size to her. She will get cranky about it."
     "VROOOOMMM"
+    
     hide jaden normal
     show jaden silly
+    
     j "HO, here comes the genius herself, Sally!"
+
+    show sally angry at left
+    with moveinleft
+
+    s "Don't act like I didn't hear you talking about my size!"
+    s "I have eyes everywhere on my ship."
+    m "Her ship?"
+    j "Ah yes, Sally was the one who build the Deep."
+
+    hide sally angry
+    show sally embrass at left
+
+    s "Awww... I wanted to make myself look cool in front of the newbie."
+    j "Well you know what they say."
+    j "You can't fool people for who you really are."
+
+    hide sally embrass
+    show sally normal at left
+
+    s "I think you just made that up right up the spot."
+
 
 label ending:
     if badending:
