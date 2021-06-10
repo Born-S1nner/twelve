@@ -475,7 +475,7 @@ label options:
         jump options
 
 label act3_end:
-    scene bg deeplightspeed
+    scene bg deepship
     show jaden normal at left
     show morgana normal at right
 
@@ -639,21 +639,23 @@ label arrival:
     hide sally embrass
     show sally normal at left
 
-    s "I think you just made that up right up the spot."
+    s "I think you just made that up right at the spot."
     j "You caught me."
 
 label sally_intro:
-    show jaden happy
-    show sally normal at left
-    
     s "Let me make a proper introdution to the newbie over here."
     j "Sure thing, let me give you the spotlight."
 
-    hide jaden
+    hide jaden silly
     with moveoutright
     hide sally normal
     show sally happy 
-    with moveing left
+    with moveinleft
+
+    s "The name's Sally Sulzberger from the Tweleve."
+    s "I am the best engineer and genius of the universe."
+    s "Anything you can think of, I can make them come true."
+    s "I could build an army of robots or a super cool PB&J sandwich maker."
 
 label ending:
     if badending:
