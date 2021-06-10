@@ -640,7 +640,20 @@ label arrival:
     show sally normal at left
 
     s "I think you just made that up right up the spot."
+    j "You caught me."
 
+label sally_intro:
+    show jaden happy
+    show sally normal at left
+    
+    s "Let me make a proper introdution to the newbie over here."
+    j "Sure thing, let me give you the spotlight."
+
+    hide jaden
+    with moveoutright
+    hide sally normal
+    show sally happy 
+    with moveing left
 
 label ending:
     if badending:
