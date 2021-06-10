@@ -656,6 +656,17 @@ label sally_intro:
     s "I am the best engineer and genius of the universe."
     s "Anything you can think of, I can make them come true."
     s "I could build an army of robots or a super cool PB&J sandwich maker."
+    j "Tell them about you origin!"
+
+    hide sally happy
+    show sally silly
+
+    s "Well, I am a Dwarf Gnome from the planet Tesarock."
+    s "It's the home of inovation and technology. The planet of oppurtunity and intelligence."
+    s "However, Tesarock was also a corrupt planet that was on the brink of war."
+    s "Had it not been for the Tweleve, I wouldn't be here and Tesarock would be committing mass genocide to other worlds."
+    s " I know your little brain is curious about me, What do you want to know more about me?"
+    
 
 label ending:
     if badending:
