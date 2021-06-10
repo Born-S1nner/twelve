@@ -12,6 +12,7 @@ default jaden_respect = False
 default android_respect = False
 default morgana_respect = False
 default kira_respect = False
+default sally_respect = False
 default badending = False
 
 label start:
@@ -666,7 +667,35 @@ label sally_intro:
     s "However, Tesarock was also a corrupt planet that was on the brink of war."
     s "Had it not been for the Tweleve, I wouldn't be here and Tesarock would be committing mass genocide to other worlds."
     s " I know your little brain is curious about me, What do you want to know more about me?"
+
+    menu:
+        "How tall are you?":
+            $ jaden_respect = False
+            jump rudeness
+        "What have you inveted so far?":
+            $ sally_respect = True
+            jump politeness
+
+label rudeness:
+    hide sally silly
+    show sally angry
     
+    s "Are you fucking kidding me!"
+    s "Jaden! did you menetion about my height?"
+    
+    show jaden normal at right
+    with moveinright
+
+    j "He is just a little curious, almost too curious that someone got his tongue."
+
+label politeness:
+    s "Well, I did build this ship by stratch."
+    s "I also made Android mobile around the universe, create anti-gravity, build anti-black hole, started a new physic laws..."
+    
+    show jaden normal at right
+    with moveinright
+
+    j "Don't kill the new member to death by boredom."
 
 label ending:
     if badending:
