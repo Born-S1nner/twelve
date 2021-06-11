@@ -506,6 +506,9 @@ label kira_intro:
 
     j "Okay okay, let's not get too deep into what ifs."
     k "I have to resupply my equipments for the next journey."
+    j "Don't overowrk yourself this time. We would have a mee-"
+    k "Yes, a meeting upcoming around the clock. I shall be there with the others."
+    j "Great!"
     k "Hope we meet again human."
     m "I wish the same."
 
@@ -550,8 +553,10 @@ label curious:
 label silence:
     m "I don't want to bother Jaden nor sound nosey."
     m "It's best to remain si-"
+
     hide jaden happy
     show jaden normal
+    
     j "You know, it's okay to ask something if you have a question."
     j "No one can tell you to be silent. You have every right to know."
     j "Afterall, you are part of the Tweleve, and we don't discriminate anyone based on anything."
@@ -662,8 +667,16 @@ label politeness:
     jump end_act4
 
 label end_act4:
-    j "Anyway, I should tell you that I won't be around for quite a while."
-    j ""
+    j "Anyway, I should remind you that the meeting is tomorrow."
+
+    hide sally silly
+    hide sally angry
+    show sally normal
+    
+    s "Is the newbie gonna be part of the meeting?"
+    j "He is officially part of the Tweleve, so he is obligated to be there."
+    s "Sounds reasonable, I see no problem with that."
+    s "However, the rest of thet guys would feel discomfortable about his presence."
 
 label ending:
     if badending:
