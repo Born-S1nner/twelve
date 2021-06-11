@@ -4,6 +4,7 @@ define a = Character("Andriod", color="#2eb8b8")
 define mo = Character("Morgana", color="#9900cc")
 define k = Character("Kira", color="#660000")
 define s = Character("Sally", color="#cccc00")
+
 define g = Character("Giddion", color="#99cc00")
 define b = Character("Bobby", color="#00ffcc")
 define t = Character("Tony", color="#ff9900")
@@ -677,6 +678,29 @@ label end_act4:
     j "He is officially part of the Tweleve, so he is obligated to be there."
     s "Sounds reasonable, I see no problem with that."
     s "However, the rest of thet guys would feel discomfortable about his presence."
+    j "Relax, I got that situation handle out."
+    s "I hope so."
+    
+    hide sally normal
+    show sally happy
+
+    s "Welp, I got to get some rest after the long mission."
+    s "See you on the meeting, newbie!"
+    m "Yea, see you later."
+
+    hide sally happy
+    with moveoutright
+    hide jaden normal
+    show jaden happy
+    with moveinright
+
+    j "You heard mention about the meeting many times..."
+    j "If I didn't, they would forget about it and start a new mission."
+    j "I suggest you take some rest until Andriod calls you for the meeeting."
+    m "Okay, I'll head back to my office."
+
+label recap:
+    scene bg office
 
 label ending:
     if badending:
