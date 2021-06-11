@@ -14,11 +14,9 @@ define r = Character("Randy", color="#0033cc")
 default passed = 4
 default test_score = 0
 
-default jaden_respect = False
-default android_respect = False
-default morgana_respect = False
-default kira_respect = False
-default sally_respect = False
+define respect_meter = 0
+define moral_meter = 0
+
 default badending = False
 
 label start:
@@ -149,6 +147,7 @@ label end_act1:
         "I accept":
             j "Good, we are on the role."    
             j "Let me show you around this place."
+            $ moral_meter += 5
             hide jaden happy
             with moveoutleft
 
@@ -214,7 +213,7 @@ label choice_1:
 
     menu:
         "Talk with Android":
-            $ android_respect = True
+            $ moral_meter += 1
             m "I actually want to learn more about you."
 
             scene bg awaken facility
@@ -235,12 +234,15 @@ label a_questions:
     menu:
         "What are you exactly?" if q1_anwsered == False:
             $ q1_anwsered = True
+            $ moral_meter += 1
             jump a1
         "Do you have a body?" if q2_anwsered == False:
             $ q2_anwsered = True
+            $ moral_meter += 1
             jump a2
         "How do I call you for anything?" if q3_anwsered == False:
             $ q3_anwsered = True
+            $ moral_meter += 1
             jump a3
         "Let's continue this some other time."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
             jump end_act2
@@ -342,7 +344,7 @@ menu:
     "No":
         jump choke
     "What do you mean?":
-        $ morgana_respect = True
+        $ respect_meter += 1
         jump joke
 
 label choke:
@@ -418,12 +420,12 @@ label options:
     $ test_score -= test_score
     menu:
         "Destroy the planet":
-            $ jaden_respect == True
-            $ morgana_respect == False
+            $ respect_meter += 1
+            $ moral_meter -= 1
             $test_score += 0
         "Save the planet":
-            $ jaden_respect == False
-            $ morgana_respect == True
+            $ respect_meter -= 1
+            $ moral_meter += 1
             $test_score += 2
         "...":
             $test_score += 4
@@ -477,6 +479,7 @@ label options:
         mo "Let's just come back to Urth in a few space to check on their expanding condition."
         j "Alright, alright. Android, take us somewhere away from here."
         a "Sure thing."
+    
     else:
         j "We can't have you sleeping on this important decision, you need to pick."
         jump options
@@ -544,11 +547,14 @@ label kira_intro:
 
     menu:
         "Revenge":
-            $ Kira_respect = True
+            $ respect_meter += 1
+            $ moral_meter -= 1
         "Live a new life":
-            $ Kira_respect = False
+            $ respect_meter -= 1
+            $ moral_meter += 1
         "Kill yourself":
-            $ jaden_respect = False
+            $ respect_meter -= 1
+            $ moral_meter -= 1
 
     j "Okay okay, let's not get too deep into what ifs."
     k "I have to resupply my equipments for the next journey."
@@ -580,6 +586,7 @@ label act4:
         "ask a question":
             jump curious
         "remain silent":
+            $ respect_meter += 1
             jump silence
 
 label curious:
@@ -593,7 +600,6 @@ label curious:
     jump arrival
 
 label silence:
-    $ jaden_respect = True
     m "I don't want to bother Jaden nor sound nosey."
     m "It's best to remain si-"
     hide jaden happy
@@ -676,10 +682,10 @@ label sally_intro:
 
     menu:
         "How tall are you?":
-            $ jaden_respect = False
+            $ respect_meter -= 1
             jump rudeness
         "What have you inveted so far?":
-            $ sally_respect = True
+            $ respect_meter += 1
             jump politeness
 
 label rudeness:
@@ -708,7 +714,8 @@ label politeness:
     jump end_act4
 
 label end_act4:
-    j "Anyway, I should remind you that today is "
+    j "Anyway, I should tell you that I won't be around for quite a while."
+    j ""
 
 label ending:
     if badending:
