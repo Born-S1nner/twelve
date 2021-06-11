@@ -47,75 +47,27 @@ label act1:
     hide jaden normal
     show jaden happy
 
-    j "It's alright, your interview hasn't start just yet."
+    j "It's not a 9-5 job, so there is no interview anything like that."
     j "I am here to see you before we get started."
     j "You can leave right now while you still can."
-    m "No, no, I made myself clear to do this trail."
-    m "Just hit me with some questions."
+    m "No, no, I made myself clear to commit this role."
+    m "Just hit me with the truth."
     j "ho, I like a determined person who's ready for anything."
     j "Let's begin."
     jump interview
 
-label interview:
-    j "Do you believe more in the news or your eyes?"
-    menu:
-        "I trust the news": 
-            pass
-        "I trust in my eyes only":
-            $ test_score += 1
-
-    j "Will you sacrifice the whole world for your loved ones?"
-    menu:
-        "Yes":
-            $ test_score += 1 
-        "No":
-            pass
-    
-    j "Do you believe in God?"
-    menu:
-        "Yes": 
-            pass
-        "No":
-            $ test_score += 1
-    
-    j "Do you wish to be popular on YouTube?"
-    menu:
-        "Yes": 
-            pass
-        "No":
-            $ test_score += 1
-
-label end_interview:
-    if test_score == passed:
-        jump end_act1
-    else:
-        $ test_score -= test_score
-        $ badending = True
-        hide jaden happy
-        show jaden sad
-        j "Sorry, you are still an ignorant simp that believes in every little thing."
-        j "I don't take clout-chasing influencers into the twelve."
-        j "I expected much from you."
-        j "Kira, do the memory wash again."
-        hide jaden sad
-        with moveoutleft
-        "Zapped" with vpunch
-        j "Let's hope they get the questions right this time."
-        jump ending
-
 label end_act1:
-    j "Finally, a worthy human with a clean mindset."
-    j "Welcome to the tweleve."
-    j "Let me tell you more about the Tweleve..."
+    j "Welcome to the Tweleve."
+    j "I am Jaden the Jade Emperor that is part of the group called the Tweleve."
     j "There are twelve of us from each species that are deemed too powerful for the universe, with the exception of you."
-    j "We all could fight a pointless battle, but we instead choose to work together to eliminate all the nuisance in our universe."
+    j "We all could fight a pointless battle, but we instead choose to work together to eliminate all evil in our universe."
     j "Our job is to destroy all life that are deemed too dangerous or evil to be left unchecked."
 
     hide jaden happy
     show jaden normal
 
     j "We were so good at our job that we almost wiped out all life on this universe."
-    j "As you can tell, we run into some issues as to what planet should be destroyed or who to spare."
+    j "As you can tell, we run into some issues as to which planet should be destroyed or which to spare."
     j "Upon days of debating, I propose an anwser to our problem."
 
     hide jaden normal
@@ -130,7 +82,6 @@ label end_act1:
 
     menu:
         "I refuse":
-            $ test_score -= test_score
             $ badending = True
             hide jaden happy
             show jaden angry
@@ -147,7 +98,7 @@ label end_act1:
         "I accept":
             j "Good, we are on the role."    
             j "Let me show you around this place."
-            $ moral_meter += 5
+            $ moral_meter += 1
             hide jaden happy
             with moveoutleft
 
@@ -160,7 +111,7 @@ label act2:
     j "The deep is our one and only spacehip that we have as our headquarters."
     j "Normally, I would have all the twelve on board."
     j "However, most of them are on important missions thoughout the galaxy."
-    j "You would see them when they come back."
+    j "You would see them when they come back for the meeting."
     m "Would I be tasked to go out in space?"
     
     hide jaden happy
@@ -234,15 +185,12 @@ label a_questions:
     menu:
         "What are you exactly?" if q1_anwsered == False:
             $ q1_anwsered = True
-            $ moral_meter += 1
             jump a1
         "Do you have a body?" if q2_anwsered == False:
             $ q2_anwsered = True
-            $ moral_meter += 1
             jump a2
         "How do I call you for anything?" if q3_anwsered == False:
             $ q3_anwsered = True
-            $ moral_meter += 1
             jump a3
         "Let's continue this some other time."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
             jump end_act2
@@ -493,8 +441,8 @@ label act3_end:
     j "Oh yeah, its almost time for your sleep."
     mo "Don't let the newbie get near my room or else he would sufficate."
     m "I'll do my best to stay away."
-    mo "Good, see you when I'm awake again."
-    m "Okay."
+    j "And don't sleep for too loong becase we will have a meeting in a bit."
+    mo "Okay, see you when I'm awake again."
 
     hide morgana normal
     with moveoutright
