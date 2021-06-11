@@ -4,6 +4,12 @@ define a = Character("Andriod", color="#2eb8b8")
 define mo = Character("Morgana", color="#9900cc")
 define k = Character("Kira", color="#660000")
 define s = Character("Sally", color="#cccc00")
+define g = Character("Giddion", color="#99cc00")
+define b = Character("Bobby", color="#00ffcc")
+define t = Character("Tony", color="#ff9900")
+define v = Character("Vod", color="#e62e00")
+define n = Character("Nova", color="#40080")
+define r = Character("Randy", color="#0033cc")
 
 default passed = 4
 default test_score = 0
@@ -688,6 +694,8 @@ label rudeness:
 
     j "He is just a little curious, almost too curious that someone got his tongue."
 
+    jump end_act4
+
 label politeness:
     s "Well, I did build this ship by stratch."
     s "I also made Android mobile around the universe, create anti-gravity, build anti-black hole, started a new physic laws..."
@@ -696,6 +704,11 @@ label politeness:
     with moveinright
 
     j "Don't kill the new member to death by boredom."
+
+    jump end_act4
+
+label end_act4:
+    j "Anyway, I should remind you that today is "
 
 label ending:
     if badending:
