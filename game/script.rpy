@@ -732,6 +732,39 @@ label recap:
     m "Then again, Jaden may have something in his mind that no one else can see.
     m "Whatever the case could be, he would have the final word for my existence."
     hide jaden happy
+    m "I only met five of them, yet they are on another level."
+    m "I don't even known what's it going to be with the other members."
+    m "It probably be best to just rest and see what happens next."
+
+label act5:
+    scene bg deep
+    with fade
+    pause
+    "Beep, beep beep!" with vpunch
+    scene bg office
+    with fade
+    "Beep, beep, beep!"
+    m "What's that noise?"
+    a "It's the alarm system, I have it on so you won't be late to the meeting."
+    a "The alarm system has proven to be efficent."
+    m "Almost too efficent."
+    m "Let me get myself ready and I'll be out there."
+    a "Alright, take your time."
+
+    scene bg facility
+    with wiperight
+    m "How far is the meeting?"
+    scene bg awaken facility
+    a "It should take 10 minutes to get there."
+    scene bg facility
+    m "It's that far, I'm gonna have to rely on you to show me the directions."
+    "You must be the new member, rihgt?!" with hpunch
+    m "Who said that?"
+    
+   
+
+label meeting:
+    m
 
 label ending:
     if badending:
