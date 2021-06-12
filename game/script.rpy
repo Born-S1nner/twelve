@@ -701,15 +701,36 @@ label end_act4:
 
 label recap:
     scene bg office
-    m ""
-    show sally happy
-    hide sally happy
+    m "That was a lot to take in for me."
+    m "First, I'm part of the Tweleve."
+    m "Then, I choose to decide the faith of a planet."
+    m "Now, I am going to meet the rest of the Tweleve."
+    m "To recap, I have met five out of the eleven Tweleve members."
+    m "They are unique and different in their own way."
+    show sally angry
+    m "Sally is the smartest Tweleve and the greatest inventor."
+    m "Despite her anger issues, she could be a kind person if you don't say anything bad to her."
+    hide sally angry
     show kira model
+    m "Kira is the Healer of the Tweleve."
+    m "His knowledge about magic and spells may be far superior than any Tweleve."
+    m "While his role to dispell evil is quite known, the rest of his identity remains a mystery."
     hide kira model
-    show morgana happy
-    hide morgana happy
+    show morgana silly
+    m "Morgana is a pure Succubus and a demon lord."
+    m "She may be filrty at times, but she likes to have fun when there is no work needed for her."
+    m "Might be best to stay on her good term and avoid losing her intrest."
+    hide morgana silly
     scene bg awaken facility
+    m "Android is the Superior A.I. in the universe."
+    m "Android has eyes everywhere, so I better be at good behavior at all times."
+    m "Android could be the one to save me or disown me."
+    scene bg office
     show jaden happy
+    m "Finally, Jaden is the main figure of the Tweleve."
+    m "Quite strange that a Jade Emperor would be part of this group."
+    m "Then again, Jaden may have something in his mind that no one else can see.
+    m "Whatever the case could be, he would have the final word for my existence."
     hide jaden happy
 
 label ending:
