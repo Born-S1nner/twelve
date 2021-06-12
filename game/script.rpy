@@ -701,6 +701,16 @@ label end_act4:
 
 label recap:
     scene bg office
+    m ""
+    show sally happy
+    hide sally happy
+    show kira model
+    hide kira model
+    show morgana happy
+    hide morgana happy
+    scene bg awaken facility
+    show jaden happy
+    hide jaden happy
 
 label ending:
     if badending:
