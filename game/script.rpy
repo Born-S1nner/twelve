@@ -752,7 +752,7 @@ label act5:
     a "Alright, take your time."
 
     scene bg facility
-    with wiperight
+    with wipeleft
     m "How far is the meeting?"
     scene bg awaken facility
     a "It should take 10 minutes to get there."
@@ -760,8 +760,37 @@ label act5:
     m "It's that far, I'm gonna have to rely on you to show me the directions."
     "You must be the new member, rihgt?!" with hpunch
     m "Who said that?"
+
+    show bobby model
+    with moveinright
     
-   
+    b "It's me, Bobby!"
+    m "Ah, you must also be one of the Tweleve, are you?"
+    b "If I'm in the deep, then yes."
+
+    show randy model at right
+    with moveinright
+
+    m "Waah" with hpunch
+    b "Oh, that's Randy."
+    b "He don't talk much, so he would show up in surprise."
+    r "..."
+    m "Why does he stay muted and wear a mask?"
+    b "If you havn't figure it out yet, his voice could destroy a planet."
+    b "A single word could shattter the deep into pieces."
+    r "..."
+    b "Regardless, why are you here on the hallway?"
+    m "I was on the way to the meeting."
+    b "Ah yes, the meeting... must be your first time going there."
+    m "Yes it is, can you show the way to the meeting?"
+    b "Why of course, I can always help a brother out! Follow me!"
+
+    hide bobby model
+    with moveoutleft
+    hide randy model
+    with moveoutleft
+
+    m "Wait hold up!"    
 
 label meeting:
     m
