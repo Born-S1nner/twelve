@@ -793,7 +793,7 @@ label act5:
     m "Wait hold up!"    
 
 label meeting:
-    m
+    scene bg roundtable 
 
 label ending:
     if badending:
