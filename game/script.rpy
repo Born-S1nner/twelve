@@ -1,4 +1,5 @@
 ﻿define m = Character("Me")
+define Character("???" color="#ffffff")
 define j = Character("Jaden", color="#009900")
 define a = Character("Andriod", color="#2eb8b8")
 define mo = Character("Morgana", color="#9900cc")
@@ -837,6 +838,24 @@ label meeting:
     show nova angry at left
     with moveinleft
     n "We are more mature to know that fist fights don't resolve anything."
+    t "Are you saying that I'm too savage to be handle?"
+    n "If I did, I would have said it right away."
+    n "We are having a meeting with the new member being here for the first time."
+    n "We should leave a good impression so that he would feel confident around us."
+    hide vod angry
+    show vod normal at right
+    hide jaden angry
+    show jaden normal
+    j "You have a point. Sorry that you got to side that side of me."
+    v "..."
+    n "Vod. Jaden said his apology and you should too."
+    v "..."
+    v "Sorry."
+    hide vod normal
+    with moveoutright
+    hide nova angry
+    show nove sad at left
+    n "Vod was never good at apologizing. I hope you could forgive him."
 
 label ending:
     if badending:
