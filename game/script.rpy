@@ -805,7 +805,38 @@ label meeting:
     "This must be the new member of the Tweleve!" with hpunch
     show vod normal at right
     with moveinright
+    b "Hey Vod! Glad to see that you never change."
     v "This little human is the one to decide on the fate of planets?"
+    b "You know what they say, \"don't grudge a book by it's face.\" "
+    v "You mean \"Don't judge a book by it's cover.\""
+    b "Yeah, what you said."
+    
+    hide vod normal
+    show vod angry at right
+    
+    v "Look human, I don't care what you're intentions here."
+    v "If you plan to betray the Tweleve, you will be punished in the depths of punish land."
+    
+    j "Don't scare the beginner with your fangs, Vod."
+    show jaden normal 
+    with moveinleft
+    
+    j "We all agree to be nice to the new member, remember?"
+    v "It was a mojority vote, I didn't agree to this."
+    
+    hide jaden normal
+    with moveoutleft
+    show jaden angry
+    
+    j "I sense you got a proble with how the Tweleve runs the universe."
+    b "Hold up, we can't start a fight just now."
+    "Bobby is right, it's rude to start an argument in front of the newest member."
+
+    hide bobby model
+    with moveoutleft
+    show nova angry at left
+    with moveinleft
+    n "We are more mature to know that fist fights don't resolve anything."
 
 label ending:
     if badending:
