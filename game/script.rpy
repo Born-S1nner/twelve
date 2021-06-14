@@ -4,13 +4,13 @@ define a = Character("Andriod", color="#2eb8b8")
 define mo = Character("Morgana", color="#9900cc")
 define k = Character("Kira", color="#660000")
 define s = Character("Sally", color="#cccc00")
+define b = Character("Bobby", color="#00ffcc")
+define r = Character("Randy", color="#0033cc")
+define v = Character("Vod", color="#e62e00")
 
 define g = Character("Giddion", color="#99cc00")
-define b = Character("Bobby", color="#00ffcc")
 define t = Character("Tony", color="#ff9900")
-define v = Character("Vod", color="#e62e00")
 define n = Character("Nova", color="#40080")
-define r = Character("Randy", color="#0033cc")
 
 default passed = 4
 default test_score = 0
@@ -729,7 +729,7 @@ label recap:
     show jaden happy
     m "Finally, Jaden is the main figure of the Tweleve."
     m "Quite strange that a Jade Emperor would be part of this group."
-    m "Then again, Jaden may have something in his mind that no one else can see.
+    m "Then again, Jaden may have something in his mind that no one else can see."
     m "Whatever the case could be, he would have the final word for my existence."
     hide jaden happy
     m "I only met five of them, yet they are on another level."
@@ -795,6 +795,17 @@ label act5:
 label meeting:
     scene bg roundtable
     m "This must be where the meeting takes place."
+    
+    show bobby model at left
+    with moveinleft
+    b "Were you doubting me on the way here?"
+    m "No, I'm new here around the deep."
+    b "Oh right, sorry for being concern about you."
+    m "Concern?"
+    "This must be the new member of the Tweleve!" with hpunch
+    show vod normal at right
+    with moveinright
+    v "This little human is the one to decide on the fate of planets?"
 
 label ending:
     if badending:

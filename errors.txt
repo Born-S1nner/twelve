@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 217: expected menuitem
-    if a1_unasked:
-    ^
+File "game/script.rpy", line 732: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        m "Then again, Jaden may have something in his mind that no one else can see.
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Thu Jun  3 21:24:14 2021
+Mon Jun 14 14:28:42 2021
