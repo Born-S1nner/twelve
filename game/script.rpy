@@ -793,7 +793,8 @@ label act5:
     m "Wait hold up!"    
 
 label meeting:
-    scene bg roundtable 
+    scene bg roundtable
+    m "This must be where the meeting takes place."
 
 label ending:
     if badending:
