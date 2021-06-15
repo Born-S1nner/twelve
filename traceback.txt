@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 444, in script
-    k "Sure thing, Android remove Urth's core."
-Exception: Sayer 'k' is not defined.
+  File "game/script.rpy", line 14, in script call
+    call act1_main
+  File "game/script.rpy", line 14, in script call
+    call act1_main
+ScriptError: could not find label 'act1_main'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 444, in script
-    k "Sure thing, Android remove Urth's core."
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'k' is not defined.
+  File "game/script.rpy", line 14, in script call
+    call act1_main
+  File "renpy/ast.py", line 1444, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 14, in script call
+    call act1_main
+  File "renpy/script.py", line 910, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'act1_main'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Tweleve 1.0
-Tue Jun  8 16:30:08 2021
+Mon Jun 14 23:47:56 2021

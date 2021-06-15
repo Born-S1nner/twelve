@@ -1,4 +1,5 @@
-label act1:
+
+label act1_main:
     "..."
     scene bg deep
     with fade
@@ -32,9 +33,6 @@ label act1:
     m "Just hit me with the truth."
     j "ho, I like a determined person who's ready for anything."
     j "Let's begin."
-    jump interview
-
-label end_act1:
     j "Welcome to the Tweleve."
     j "I am Jaden the Jade Emperor that is part of the group called the Tweleve."
     j "There are twelve of us from each species that are deemed too powerful for the universe, with the exception of you."
