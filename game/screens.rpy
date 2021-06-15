@@ -289,20 +289,25 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
+## load 954 294
+## preference 780 424
+## about 754 548
+## help 360 606
+## quit 0 582
+
 screen navigation():
 
     vbox:
         style_prefix "navigation"
 
-        #xpos gui.navigation_xpos
-        #yalign 0.5
+        xpos gui.navigation_xpos
+        yalign 0.5
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            #textbutton _("Start") action Start()
-            imagebutton auto "gui/mm_start_%s.png" xpos 1033 ypos 123 focus_mask True action Start()
+            textbutton _("Start") action Start()
  
         else:
 
@@ -311,9 +316,10 @@ screen navigation():
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
+         
 
         textbutton _("Preferences") action ShowMenu("preferences")
-
+ 
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
@@ -323,18 +329,18 @@ screen navigation():
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
-
+ 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
             textbutton _("Help") action ShowMenu("help")
-
+ 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
             textbutton _("Quit") action Quit(confirm=not main_menu)
-
+ 
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -361,12 +367,63 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    #frame:
+    #    style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+
+    vbox:
+        style_prefix "navigation"
+
+        #xpos gui.navigation_xpos
+        #yalign 0.5
+
+        spacing gui.navigation_spacing
+
+        if main_menu:
+
+            #textbutton _("Start") action Start()
+            imagebutton auto "gui/mm_start_%s.png" xpos 1033 ypos 123 focus_mask True action Start()
+ 
+        else:
+
+            textbutton _("History") action ShowMenu("history")
+
+            textbutton _("Save") action ShowMenu("save")
+
+        #textbutton _("Load") action ShowMenu("load")
+        imagebutton auto "gui/mm_load_%s.png" xpos 954 ypos 194 focus_mask True action ShowMenu("load")
+         
+
+        #textbutton _("Preferences") action ShowMenu("preferences")
+        imagebutton auto "gui/mm_preferences_%s.png" xpos 780 ypos 224 focus_mask True action ShowMenu("preferences")
+
+        if _in_replay:
+
+            textbutton _("End Replay") action EndReplay(confirm=True)
+
+        elif not main_menu:
+
+            textbutton _("Main Menu") action MainMenu()
+
+        #textbutton _("About") action ShowMenu("about")
+        imagebutton auto "gui/mm_about_%s.png" xpos 720 ypos 248 focus_mask True action ShowMenu("about")
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+            #textbutton _("Help") action ShowMenu("help")
+            imagebutton auto "gui/mm_help_%s.png" xpos 360 ypos 210 focus_mask True action ShowMenu("help")
+
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
+            #textbutton _("Quit") action Quit(confirm=not main_menu)
+            imagebutton auto "gui/mm_quit_%s.png" xpos 0 ypos 112 focus_mask True action Quit(confirm=not main_menu)
+
+
 
     if gui.show_name:
 
