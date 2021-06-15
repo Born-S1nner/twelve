@@ -1,24 +1,40 @@
-Tue Jun 15 15:30:48 2021
+Tue Jun 15 17:28:14 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
  
 
-Bootstrap to the start of init.init took 0.12s
-Early init took 0.01s
-Loader init took 0.15s
-Loading error handling took 0.04s
-Loading script took 2.14s
-Loading save slot metadata. took 0.39s
+Bootstrap to the start of init.init took 0.14s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-
-The label end_act2 is defined twice, at
-  File "game/original_scripts/script-act2.rpy", line 124 and
-  File "game/original_scripts/script-act2.rpy", line 204.
+Running init code took 0.10s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.31s
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.14s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -45,35 +61,157 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 3.59918022156s
+Total time until interface ready: 2.41952800751s
 Resetting cache.
-Bootstrap to the start of init.init took 100.33s
+Bootstrap to the start of init.init took 137.81s
 Early init took 0.00s
 Loader init took 0.03s
-Loading error handling took 0.03s
-Loading script took 0.39s
+Loading error handling took 0.06s
+Loading script took 0.60s
 Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
-Loading analysis data took 0.06s
+Running init code took 0.09s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\123\\AppData\\Roaming/RenPy/backups\\Tweleve':
-Dump and make backups. took 0.30s
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.08s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.11s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 2500'
+Version: '4.0.0 - Build 10.18.10.4358'
+Display Info: None
+Number of texture units: 16
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 140.22595191s
+Resetting cache.
+Bootstrap to the start of init.init took 229.56s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.64s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\123\\AppData\\Roaming/RenPy/backups\\Tweleve':
+Dump and make backups. took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.06s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.02s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.00s
-Load screen analysis took 0.02s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.09s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.11s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 2500'
+Version: '4.0.0 - Build 10.18.10.4358'
+Display Info: None
+Number of texture units: 16
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 232.025197029s
+Resetting cache.
+Bootstrap to the start of init.init took 245.10s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.02s
+Loading script took 0.40s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\123\\AppData\\Roaming/RenPy/backups\\Tweleve':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.08s
 Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
@@ -106,4 +244,4 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1278, 719) drawable=(1278, 719)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 101.945363045s
+Total time until interface ready: 247.109057903s

@@ -32,7 +32,11 @@ define s = Character("Sally", color="#cccc00")
 define b = Character("Bobby", color="#00ffcc")
 define r = Character("Randy", color="#0033cc")
 define v = Character("Vod", color="#e62e00")
+define n = Character("Nova", color="#40080")
 
 define g = Character("Giddion", color="#99cc00")
 define t = Character("Tony", color="#ff9900")
-define n = Character("Nova", color="#40080")
+
+# ending
+
+default badending = False

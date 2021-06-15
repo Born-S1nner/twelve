@@ -1,6 +1,4 @@
 ﻿
-default badending = False
-
 label start:
 
     call act1

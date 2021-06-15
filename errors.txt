@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-The label end_act2 is defined twice, at
-  File "game/original_scripts/script-act2.rpy", line 124 and
-  File "game/original_scripts/script-act2.rpy", line 204.
+File "game/screens.rpy", line 302: vbox expects a non-empty block.
+    if main_menu:
+                 ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Tue Jun 15 15:30:51 2021
+Tue Jun 15 16:07:08 2021

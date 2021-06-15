@@ -294,15 +294,16 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        #xpos gui.navigation_xpos
+        #yalign 0.5
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
-
+            #textbutton _("Start") action Start()
+            imagebutton auto "gui/mm_start_%s.png" xpos 1033 ypos 123 focus_mask True action Start()
+ 
         else:
 
             textbutton _("History") action ShowMenu("history")

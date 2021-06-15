@@ -1,30 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 6, in script call
-    call act1
-  File "game/original_scripts/script-act1.rpy", line 76, in script
-    $ moral_meter += 1
-  File "game/original_scripts/script-act1.rpy", line 76, in <module>
-    $ moral_meter += 1
-NameError: name 'moral_meter' is not defined
+  File "renpy/common/00start.rpy", line 213, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 498, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 498, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 508, in _execute_python_hide
+    renpy.load("_reload-2")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 6, in script call
-    call act1
-  File "game/original_scripts/script-act1.rpy", line 76, in script
-    $ moral_meter += 1
+  File "renpy/common/00start.rpy", line 213, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 498, in script
+    python hide:
   File "renpy/ast.py", line 922, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 2218, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/original_scripts/script-act1.rpy", line 76, in <module>
-    $ moral_meter += 1
-NameError: name 'moral_meter' is not defined
+  File "renpy/common/00keymap.rpy", line 498, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 508, in _execute_python_hide
+    renpy.load("_reload-2")
+  File "renpy/loadsave.py", line 767, in load
+    log.unfreeze(roots, label="_after_load")
+  File "renpy/python.py", line 2173, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "renpy/python.py", line 2005, in rollback
+    self.load_failed()
+  File "renpy/python.py", line 1923, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Tweleve 1.0
-Tue Jun 15 15:12:43 2021
+Tue Jun 15 17:28:03 2021
