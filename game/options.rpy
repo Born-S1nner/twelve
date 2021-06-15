@@ -47,7 +47,7 @@ define build.name = "Tweleve"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -151,6 +151,8 @@ define config.save_directory = "Tweleve-1622567750"
 
 define config.window_icon = "gui/window_icon.png"
 
+define config.has_autosave = False
+define config.autosave_on_quit = False
 
 ## Build configuration #########################################################
 ##
@@ -187,6 +189,8 @@ init python:
 
     # build.classify('game/**.png', 'archive')
     # build.classify('game/**.jpg', 'archive')
+
+
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
