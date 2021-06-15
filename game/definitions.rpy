@@ -7,6 +7,21 @@
 ## your own package name in options.rpy under define package_name. 
 ##Your package name is what you defined in Ren'Py Launcher in the Android section
 
+#define moraility in this game
+define moral_meter = 0
+#define respect in this game
+default respect_meter = 0
+
+#Three-type questions
+define q1_anwsered = False
+define q2_anwsered = False
+define q3_anwsered = False
+
+#multiple choice questions
+default passed = 4
+default test_score = 0
+
+#Characters
 define m = Character("Me")
 define w = Character("???", color="#ffffff")
 define j = Character("Jaden", color="#009900")

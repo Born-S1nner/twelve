@@ -1,5 +1,5 @@
 
-label act1_main:
+label act1:
     "..."
     scene bg deep
     with fade
@@ -12,7 +12,7 @@ label act1_main:
     m "If anything, space is just a lucid dream to get away from our corrupted world."
 
     m "..."
-    j "I see that you are enjoying the view." with hpunch
+    w "I see that you are enjoying the view." with hpunch
 
     scene bg deepship
     with zoomout
@@ -26,14 +26,14 @@ label act1_main:
     hide jaden normal
     show jaden happy
 
-    j "It's not a 9-5 job, so there is no interview anything like that."
-    j "I am here to see you before we get started."
-    j "You can leave right now while you still can."
+    w "It's not a 9-5 job, so there is no interview anything like that."
+    w "I am here to see you before we get started."
+    w "You can leave right now while you still can."
     m "No, no, I made myself clear to commit this role."
     m "Just hit me with the truth."
-    j "ho, I like a determined person who's ready for anything."
-    j "Let's begin."
-    j "Welcome to the Tweleve."
+    w "ho, I like a determined person who's ready for anything."
+    w "Let's begin."
+    w "Welcome to the Tweleve."
     j "I am Jaden the Jade Emperor that is part of the group called the Tweleve."
     j "There are twelve of us from each species that are deemed too powerful for the universe, with the exception of you."
     j "We all could fight a pointless battle, but we instead choose to work together to eliminate all evil in our universe."
@@ -67,9 +67,8 @@ label act1_main:
             
             hide jaden angry
             with moveoutleft
-            
+            "{i}Zap{/i}" with vpunch
             j "Sensitive creatures!"
-            jump ending
 
         "I accept":
             j "Good, we are on the role."    
@@ -77,3 +76,4 @@ label act1_main:
             $ moral_meter += 1
             hide jaden happy
             with moveoutleft
+    return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 28: end of line expected.
-    call act1 from script-ch1
-                         ^
+File "game/script.rpy", line 10: Line is indented, but the preceding default statement statement does not expect a block. Please check this line's indentation.
+    $ act = 1
+    ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Mon Jun 14 23:28:24 2021
+Tue Jun 15 14:38:53 2021

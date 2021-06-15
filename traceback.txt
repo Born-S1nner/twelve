@@ -1,26 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 14, in script call
-    call act1_main
-  File "game/script.rpy", line 14, in script call
-    call act1_main
-ScriptError: could not find label 'act1_main'.
+  File "game/script.rpy", line 6, in script call
+    call act1
+  File "game/original_scripts/script-act1.rpy", line 76, in script
+    $ moral_meter += 1
+  File "game/original_scripts/script-act1.rpy", line 76, in <module>
+    $ moral_meter += 1
+NameError: name 'moral_meter' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 14, in script call
-    call act1_main
-  File "renpy/ast.py", line 1444, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/script.rpy", line 14, in script call
-    call act1_main
-  File "renpy/script.py", line 910, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'act1_main'.
+  File "game/script.rpy", line 6, in script call
+    call act1
+  File "game/original_scripts/script-act1.rpy", line 76, in script
+    $ moral_meter += 1
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/original_scripts/script-act1.rpy", line 76, in <module>
+    $ moral_meter += 1
+NameError: name 'moral_meter' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Tweleve 1.0
-Mon Jun 14 23:47:56 2021
+Tue Jun 15 15:12:43 2021
