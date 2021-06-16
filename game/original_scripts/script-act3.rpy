@@ -201,7 +201,52 @@ label act3:
 
     n "Gosh, tone down your voice."
     n "You don't need to scream every time you show up."
-    g ""
+    g "That's what happens when you venture in a no sound zone for too long."
+    g "You can't tell how loud your voice is and things sound awfully too quite."
+    
+    scene bg roundtable
+
+    m "I decided to leave the two as I felt left out of the conversation."
+    m "It's probably normal for the new member to be left out."
+    m "It appears everyone showed up to the meeting."
+    
+    show morgana happy at left
+    show kira model
+    show sally happy at right
+    m "you got Moragana and Sally talking while Kira is calmly tolerating their chat."
+    
+    pause
+    scene bg roundtable
+    show tony model at left
+    show bobby model
+    show randy model at right
+    m "Then you got Bobby talking to the two mutes."
+    
+    show nova normal at left
+    show giddion model at right
+    m "Then there are the two arguing like a couple."
+    
+    pause
+    scene bg roundtable
+    show vod normal at left
+    show jaden normal model
+    m "Finally; Jaden, Android, and Vod are making sure that everyone is present."
+    
+    scene bg roundtable 
+    m "I wonder if I even fit in to be part of the Tweleve."
+    m "Every one of them are beyound my capability."
+    m "I guess Vod is r-"
+
+    show jaden normal
+    j "Alright everyone, let's gather around to the table." with hpunch
+
+    m "Everyone stop talking and went to take a seat very seriously."
+    m "The atmosphere went dead silent as soon as Jaden command them to start the meeting."
+    
+    hide jaden normal
+    show jaden happy
+    j "What are you waiting for, taking a seat with us."
+    m "Ah, yes."
 #    menu:
 #        "":
 #        "":

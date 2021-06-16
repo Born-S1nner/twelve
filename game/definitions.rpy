@@ -44,6 +44,10 @@ define n = Character("Nova", color="#40080")
 define t = Character("Tony", color="#ff9900")
 define g = Character("Giddion", color="#99cc00")
 
+define destroyers_points = 0
+define pacifier_points = 0
+define world_endgoal = 0
+
 ## Multiple endings
 # gameover
 default quick_death_ending = False
