@@ -64,7 +64,7 @@ label meeting:
     m "No, I'm new here around the deep."
     b "Oh right, sorry for being concern about you."
     m "Concern?"
-    "This must be the new member of the Tweleve!" with hpunch
+    w "This must be the new member of the Tweleve!" with hpunch
     show vod normal at right
     with moveinright
     b "Hey Vod! Glad to see that you never change."
@@ -79,6 +79,15 @@ label meeting:
     v "Look human, I don't care what you're intentions here."
     v "If you plan to betray the Tweleve, you will be punished in the depths of punish land."
     
+    menu:
+        "Confront Vod":
+            $ respect_meter -= 1
+            v "Are you trying to stand up against me!"
+        "Step back":
+            $ respect_meter += 1
+            v "You look more patheic than a weasel."
+            v "I'mma show you why weaklings don't belong to the Tweleve."
+    
     j "Don't scare the beginner with your fangs, Vod."
     show jaden normal 
     with moveinleft
@@ -90,7 +99,7 @@ label meeting:
     with moveoutleft
     show jaden angry
     
-    j "I sense you got a proble with how the Tweleve runs the universe."
+    j "I sense you got a problem with how the Tweleve runs the universe."
     b "Hold up, we can't start a fight just now."
     w "Bobby is right, it's rude to start an argument in front of the newest member." with hpunch
 
@@ -102,7 +111,8 @@ label meeting:
     n "We are more mature to know that fist fights don't resolve anything."
     t "Are you saying that I'm too savage to be handle?"
     n "If I did, I would have said it right away."
-    n "We are having a meeting with the new member being here for the first time."
+    n "The rest of the guys would be here any minute."
+    n "We are having a meeting with a new member for the first time."
     n "We should leave a good impression so that he would feel confident around us."
 
     hide vod angry

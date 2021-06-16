@@ -12,9 +12,12 @@ define moral_meter = 0
 #define respect in this game
 default respect_meter = 0
 
-#total First day of your impresssion with the Tweleve
+#total RP per day of your impresssion with the Tweleve
 default day_one_respect_threshold_full = 6
 default day_one_respect_threshold = 3
+
+default day_two_respect_threshold_full = 6
+default day_two_respect_threshold = 3
 
 #Three-type questions
 define q1_anwsered = False
