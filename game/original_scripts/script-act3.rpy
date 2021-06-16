@@ -54,19 +54,22 @@ label act3:
 
     m "Wait hold up!"    
 
-label meeting:
     scene bg roundtable
+
     m "This must be where the meeting takes place."
     
     show bobby model at left
     with moveinleft
+
     b "Were you doubting me on the way here?"
     m "No, I'm new here around the deep."
     b "Oh right, sorry for being concern about you."
     m "Concern?"
     w "This must be the new member of the Tweleve!" with hpunch
+    
     show vod normal at right
     with moveinright
+    
     b "Hey Vod! Glad to see that you never change."
     v "This little human is the one to decide on the fate of planets?"
     b "You know what they say, \"don't grudge a book by it's face.\" "
@@ -89,6 +92,7 @@ label meeting:
             v "I'mma show you why weaklings don't belong to the Tweleve."
     
     j "Don't scare the beginner with your fangs, Vod."
+    
     show jaden normal 
     with moveinleft
     
@@ -107,7 +111,8 @@ label meeting:
     with moveoutleft
     show nova angry at left
     with moveinleft
-
+    j "Nova! When did you get here so quick?"
+    n "Don't dodge the current situation, Jaden." with hpunch
     n "We are more mature to know that fist fights don't resolve anything."
     t "Are you saying that I'm too savage to be handle?"
     n "If I did, I would have said it right away."
@@ -133,3 +138,29 @@ label meeting:
     
     n "Vod was never good at apologizing. I hope you could forgive him."
     m "It's alright. I can tolerate a few opinions."
+    "{i}Thump. Thump. Thump.{/i}" with vpunch
+    m "What was that?"
+    "{i}Thump. Thump. Thump.{/i}" with vpunch
+    show bobby at left
+    with moveinleft
+    b "That must be Tony."
+    m "Tony?"
+    
+    show tony model at right
+    with moveinright
+
+    menu:
+        "":
+        "":
+    menu:
+        "":
+        "":
+    menu:
+        "":
+        "":
+    menu:
+        "":
+        "":
+    menu:
+        "":
+        "":
