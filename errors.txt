@@ -2,9 +2,25 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 300: style property vbox is not known.
-    vbox:
-        ^
+File "game/original_scripts/script-act3.rpy", line 155: choice menuitem expects a non-empty block.
+    "":
+       ^
+
+File "game/original_scripts/script-act3.rpy", line 158: choice menuitem expects a non-empty block.
+    "":
+       ^
+
+File "game/original_scripts/script-act3.rpy", line 161: choice menuitem expects a non-empty block.
+    "":
+       ^
+
+File "game/original_scripts/script-act3.rpy", line 164: choice menuitem expects a non-empty block.
+    "":
+       ^
+
+File "game/original_scripts/script-act3.rpy", line 167: choice menuitem expects a non-empty block.
+    "":
+       ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Tue Jun 15 19:07:41 2021
+Wed Jun 16 15:22:09 2021

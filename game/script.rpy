@@ -1,6 +1,5 @@
 ﻿
 label start:
-
     call act1
     if badending:
         jump ending

@@ -141,26 +141,57 @@ label act3:
     "{i}Thump. Thump. Thump.{/i}" with vpunch
     m "What was that?"
     "{i}Thump. Thump. Thump.{/i}" with vpunch
-    show bobby at left
+    
+    show bobby at right
     with moveinleft
     b "That must be Tony."
     m "Tony?"
     
+    scene bg roundtable 
+    "{i}Thump.{/i}" with vpunch
+    "{i}Thump.{/i}" with vpunch
+    "{i}Thump.{/i}" with vpunch
     show tony model at right
     with moveinright
 
-    menu:
-        "":
-        "":
-    menu:
-        "":
-        "":
-    menu:
-        "":
-        "":
-    menu:
-        "":
-        "":
-    menu:
-        "":
-        "":
+    t "..."
+    b ""
+    show bobby at left
+    with moveinleft
+    b "Hey Tony, How you been doing?"
+    t "..."
+    b "I see you are doing good too."
+    m "How does Bobby know what they are saying?"
+
+    scene bg roundtable
+    show nova happy
+
+    n "That's because Bobby can read minds telepathically."
+    n "He knows what every can said, even if they are mute or consider non-living."
+    m "That's cool."
+    m "Bobby must be happy to talk to anyone."
+
+    hide nova happy
+    show nova sad
+    
+    n "Well, things weren't the same before you showed up."
+    n "Bobby originally didn't speak because of his body condition."
+    n "Since no one could hear him, Bobby would cause trouble just to get our attention."
+    n "Kira realized the problem and decided to give bobby a voice."
+    n "Now, Bobby would find any opportunity to speak."
+
+#    menu:
+#        "":
+#        "":
+#    menu:
+#        "":
+#        "":
+#    menu:
+#        "":
+#        "":
+#    menu:
+#        "":
+#        "":
+#    menu:
+#        "":
+#        "":
