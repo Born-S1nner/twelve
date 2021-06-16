@@ -10,12 +10,13 @@
 #define moraility in this game
 define moral_meter = 0
 #define respect in this game
-default respect_meter = 0
 
 #total RP per day of your impresssion with the Tweleve
+default day_one_respect_meter = 0
 default day_one_respect_threshold_full = 6
 default day_one_respect_threshold = 3
 
+default day_two_respect_meter = 0
 default day_two_respect_threshold_full = 6
 default day_two_respect_threshold = 3
 
@@ -41,9 +42,16 @@ define r = Character("Randy", color="#0033cc")
 define v = Character("Vod", color="#e62e00")
 define n = Character("Nova", color="#40080")
 define t = Character("Tony", color="#ff9900")
-
 define g = Character("Giddion", color="#99cc00")
 
-# ending
-
-default badending = False
+## Multiple endings
+# gameover
+default quick_death_ending = False
+#become Tweleve's friend
+default middle_ground_ending = False
+# betray the Tweleve
+default traitor_ending = False
+# side with the destroyers
+default destroyer_ending = False
+# side with the pacifiers
+default pacifier_ending = False

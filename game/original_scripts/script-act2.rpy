@@ -59,7 +59,7 @@ label act2:
 
     menu:
         "Talk with Android":
-            $ respect_meter += 1
+            $ day_one_respect_meter += 1
             m "I actually want to learn more about you."
 
             scene bg awaken facility
@@ -179,9 +179,10 @@ label act2:
 
     menu:
         "No":
+            $ day_one_respect_meter -= 1
             jump choke
         "What do you mean?":
-            $ respect_meter += 1
+            $ day_one_respect_meter += 1
             jump joke
 
     label choke:
@@ -379,11 +380,11 @@ label act2:
 
     menu:
         "Revenge":
-            $ respect_meter += 1
+            $ day_one_respect_meter += 1
         "Live a new life":
-            $ respect_meter -= 1
+            $ day_one_respect_meter -= 1
         "Kill yourself":
-            $ respect_meter -= 1
+            $ day_one_respect_meter -= 1
 
     j "Okay okay, let's not get too deep into what ifs."
     k "I have to resupply my equipments for the next journey."
@@ -425,7 +426,7 @@ label act2:
             j "what do you mean?"
 
         "remain silent":
-            $ respect_meter += 1
+            $ day_one_respect_meter += 1
             m "I don't want to bother Jaden nor sound nosey."
             m "It's best to remain si-"
 
@@ -505,7 +506,7 @@ label act2:
 
     menu:
         "How tall are you?":
-            $ respect_meter -= 1
+            $ day_one_respect_meter -= 1
             hide sally silly
             show sally angry
 
@@ -518,7 +519,7 @@ label act2:
             j "He is just a little curious, almost too curious that someone got his tongue."
 
         "What have you inveted so far?":
-            $ respect_meter += 1
+            $ day_one_respect_meter += 1
             s "Well, I did build this ship by stratch."
             s "I also made Android mobile around the universe, create anti-gravity, build anti-black hole, started a new physic laws..."
             

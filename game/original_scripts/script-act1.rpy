@@ -58,7 +58,7 @@ label act1:
 
     menu:
         "I refuse":
-            $ badending = True
+            $ quick_death_ending = True
             hide jaden happy
             show jaden angry
 
@@ -73,7 +73,7 @@ label act1:
         "I accept":
             j "Good, we are on the role."    
             j "Let me show you around this place."
-            $ respect_meter += 1
+            $ day_one_respect_meter += 1
             hide jaden happy
             with moveoutleft
     return

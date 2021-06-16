@@ -84,10 +84,10 @@ label act3:
     
     menu:
         "Confront Vod":
-            $ respect_meter -= 1
+            $ day_two_respect_meter -= 1
             v "Are you trying to stand up against me!"
         "Step back":
-            $ respect_meter += 1
+            $ day_two_respect_meter += 1
             v "You look more patheic than a weasel."
             v "I'mma show you why weaklings don't belong to the Tweleve."
     
@@ -179,10 +179,29 @@ label act3:
     n "Since no one could hear him, Bobby would cause trouble just to get our attention."
     n "Kira realized the problem and decided to give bobby a voice."
     n "Now, Bobby would find any opportunity to speak."
+    n "Bobby makes the atmosphere more lively despite being in the middle of sapce."
+    n "Otherwise, I would have to hear Giddion's chantings"
+    w "Did somebody say Giddion!!!" with hpunch
+    m "Who was that?"
+    n "Oh no, here he comes."
 
-#    menu:
-#        "":
-#        "":
+    show giddion model
+    g "My name had been called around here."
+    g "Did you summon me, mere mortal?"
+
+    menu:
+        "We were just talking about you":
+            $ day_two_respect_meter += 1
+            g "I see that at least you are willing to acknowledge me."
+            g "Praise on you mortal!" with hpunch
+        "No one said anything":
+            $ day_two_respect_meter += 1
+            g "Don't lie in front of my face!" with hpunch
+            g "I heard you mention my name!"
+
+    n "Gosh, tone down your voice."
+    n "You don't need to scream every time you show up."
+    g ""
 #    menu:
 #        "":
 #        "":

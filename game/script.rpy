@@ -11,8 +11,8 @@ label start:
         jump ending
     
 label ending:
-    if badending:
-        "Bad ending"
+    if quick_death_ending:
+        "Game Over: load a previous saving spot or reset from the start"
     else:
         "end"
     return
