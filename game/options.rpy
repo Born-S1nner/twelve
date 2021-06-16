@@ -153,6 +153,7 @@ define config.window_icon = "gui/window_icon.png"
 
 define config.has_autosave = False
 define config.autosave_on_quit = False
+define config.autosave_on_choice = False
 define config.autosave_slots = 0
 
 ## Build configuration #########################################################

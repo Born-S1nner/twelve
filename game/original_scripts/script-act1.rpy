@@ -73,7 +73,7 @@ label act1:
         "I accept":
             j "Good, we are on the role."    
             j "Let me show you around this place."
-            $ moral_meter += 1
+            $ respect_meter += 1
             hide jaden happy
             with moveoutleft
     return

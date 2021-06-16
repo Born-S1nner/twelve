@@ -20,7 +20,7 @@ label act3:
     a "It should take 10 minutes to get there."
     scene bg facility
     m "It's that far, I'm gonna have to rely on you to show me the directions."
-    "You must be the new member, rihgt?!" with hpunch
+    w "You must be the new member, rihgt?!" with hpunch
     m "Who said that?"
 
     show bobby model
@@ -92,28 +92,34 @@ label meeting:
     
     j "I sense you got a proble with how the Tweleve runs the universe."
     b "Hold up, we can't start a fight just now."
-    "Bobby is right, it's rude to start an argument in front of the newest member."
+    w "Bobby is right, it's rude to start an argument in front of the newest member." with hpunch
 
     hide bobby model
     with moveoutleft
     show nova angry at left
     with moveinleft
+
     n "We are more mature to know that fist fights don't resolve anything."
     t "Are you saying that I'm too savage to be handle?"
     n "If I did, I would have said it right away."
     n "We are having a meeting with the new member being here for the first time."
     n "We should leave a good impression so that he would feel confident around us."
+
     hide vod angry
     show vod normal at right
     hide jaden angry
     show jaden normal
+
     j "You have a point. Sorry that you got to side that side of me."
     v "..."
     n "Vod. Jaden said his apology and you should too."
     v "..."
     v "Sorry."
+
     hide vod normal
     with moveoutright
     hide nova angry
     show nove sad at left
+    
     n "Vod was never good at apologizing. I hope you could forgive him."
+    m "It's alright. I can tolerate a few opinions."

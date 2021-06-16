@@ -59,7 +59,7 @@ label act2:
 
     menu:
         "Talk with Android":
-            $ moral_meter += 1
+            $ respect_meter += 1
             m "I actually want to learn more about you."
 
             scene bg awaken facility
@@ -256,11 +256,9 @@ label act2:
         $ test_score -= test_score
         menu:
             "Destroy the planet":
-                $ respect_meter += 1
                 $ moral_meter -= 1
                 $test_score += 0
             "Save the planet":
-                $ respect_meter -= 1
                 $ moral_meter += 1
                 $test_score += 2
             "...":
@@ -382,13 +380,10 @@ label act2:
     menu:
         "Revenge":
             $ respect_meter += 1
-            $ moral_meter -= 1
         "Live a new life":
             $ respect_meter -= 1
-            $ moral_meter += 1
         "Kill yourself":
             $ respect_meter -= 1
-            $ moral_meter -= 1
 
     j "Okay okay, let's not get too deep into what ifs."
     k "I have to resupply my equipments for the next journey."
@@ -564,37 +559,56 @@ label act2:
     m "Okay, I'll head back to my office."
 
     scene bg office
+
     m "That was a lot to take in for me."
     m "First, I'm part of the Tweleve."
     m "Then, I choose to decide the faith of a planet."
     m "Now, I am going to meet the rest of the Tweleve."
     m "To recap, I have met five out of the eleven Tweleve members."
     m "They are unique and different in their own way."
+
     show sally angry
+
     m "Sally is the smartest Tweleve and the greatest inventor."
     m "Despite her anger issues, she could be a kind person if you don't say anything bad to her."
+
     hide sally angry
     show kira model
+
     m "Kira is the Healer of the Tweleve."
     m "His knowledge about magic and spells may be far superior than any Tweleve."
     m "While his role to dispell evil is quite known, the rest of his identity remains a mystery."
+
     hide kira model
     show morgana silly
+
     m "Morgana is a pure Succubus and a demon lord."
     m "She may be filrty at times, but she likes to have fun when there is no work needed for her."
     m "Might be best to stay on her good term and avoid losing her intrest."
+
     hide morgana silly
     scene bg awaken facility
+
     m "Android is the Superior A.I. in the universe."
     m "Android has eyes everywhere, so I better be at good behavior at all times."
     m "Android could be the one to save me or disown me."
+
     scene bg office
     show jaden happy
+
     m "Finally, Jaden is the main figure of the Tweleve."
     m "Quite strange that a Jade Emperor would be part of this group."
     m "Then again, Jaden may have something in his mind that no one else can see."
     m "Whatever the case could be, he would have the final word for my existence."
+
     hide jaden happy
+
     m "I only met five of them, yet they are on another level."
     m "I don't even known what's it going to be with the other members."
     m "It probably be best to just rest and see what happens next."
+
+    $ test_score -= test_score
+    $ q1_anwsered = False
+    $ q2_anwsered = False
+    $ q3_anwsered = False
+    return
