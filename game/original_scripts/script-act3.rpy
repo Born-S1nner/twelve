@@ -185,22 +185,29 @@ label act3:
     m "Who was that?"
     n "Oh no, here he comes."
 
-    show giddion model
+    show giddion silly
     g "My name had been called around here."
     g "Did you summon me, mere mortal?"
 
     menu:
         "We were just talking about you":
+            hide giddion silly
+            show giddion happy
             $ day_two_respect_meter += 1
             g "I see that at least you are willing to acknowledge me."
             g "Praise on you mortal!" with hpunch
+            hide giddion happy
         "No one said anything":
+            hide giddion silly
+            show giddion angry
             $ day_two_respect_meter += 1
             g "Don't lie in front of my face!" with hpunch
             g "I heard you mention my name!"
-
+            hide giddion angry
+    show giddion normal
     n "Gosh, tone down your voice."
     n "You don't need to scream every time you show up."
+    show giddion happy
     g "That's what happens when you venture in a no sound zone for too long."
     g "You can't tell how loud your voice is and things sound awfully too quite."
     
@@ -223,7 +230,7 @@ label act3:
     m "Then you got Bobby talking to the two mutes."
     
     show nova normal at left
-    show giddion model at right
+    show giddion angry at right
     m "Then there are the two arguing like a couple."
     
     pause
@@ -253,6 +260,8 @@ label act3:
     j "Who are we to judge on who is evil and how is not."
     j "Because of our immense power, we can't comprehand the lives of the weak."
     j "That is why I propose a the solution to introduce a newer and weaker member."
+    j "Introducing our newest member, the human."
+    "Everyone clapped for me."
 #    menu:
 #        "":
 #        "":
