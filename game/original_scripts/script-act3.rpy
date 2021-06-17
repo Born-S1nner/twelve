@@ -247,6 +247,12 @@ label act3:
     show jaden happy
     j "What are you waiting for, taking a seat with us."
     m "Ah, yes."
+    j "This meeting is special for obvious reason."
+    j "Since our quest to eliminate all evil, we stumble upon a difficult question."
+    j "What does define evil?"
+    j "Who are we to judge on who is evil and how is not."
+    j "Because of our immense power, we can't comprehand the lives of the weak."
+    j "That is why I propose a the solution to introduce a newer and weaker member."
 #    menu:
 #        "":
 #        "":
