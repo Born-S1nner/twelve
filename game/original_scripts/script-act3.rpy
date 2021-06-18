@@ -2,10 +2,10 @@ label act3:
     scene bg deep
     with fade
     pause
-    "Beep, beep beep!" with vpunch
+    "{i}Beep, beep beep!{/i}" with vpunch
     scene bg office
     with fade
-    "Beep, beep, beep!"
+    "{i}Beep, beep, beep!{/i}"
     m "What's that noise?"
     a "It's the alarm system, I have it on so you won't be late to the meeting."
     a "The alarm system has proven to be efficent."
@@ -33,7 +33,7 @@ label act3:
     show randy model at right
     with moveinright
 
-    m "Waah" with hpunch
+    m "{b}Waah{/b}" with hpunch
     b "Oh, that's Randy."
     b "He don't talk much, so he would show up in surprise."
     r "..."
@@ -65,7 +65,7 @@ label act3:
     m "No, I'm new here around the deep."
     b "Oh right, sorry for being concern about you."
     m "Concern?"
-    w "This must be the new member of the Tweleve!" with hpunch
+    w "{b}This must be the new member of the Tweleve!{/b}" with hpunch
     
     show vod normal at right
     with moveinright
@@ -181,7 +181,7 @@ label act3:
     n "Now, Bobby would find any opportunity to speak."
     n "Bobby makes the atmosphere more lively despite being in the middle of sapce."
     n "Otherwise, I would have to hear Giddion's chantings"
-    w "Did somebody say Giddion!!!" with hpunch
+    w "{b}Did somebody say Giddion!!!{/b}" with hpunch
     m "Who was that?"
     n "Oh no, here he comes."
 
@@ -213,31 +213,31 @@ label act3:
     
     scene bg roundtable
 
-    m "I decided to leave the two as I felt left out of the conversation."
-    m "It's probably normal for the new member to be left out."
-    m "It appears everyone showed up to the meeting."
+    m "{b}{i}I decided to leave the two as I felt left out of the conversation.{/i}{/b}"
+    m "{b}{i}It's probably normal for the new member to be left out.{/i}{/b}"
+    m "{b}{i}It appears everyone showed up to the meeting.{/i}{/b}"
     
     show morgana happy at left
     show kira model
     show sally happy at right
-    m "you got Moragana and Sally talking while Kira is calmly tolerating their chat."
+    m "{b}{i}You got Moragana and Sally talking while Kira is calmly tolerating their chat.{/i}{/b}"
     
     pause
     scene bg roundtable
     show tony model at left
     show bobby model
     show randy model at right
-    m "Then you got Bobby talking to the two mutes."
+    m "{b}{i}Then you got Bobby talking to the two mutes.{/i}{/b}"
     
     show nova normal at left
     show giddion angry at right
-    m "Then there are the two arguing like a couple."
+    m "{b}{i}Then there are the two arguing like a couple.{/i}{/b}"
     
     pause
     scene bg roundtable
     show vod normal at left
     show jaden normal model
-    m "Finally; Jaden, Android, and Vod are making sure that everyone is present."
+    m "{b}{i}Finally; Jaden, Android, and Vod are making sure that everyone is present.{/i}{/b}"
     
     scene bg roundtable 
     m "I wonder if I even fit in to be part of the Tweleve."
@@ -261,7 +261,7 @@ label act3:
     j "Because of our immense power, we can't comprehand the lives of the weak."
     j "That is why I propose a the solution to introduce a newer and weaker member."
     j "Introducing our newest member, right here in flesh."
-    "Everyone clapped for me."
+    "{i}clap clap clap clap{/i}"
     j "Now then, do you got something to say?"
     m "Yes..."
 
@@ -299,7 +299,7 @@ label act3:
 
 if pacifier_points < destroyers_points:
     show giddion happy
-    g "HAHA, I knew that I could count on the new member!"
+    g "{b}HAHA{/b}, I knew that I could count on the new member!"
 else:
     show bobby model
     b "Glad to know that you have good intentions."

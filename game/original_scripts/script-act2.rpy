@@ -510,8 +510,8 @@ label act2:
             hide sally silly
             show sally angry
 
-            s "Are you fucking kidding me!"
-            s "Jaden! did you menetion about my height?"
+            s "{b}Are you fucking kidding me!{/b}"
+            s "{b}Jaden{/b}! did you menetion about my height?"
 
             show jaden normal at right
             with moveinright
@@ -561,52 +561,52 @@ label act2:
 
     scene bg office
 
-    m "That was a lot to take in for me."
-    m "First, I'm part of the Tweleve."
-    m "Then, I choose to decide the faith of a planet."
-    m "Now, I am going to meet the rest of the Tweleve."
-    m "To recap, I have met five out of the eleven Tweleve members."
-    m "They are unique and different in their own way."
+    m "{b}{i}That was a lot to take in for me.{/i}{/b}"
+    m "{b}{i}First, I'm part of the Tweleve.{/i}{/b}"
+    m "{b}{i}Then, I choose to decide the faith of a planet.{/i}{/b}"
+    m "{b}{i}Now, I am going to meet the rest of the Tweleve.{/i}{/b}"
+    m "{b}{i}To recap, I have met five out of the eleven Tweleve members.{/i}{/b}"
+    m "{b}{i}They are unique and different in their own way.{/i}{/b}"
 
     show sally angry
 
-    m "Sally is the smartest Tweleve and the greatest inventor."
-    m "Despite her anger issues, she could be a kind person if you don't say anything bad to her."
+    m "{b}{i}Sally is the smartest Tweleve and the greatest inventor.{/i}{/b}"
+    m "{b}{i}Despite her anger issues, she could be a kind person if you don't say anything bad to her.{/i}{/b}"
 
     hide sally angry
     show kira model
 
-    m "Kira is the Healer of the Tweleve."
-    m "His knowledge about magic and spells may be far superior than any Tweleve."
-    m "While his role to dispell evil is quite known, the rest of his identity remains a mystery."
+    m "{b}{i}Kira is the Healer of the Tweleve."
+    m "{b}{i}His knowledge about magic and spells may be far superior than any Tweleve.{/i}{/b}"
+    m "{b}{i}While his role to dispell evil is quite known, the rest of his identity remains a mystery.{/i}{/b}"
 
     hide kira model
     show morgana silly
 
-    m "Morgana is a pure Succubus and a demon lord."
-    m "She may be filrty at times, but she likes to have fun when there is no work needed for her."
-    m "Might be best to stay on her good term and avoid losing her intrest."
+    m "{b}{i}Morgana is a pure Succubus and a demon lord.{/i}{/b}"
+    m "{b}{i}She may be filrty at times, but she likes to have fun when there is no work needed for her.{/i}{/b}"
+    m "{b}{i}Might be best to stay on her good term and avoid losing her intrest.{/i}{/b}"
 
     hide morgana silly
     scene bg awaken facility
 
-    m "Android is the Superior A.I. in the universe."
-    m "Android has eyes everywhere, so I better be at good behavior at all times."
-    m "Android could be the one to save me or disown me."
+    m "{b}{i}Android is the Superior A.I. in the universe."
+    m "{b}{i}Android has eyes everywhere, so I better be at good behavior at all times."
+    m "{b}{i}Android could be the one to save me or disown me."
 
     scene bg office
     show jaden happy
 
-    m "Finally, Jaden is the main figure of the Tweleve."
-    m "Quite strange that a Jade Emperor would be part of this group."
-    m "Then again, Jaden may have something in his mind that no one else can see."
-    m "Whatever the case could be, he would have the final word for my existence."
+    m "{b}{i}Finally, Jaden is the main figure of the Tweleve."
+    m "{b}{i}Quite strange that a Jade Emperor would be part of this group."
+    m "{b}{i}Then again, Jaden may have something in his mind that no one else can see."
+    m "{b}{i}Whatever the case could be, he would have the final word for my existence."
 
     hide jaden happy
 
-    m "I only met five of them, yet they are on another level."
-    m "I don't even known what's it going to be with the other members."
-    m "It probably be best to just rest and see what happens next."
+    m "{b}{i}I only met five of them, yet they are on another level."
+    m "{b}{i}I don't even known what's it going to be with the other members."
+    m "{b}{i}It probably be best to just rest and see what happens next."
 
     $ test_score -= test_score
     $ q1_anwsered = False
