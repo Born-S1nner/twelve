@@ -13,6 +13,11 @@ default day_two_respect_meter = 0
 default day_two_respect_threshold_full = 6
 default day_two_respect_threshold = 3
 
+default day_six_respect_meter = 0
+default day_six_respect_threshold_full = 6
+default day_six_respect_threshold = 3
+
+
 #Three-type questions
 define q1_anwsered = False
 define q2_anwsered = False
@@ -47,7 +52,7 @@ define world_endgoal = 3
 default quick_death_ending = False
 #become Tweleve's friend
 default middle_ground_ending = False
-# betray the Tweleve
+# betray the Tweleve by invading privacy and failing to meet the rp requirements
 default traitor_ending = False
 # side with the destroyers
 default destroyer_ending = False

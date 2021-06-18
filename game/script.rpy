@@ -9,6 +9,9 @@ label start:
     call act3
     if badending:
         jump ending
+    call act6
+    if badending:
+        jump ending
     
 label ending:
     if quick_death_ending:
