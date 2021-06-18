@@ -44,9 +44,11 @@ define n = Character("Nova", color="#40080")
 define t = Character("Tony", color="#ff9900")
 define g = Character("Giddion", color="#99cc00")
 
+# what determines your side on the argument
 define destroyers_points = 0
 define pacifier_points = 0
-define world_endgoal = 0
+define world_endgoal = 3
+
 
 ## Multiple endings
 # gameover

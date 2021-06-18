@@ -20,7 +20,7 @@ label act3:
     a "It should take 10 minutes to get there."
     scene bg facility
     m "It's that far, I'm gonna have to rely on you to show me the directions."
-    w "You must be the new member, rihgt?!" with hpunch
+    w "You must be the new member, right?!" with hpunch
     m "Who said that?"
 
     show bobby model
@@ -282,7 +282,7 @@ label act3:
     j "Okay, what a small talk."
     j "Anyway, I would like to ask you for your opinion."
     j "What do you plan to do in your position?"
-
+    hide jaden normal
     menu:
     "Destroy the plants that are deemed evil.":
         $ day_two_respect_meter += 1
@@ -297,12 +297,56 @@ label act3:
         m "We will do what we can to end this evil once and for all."
         m "Even if it means protecting a planet with our bare hands."
 
-if pacifier_points < destroyers_points:
-    show giddion happy
-    g "{b}HAHA{/b}, I knew that I could count on the new member!"
-else:
-    show bobby model
-    b "Glad to know that you have good intentions."
+    if pacifier_points < destroyers_points:
+        show giddion happy
+        g "{b}HAHA{/b}, I knew that I could count on the new member!"
+        show kira model at left
+        with moveinright
+        k "A mere mortal could see evil around the world."
+        show randy model at right 
+        with moveinright
+        r "..."
+        
+        scene bg roundtable
+
+        show vod angry
+        with moveinleft
+        v "I see that you don't take consideration about different perspectives."
+        show bobby model at left
+        b "Not this time, Vod."
+        b "There's still way to change his view"
+        show sally happy at right
+        with moveinleft
+        s "Oh, he will change his views after he sees his hands cover in blood."
+    else:
+        show bobby model
+        b "Glad to know that you have good intentions."
+        show vod normal at left
+        with moveinleft
+        v "You don't seem like a bad person to begin with."
+        show sally happy at right
+        with moveinleft
+        s "Progression at it's finest!"
+
+        scene bg roundtable
+    
+        show giddion happy
+        g "Ah come on! What's good on protecting planets."
+        g "We're not guardians."
+        show kira model at left
+        with moveinright
+        k "I knew you are too sensitive to see the truth."
+        show randy model at right 
+        with moveinright
+        r "..."
+        
+    scene bg roundtable
+    show jaden normal
+    j "Alright, alright guys."
+    j "Let's settle down and continue on with the meeting."
+    j "He does not choose sides; he makes the ultimate decision."
+    j "He can ask anyone and listen to anyone if they have a problem with the final decision."
+    j "Maybe he could acknowledge your desicion."
 
 
 #    menu:
