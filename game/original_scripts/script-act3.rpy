@@ -395,14 +395,77 @@ label act3:
     k "But to think that evil itself takes a form of an atom."
     k "It would be ashame to deal with with powerful beings that could challenge us."
     k "In fact, one of us could even disturb our goal along the way."
+    hide kira model
+    show vod normal
+    v "That is a possibility if every one of us continue to go out there."
+    v "However, you claimed that everyone is clean as of right now."
+    v "If none of us get contaminated by the evil virus thing, then we should be good."
+    a "The problem isn't about us getting contaminated; it's about how we handle the evil atoms without us getting infected."
+    v "You have a point there, but nebula manage to move them without getting infected."
+    v "So, we could sweep them into one place."
+    hide vod normal
+    show nova normal
+    n "We can't count on me to always move them out."
+    n "I had a hard time moving them and some of the evil nebula scattered and infected nearby objects."
+    n "I only got lucky, but my luck could run out when I'm not careful enough."
+    hide nova normal
+    show jaden normal
+    j "So we need a plan that can gaurantee our safety and the safety of the universe"
+    m "What if..."
+    hide jaden normal
+    menu:
+        "we drag the evil atoms elsewhere":
+            $ day_two_respect_meter += 1
+
+            m "we take those evil atoms and complied them into the planet."
+            m "The evil atoms are only dangerous when they need a host to take."
+            m "Afterwhich, they can't spread "
+            m"They even die along with the host adn not affect anything around them."
+            show bobby model
+            b "are you suggeting mass genocide until all evil atoms are cleared."
+            m "we don't have to kill them, we herd them into one location"
+            b "Put they could be potentially dangerous if left unchecked."
+            m "But we coul-"
+
+        "we find a cure to surpress the evil atoms":
+            $ day_two_respect_meter -= 1
+            m "Find something that can eliminate the traits of evil."
+            m "It could be a vaccine that can prevent anyone that could be affected."
+            show kira model
+            k "Don't mistake this crisis as a pandemic. It's much more serious."
+            k "We can't soley rely on medicine and vaccines to do the work."
+            k "What if the evil atoms can mutate into a deadlier stage."
+            k "And even if there was a vaccine to begin with, we can't provide the entire universe as we don't know every single being."
+            k "This evil atom has went under our radar and we don't know where it comes from."
+            k "They could be a bio-weapon or a natural cause phenomenom."
+            m "But we coul-"
+
+    show giddion angry
+    g "Well, it sounds to me that we got nothing to compete against the evil atoms."
+    hide giddion angry
+    show sally normal
+    s "Not quite."
+    s "I got a better suggestion."
+    s "First of, we deal with the evil atoms itself that float in space."
+    s "Since matter can't be created nor destroyed, we should compile them into somewhere else."
+    s "I could make a machine that could suck out those evil atoms, compresss them, and place them in a planet."
+    s "Then have Nova or Tony move them carefully to a desired, isolated location."
+    s "Second, we deal with those inhabited planets that are affected."
+    s "Since a planet could be infected, the evil atoms becomes unable to infect anything."
+    s "Have Randy or Giddion destroy the planets until the evil atms are considered dead."
+    s "Finally, dealing with those habited planets that are affected."
+    hide sally normal
+    show nova normal
+    n "How do we deal with them?"
+    n "Not all planets are worth saving."
+    hide nova normal
+    show jaden happy
+    j "We could have the new member make that decision."
+    j "He could save the planet or destroy the planet."
+    j "It's his job to make those decision."
 #    menu:
 #        "":
 #        "":
-
-    s "I got a better idea."
-
-#    menu:
-#        "":
-#        "":
+    j "Let's get working!"
     scene bg office
     m "Another day of me"
