@@ -3,14 +3,7 @@
 # This section defines stuff for your mod!
 # Use this as a starting point if you would like to override with your own.
 
-## Note: For Android, make sure to change the default package name of to 
-## your own package name in options.rpy under define package_name. 
-##Your package name is what you defined in Ren'Py Launcher in the Android section
-
-#define moraility in this game
-define moral_meter = 0
 #define respect in this game
-
 #total RP per day of your impresssion with the Tweleve
 default day_one_respect_meter = 0
 default day_one_respect_threshold_full = 6
@@ -44,11 +37,10 @@ define n = Character("Nova", color="#40080")
 define t = Character("Tony", color="#ff9900")
 define g = Character("Giddion", color="#99cc00")
 
-# what determines your side on the argument
+# what determines your side on the argument(destroyer or pacifier)
 define destroyers_points = 0
 define pacifier_points = 0
 define world_endgoal = 3
-
 
 ## Multiple endings
 # gameover

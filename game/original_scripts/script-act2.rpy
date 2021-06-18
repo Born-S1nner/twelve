@@ -257,10 +257,8 @@ label act2:
         $ test_score -= test_score
         menu:
             "Destroy the planet":
-                $ moral_meter -= 1
                 $test_score += 0
             "Save the planet":
-                $ moral_meter += 1
                 $test_score += 2
             "...":
                 $test_score += 4
