@@ -347,14 +347,62 @@ label act3:
     j "He does not choose sides; he makes the ultimate decision."
     j "He can ask anyone and listen to anyone if they have a problem with the final decision."
     j "Maybe he could acknowledge your desicion."
+    j "isn't that right?"
+    hide jaden normal
+    menu:
+        "That's right":
+            $ day_two_respect_meter += 1
+        "It depends":
+            $ day_two_respect_meter -= 1
+    show jaden happy
+    j "Alright! Moving on to the next topic."
+    j "We have yet to discover the source of evil."
+    j "However, Moragana and Nova got some intel about it."
+    j "Morgana, tell us your report on your findings?"
+    hide jaden happy
+    show moragana happy
+    mo "Okay, I went far east to find a other advancing civilization."
+    mo "I visited planet Gormorrah once again, where it was once been a peaceful civilization."
+    mo "Unfortunately, that very same planet got corrupted and I had to end it before they speard any further."
+    m "{b}{i}She ended a planet by herself.{/i}{/b}"
+    mo "I knew the planet had been infected, so I used my scent to tracee the source."
+    mo "It was when I discover a strange nebula cloud that had a preciluar evil scent."
+    mo "Since, I'm not good at space stuff, I asked Nova to check out the strange nebula."
+    hide morgana happy
+    show nova normal
+    n "I was called by Morgana and told me to check out the nebula."
+    n "I went there and it had a sterange color."
+    n "There was no way to describe the very nature of the nebula because it's composition isn't the same as regular nebula."
+    n "Instead of hydrogen and nitrogen, I found a new element that is not from the periodic table."
+    n "I did some rreseach by moving the nebula into a nearby planet call Sodom."
+    n "As soon as it got close to a planet, the nebula absorbed Sodom and corrupted it like how Morgana described it with Gomorrah."
+    hide nova normal
+    show morgana normal
+    mo "What I propose is that the source of evil isn't a person, but rather a corrupt element."
+    mo "It can't be created nor destroyed, but it can take my forms."
+    hide morgana happy
+    show nova normal
+    n "To ensure that none of us where corupted, I asked Kira to scan us if we have any within everyone."
+    n "Kira took a look at the evil nebula and used it as a scale to trace them."
+    n "Kira has confirm that none of us in the Tweleve are corrupted whatsoever."
+    n "The real problem is what would happen if one of us gets infected."
+    hide nova normal
+    show morgana normal
+    mo "We made a pledge to never betray a member of the Tweleve, but what if one of us gets corrupted?"
+    hide morgana normal
+    show kira model
+    k "I have predicted that evil was a gene or something invaded like a parasite."
+    k "But to think that evil itself takes a form of an atom."
+    k "It would be ashame to deal with with powerful beings that could challenge us."
+    k "In fact, one of us could even disturb our goal along the way."
+#    menu:
+#        "":
+#        "":
 
+    s "I got a better idea."
 
 #    menu:
 #        "":
 #        "":
-#    menu:
-#        "":
-#        "":
-#    menu:
-#        "":
-#        "":
+    scene bg office
+    m "Another day of me"
