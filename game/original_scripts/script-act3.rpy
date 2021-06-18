@@ -200,7 +200,7 @@ label act3:
         "No one said anything":
             hide giddion silly
             show giddion angry
-            $ day_two_respect_meter += 1
+            $ day_two_respect_meter -= 1
             g "Don't lie in front of my face!" with hpunch
             g "I heard you mention my name!"
             hide giddion angry
@@ -260,11 +260,51 @@ label act3:
     j "Who are we to judge on who is evil and how is not."
     j "Because of our immense power, we can't comprehand the lives of the weak."
     j "That is why I propose a the solution to introduce a newer and weaker member."
-    j "Introducing our newest member, the human."
+    j "Introducing our newest member, right here in flesh."
     "Everyone clapped for me."
-#    menu:
-#        "":
-#        "":
+    j "Now then, do you got something to say?"
+    m "Yes..."
+
+    hide jaden happy
+    if day_one_respect_meter <= day_one_respect_threshold:
+        m "I'm sorry for all the trouble I caused."
+    elif day_one_respect_meter => day_one_respect_threshold and  day_one_respect_meter != day_one_respect_threshold_full:
+        m "I may have offended some people; in which case, I'm sorry."
+    else:
+        m "I'm grateful to be working with you."
+    
+    m "I won't say much."
+    m "I'm looking forward to be working with y'all guys."
+    m "Excuse me"
+
+    show jaden normal
+    with moveinleft
+    j "Okay, what a small talk."
+    j "Anyway, I would like to ask you for your opinion."
+    j "What do you plan to do in your position?"
+
+    menu:
+    "Destroy the plants that are deemed evil.":
+        $ day_two_respect_meter += 1
+        $ destroyers_points += 1
+        m "This universe is being consumed by evil and we must stop it."
+        m "We will do what we can to end this evil once and for all."
+        m "Even if it mean wiping down colonies and planets."
+    "Save the planets from the evil idealist.":
+        $ day_two_respect_meter += 1
+        $ pacifier_points += 1
+        m "This universe is being under attack by evil and we must stop it."
+        m "We will do what we can to end this evil once and for all."
+        m "Even if it means protecting a planet with our bare hands."
+
+if pacifier_points < destroyers_points:
+    show giddion happy
+    g "HAHA, I knew that I could count on the new member!"
+else:
+    show bobby model
+    b "Glad to know that you have good intentions."
+
+
 #    menu:
 #        "":
 #        "":
