@@ -464,8 +464,35 @@ label act3:
     menu:
         "Check it out":
             $ day_six_respect_meter += 1
+            m "{b}{i}I'm just checking out the noise.{/i}{/b}"
+            m "{b}{i}That's all I'm doing.{/i}{/b}"
+            jump inspect
         "Leave":
             $ day_six_respect_meter -= 1
+            m "{b}{i}Problably best to not get involved.{/i}{/b}"
+            jump continue_forward
 
-    scene bg office
-    m "Another day of me"
+    label inspect:
+        scene bg secret
+        $ tm_1 = True
+        m "{b}{i}What is this place?{/i}{/b}"
+        m "{b}{i}It's compiled by folders and paper.{/i}{/b}"
+        m "{b}{i}What's this paper?{/i}{/b}"
+        m "{b}{i}Oh my god.{/i}{/b}"
+        m "{b}{i}I must stay silent for the moment.{/i}{/b}"
+        m "{b}{i}I will do something about it.{/i}{/b}"
+        m "{b}{i}Not today.{/i}{/b}"
+
+    label continue_forward:
+        scene bg office
+
+        m "Another day for me."
+        m "What more can I ask."
+        m "The guys are out in space, while I'm here doing some paper work."
+        m "How do we even get paper work?"
+        a "They're important douments to confirm our actions."
+        a "Without them, we can't justify our actions."
+        m "That makes sense."
+        m "I'll just work on these papers and then I get some sleep."
+        a "Setting alarm."
+        m "Make the ringtone more pleasent to my ears this time."

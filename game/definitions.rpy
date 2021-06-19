@@ -17,6 +17,11 @@ default day_six_respect_meter = 0
 default day_six_respect_threshold_full = 6
 default day_six_respect_threshold = 3
 
+#Times you have betray their back
+define tm_1 = False
+define tm_2 = False
+define tm_3 = False
+define tm_4 = False
 
 #Three-type questions
 define q1_anwsered = False
