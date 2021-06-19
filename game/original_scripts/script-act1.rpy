@@ -4,14 +4,14 @@ label act1:
     scene bg deep
     with fade
     "..."
-    m "This is space, the place where humanity wish to explore."
-    m "To us humans, space holds great potential to expand our knowledge."
-    m "However..."
-    m "We, humans, have hype our expectations to believe that space is our final frontier."
-    m "There is nothing fascinating for humans to learn in space."
-    m "If anything, space is just a lucid dream to get away from our corrupted world."
+    u "This is space, the place where humanity wish to explore."
+    u "To us humans, space holds great potential to expand our knowledge."
+    u "However..."
+    u "We, humans, have hype our expectations to believe that space is our final frontier."
+    u "There is nothing fascinating for humans to learn in space."
+    u "If anything, space is just a lucid dream to get away from our corrupted world."
 
-    m "..."
+    u "..."
     w "I see that you are enjoying the view." with hpunch
 
     scene bg deepship
@@ -20,8 +20,8 @@ label act1:
     show jaden normal
     with moveinleft
 
-    m "Aah! Sorry for dosing off!"
-    m "I should be ready for the interview."
+    u "Aah! Sorry for dosing off!"
+    u "I should be ready for the interview."
 
     hide jaden normal
     show jaden happy
@@ -29,10 +29,17 @@ label act1:
     w "It's not a 9-5 job, so there is no interview anything like that."
     w "I am here to see you before we get started."
     w "You can leave right now while you still can."
-    m "No, no, I made myself clear to commit this role."
-    m "Just hit me with the truth."
+    u "No, no, I made myself clear to commit this role."
+    u "Just hit me with the truth."
     w "ho, I like a determined person who's ready for anything."
     w "Let's begin."
+    w "What is your name?"
+    $ persistent.player_name = renpy.input("Type your name:", length=32)
+    $ persistent.player_name = persistent.player_name.strip()
+    if persistent.player_name == "":
+        $ persistent.player_name = "Omar"
+    m "My name is [name]"
+    w "Well [name]."
     w "Welcome to the Tweleve."
     j "I am Jaden the Jade Emperor that is part of the group called the Tweleve."
     j "There are twelve of us from each species that are deemed too powerful for the universe, with the exception of you."

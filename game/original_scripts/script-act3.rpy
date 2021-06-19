@@ -20,7 +20,7 @@ label act3:
     a "It should take 10 minutes to get there."
     scene bg facility
     m "It's that far, I'm gonna have to rely on you to show me the directions."
-    w "You must be the new member, right?!" with hpunch
+    w "You must be the new member, [name]s, right?!" with hpunch
     m "Who said that?"
 
     show bobby model
@@ -71,7 +71,7 @@ label act3:
     with moveinright
     
     b "Hey Vod! Glad to see that you never change."
-    v "This little human is the one to decide on the fate of planets?"
+    v "This little human is the one to decide on the fate of planets, huh."
     b "You know what they say, \"don't grudge a book by it's face.\" "
     v "You mean \"Don't judge a book by it's cover.\""
     b "Yeah, what you said."
@@ -91,7 +91,7 @@ label act3:
             v "You look more patheic than a weasel."
             v "I'mma show you why weaklings don't belong to the Tweleve."
     
-    j "Don't scare the beginner with your fangs, Vod."
+    j "Don't scare [name] with your fangs, Vod."
     
     show jaden normal 
     with moveinleft
@@ -262,7 +262,7 @@ label act3:
     j "Who are we to judge on who is evil and how is not."
     j "Because of our immense power, we can't comprehand the lives of the weak."
     j "That is why I propose a the solution to introduce a newer and weaker member."
-    j "Introducing our newest member, right here in flesh."
+    j "Introducing our newest member, [name]."
     "{i}clap clap clap clap{/i}"
     j "Now then, do you got something to say?"
     m "Yes..."
@@ -305,7 +305,7 @@ label act3:
 
     if pacifier_points < destroyers_points:
         show giddion happy
-        g "{b}HAHA{/b}, I knew that I could count on the new member!"
+        g "{b}HAHA{/b}, I knew that I could count on [name]!"
         show kira model at left
         with moveinright
         k "A mere mortal could see evil around the world."
@@ -327,7 +327,7 @@ label act3:
     
     elif pacifier_points > destroyers_points:
         show bobby model
-        b "Glad to know that you have good intentions."
+        b "Glad to know that you have good intentions, [name]."
         show vod normal at left
         with moveinleft
         v "You don't seem like a bad person to begin with."
@@ -349,7 +349,7 @@ label act3:
 
     else:
         show jaden sad
-        a "Seems to me that the human is suffering from stage fright."
+        a "Seems to me that [name] is suffering from stage fright."
         show morgana sad at left
         m "I don't remember seeing him get so nervous before."
         show nova sad at right
@@ -358,8 +358,8 @@ label act3:
     scene bg roundtable
     show jaden normal
     j "Alright, alright."
-    j "He does not have to choose sides; he makes the ultimate decision."
-    j "He can ask anyone and listen to anyone if they have a problem with the final decision."
+    j "[name] does not have to choose sides; he makes the ultimate decision."
+    j "[name] can ask anyone and listen to anyone if they have a problem with the final decision."
     j "Maybe he could acknowledge your advice and change his desicion."
     j "isn't that right?"
     hide jaden normal
@@ -382,7 +382,7 @@ label act3:
     m "{b}{i}Didn't know the meeting could go that smooth.{/i}{/b}"
     show morgana happy at left
     show nova normal at right
-    mo "Hey, come over here and have a talk with us."
+    mo "Hey [name], come over here and have a talk with us."
     scene bg roundtable
     menu:
         "talk to them":
@@ -398,7 +398,7 @@ label act3:
         mo "Glad to get your attention to us."
         m "What is it that you guys need?"
         n "It's about the small debate within the Tweleve."
-        mo "By now, you can tell there are different converns about your job."
+        mo "By now, you can tell there are different opinions about your job."
         mo "However, there are only two sides to worry about."
         mo "Thoses that want to be pacifist and those that want to destroy."
         n "The Pacifiers and the Destroyers."
@@ -407,7 +407,8 @@ label act3:
         n "Having different ideas is quite common. but it doesn't break our relationship nor the foundation."
         mo "Think of it has siblings having different ideas."
         n "None of the sides hate each other, but they can clash against their ideas."
-        n "The "
+        n "After the issue discussed about our methods of handling the universe, two sides emerged."
+        n "The Pacifiers"
         jump privacy
 
     label privacy:

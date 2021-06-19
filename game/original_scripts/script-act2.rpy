@@ -54,7 +54,7 @@ label act2:
     with moveoutleft
 
     scene bg awaken facility
-    a "What do you want to do?"
+    a "What do you want to do, [name]?"
     scene bg facility
 
     menu:
@@ -220,7 +220,7 @@ label act2:
 
     show jaden normal at left
     with moveinleft
-    j "I see you found him in his office already."
+    j "I see you found [name] in his office already."
     mo "You can't hide the scent of a human, even with Kira's power."
     
     hide jaden normal
@@ -251,7 +251,7 @@ label act2:
     j "Each one of them has their own identity, tounge, ideas, and beliefs."
     j "There are calm ones, weak ones, timid ones, neutral ones, sad ones, crazy ones, angry ones, evil ones, etc."
     j "We have planned to destroy the planet, but we want to let you do their judgement."
-    j "What do you think we should do to the planet?"
+    j "What do you think we should do to the planet, [name]?"
 
     label options:
         $ test_score -= test_score
@@ -354,7 +354,7 @@ label act2:
     with moveinright
 
     k "..."
-    j "Kira, you know that you must introduce youreself to the new brother."
+    j "Kira, you know that you must introduce youreself to the new brother, [name]."
     k "You know how I feel about newcomers, especially humans."
     j "You must understand the conditions for the Tweleve."
     k "To remain sane, we must have the most moral kind, a human."
@@ -364,7 +364,7 @@ label act2:
     m "I heard you have protected me from many potential death."
     k "I can't allow one of us to die."
     k "I can sense a good nature in your soul."
-    k "I have high hopes for you."
+    k "I have high hopes for you, [name]."
     m "I shall live up to your expectation."
 
     hide jaden happy
@@ -389,8 +389,8 @@ label act2:
     j "Don't overowrk yourself this time. We would have a mee-"
     k "Yes, a meeting upcoming around the clock. I shall be there with the others."
     j "Great!"
-    k "Hope we meet again human."
-    m "I wish the same."
+    k "Hope we meet again, [name]."
+    m "Same here."
 
     hide kira
     with moveoutright
@@ -431,7 +431,7 @@ label act2:
             hide jaden happy
             show jaden normal
             
-            j "You know, it's okay to ask something if you have a question."
+            j "You know [name], it's okay to ask something if you have a question."
             j "No one can tell you to be silent. You have every right to know."
             j "Afterall, you are part of the Tweleve, and we don't discriminate anyone based on anything."
             j "So tell me, whats on your mind?"
@@ -478,7 +478,7 @@ label act2:
     
     s "I think you just made that up right at the spot."
     j "You caught me."
-    s "Let me make a proper introdution to the newbie over here."
+    s "Let me make a proper introdution to the newbie over there."
     j "Sure thing, let me give you the spotlight."
 
     hide jaden silly
@@ -491,7 +491,7 @@ label act2:
     s "I am the best engineer and genius of the universe."
     s "Anything you can think of, I can make them come true."
     s "I could build an army of robots or a super cool PB&J sandwich maker."
-    j "Tell them about you origin!"
+    j "Tell [name] about you origin!"
 
     hide sally happy
     show sally silly
@@ -533,7 +533,7 @@ label act2:
     show sally normal
     
     s "Is the newbie gonna be part of the meeting?"
-    j "He is officially part of the Tweleve, so he is obligated to be there."
+    j "[name] is officially part of the Tweleve, so he is obligated to be there."
     s "Sounds reasonable, I see no problem with that."
     s "However, the rest of thet guys would feel discomfortable about his presence."
     j "Relax, I got that situation handle out."
@@ -552,9 +552,9 @@ label act2:
     show jaden happy
     with moveinright
 
-    j "You heard mention about the meeting many times..."
+    j "You mention about the meeting many times..."
     j "If I didn't, they would forget about it and start a new mission."
-    j "I suggest you take some rest until Andriod calls you for the meeeting."
+    j "I suggest you take some rest until Andriod calls you for the meeeting, [name]."
     m "Okay, I'll head back to my office."
 
     scene bg office

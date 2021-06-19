@@ -28,7 +28,10 @@ default passed = 4
 default test_score = 0
 
 #Characters
-define m = Character("Me")
+default persistent.player_name = ""
+default name = persistent.player_name
+define u = Character("Unknown")
+define m = Character("[name]")
 define w = Character("???", color="#ffffff")
 define j = Character("Jaden", color="#009900")
 define a = Character("Andriod", color="#2eb8b8")

@@ -2,25 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/original_scripts/script-act3.rpy", line 155: choice menuitem expects a non-empty block.
-    "":
-       ^
-
-File "game/original_scripts/script-act3.rpy", line 158: choice menuitem expects a non-empty block.
-    "":
-       ^
-
-File "game/original_scripts/script-act3.rpy", line 161: choice menuitem expects a non-empty block.
-    "":
-       ^
-
-File "game/original_scripts/script-act3.rpy", line 164: choice menuitem expects a non-empty block.
-    "":
-       ^
-
-File "game/original_scripts/script-act3.rpy", line 167: choice menuitem expects a non-empty block.
-    "":
-       ^
+File "game/definitions.rpy", line 33: expected statement.
+    dfine u = Character("Unknown")
+            ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Wed Jun 16 15:22:09 2021
+Sat Jun 19 17:25:23 2021
