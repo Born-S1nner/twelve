@@ -408,17 +408,64 @@ label act3:
         mo "Think of it has siblings having different ideas."
         n "None of the sides hate each other, but they can clash against their ideas."
         n "After the issue discussed about our methods of handling the universe, two sides emerged."
-        n "The Pacifiers"
+        n "The Pacifiers wants to protect the planets and build a peaceful civilization."
+        n "The Pacifiers consisit of Vod, Sally, and Bobby."
+        mo "The Destroyers are the polar oppisite; they want to destroy all planets that are deemed to dangerous."
+        mo "Randy, Kira, and Giddion."
+        mo "You could see where it's going."
+        n "The point is to be considerate about their opiniions."
+        n "You won't lose their respect as the member of the Tweleve, but you will lose their respect as an ally."
+        mo "That's about much we want to talk to you about, good luck."
+        hide morgana happy
+        with moveoutleft
+        n "Be wise about your decisions."
+        hide nova normal
+        with moveoutleft
+        m "{b}{i}Great.{/i}{/b}"
         jump privacy
 
     label privacy:
         scene bg facility
-# invade private property
-#    menu:
-#        "":
-#            $ day_six_respect_meter += 1
-#        "":
-#            $ day_six_respect_meter -= 1
+        m "{b}{i}Can't believe I'm part of the Tweleve.{/i}{/b}"
+        m "{b}{i}I met so many faces in that meeting.{/i}{/b}"
+        show bobby model
+        m "{b}{i}First I met Bobby the slime.{/i}{/b}"
+        m "{b}{i}He could be quite talktitive, but he's eveeryone's friend.{/i}{/b}"
+        hide bobby model
+        show randy model
+        m "{b}{i}Then, there is Randy.{/i}{/b}"
+        m "{b}{i}The Silent reptile that can destroy a planet with just one word.{/i}{/b}"\
+        hide randy model
+        show vod normal
+        m "{b}{i}Vod is another member that I've met.{/i}{/b}"
+        m "{b}{i}He could be very serious and tough from the outside, bu he may have a soft side.{/i}{/b}"
+        m "{b}{i}I gotta make sure to be on his good terms.{/i}{/b}"
+        hide vod normal
+        show nova happy
+        m "{b}{i}There is the mystical Nova, born from a black hole.{/i}{/b}"
+        m "{b}{i}She is guided by the stars and has remained neutral to all sides.{/i}{/b}"
+        m "{b}{i}She may be my best mentor in case of difficult situation.{/i}{/b}"
+        hide nova happy
+        show tony model
+        m "{b}{i}Another member of the Tweleve is Tony the golem.{/i}{/b}"
+        m "{b}{i}Not much that I know about him because he is mute.{/i}{/b}"
+        hide tony model
+        show giddion silly
+        m "{b}{i}Finally, there is Giddion the Hydra.{/i}{/b}"
+        m "{b}{i}Never seen his true form, but it may be scary to do so.{/i}{/b}"
+        m "{b}{i}Dude's hyper and energetic.{/i}{/b}"
+        hide giddion silly
+        m "{b}{i}I said it before, these guys are on a different level.{/i}{/b}"
+        "{i}Thump{/i}"
+        "{i}Flutter{/i}"
+        m "{b}{i}What was that?{/i}{/b}"
+        m "{b}{i}It came from that room.{/i}{/b}"
+        m "{b}{i}Is it right to check out the noise?{/i}{/b}"
+    menu:
+        "Check it out":
+            $ day_six_respect_meter += 1
+        "Leave":
+            $ day_six_respect_meter -= 1
 
     scene bg office
     m "Another day of me"
