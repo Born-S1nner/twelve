@@ -373,16 +373,45 @@ label act3:
     
     scene bg roundtable
     with fade
-
+    show jaden happy
     j "And that concludes today's meeting."
+    g "Finally, I can go back out there."
+    s "I'mma go back on Corale."
+    hide jaden happy
+    
+    m "{b}{i}Didn't know the meeting could go that smooth.{/i}{/b}"
+    show morgana happy at left
+    show nova normal at right
+    mo "Hey, come over here and have a talk with us."
+    scene bg roundtable
+    menu:
+        "talk to them":
+            $ day_six_respect_meter += 1
+            jump talk2
+        "ignore them":
+            $ day_six_respect_meter -= 1
+            jump privacy
+    label talk2:
+        scene bg roundtable
+        show morgana happy at left
+        show nova normal at right
+        mo "Glad to get your attention to us."
+        m "What is it that you guys need?"
+        n "It's about the small debate within the Tweleve."
+        mo "By now, you can tell there are different converns about your job."
+        mo "However, there are only two sides to worry about."
+        mo "Thoses that want to be pacifist and those that want to destroy."
+        n "The Pacifiers and the Destroyers."
+        m "Doesn't it contradict the foundation of the Tweleve."
+        n "Not really."
+        n "Having different ideas is quite common. but it doesn't break our relationship nor the foundation."
+        mo "Think of it has siblings having different ideas."
+        n "None of the sides hate each other, but they can clash against their ideas."
+        n "The "
+        jump privacy
 
-# talk to the Tweleve
-#    menu:
-#        "":
-#            $ day_six_respect_meter += 1
-#        "":
-#            $ day_six_respect_meter -= 1
-
+    label privacy:
+        scene bg facility
 # invade private property
 #    menu:
 #        "":
