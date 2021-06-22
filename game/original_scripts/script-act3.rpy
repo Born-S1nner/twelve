@@ -264,19 +264,16 @@ label act3:
     m "Yes..."
 
     hide jaden happy
-    if day_one_respect_meter <= day_one_respect_threshold:
-        m "I'm sorry for all the trouble I caused."
-    elif day_one_respect_meter => day_one_respect_threshold and  day_one_respect_meter != day_one_respect_threshold_full:
-        m "I may have offended some people; in which case, I'm sorry."
-    else:
-        m "I'm grateful to be working with you."
-    
+    m "I'm sorry for all the trouble I caused."
+    m "I may have offended some people; in which case, I'm sorry."
+    m "I'm grateful to be working with you."
     m "I won't say much."
     m "I'm looking forward to be working with y'all guys."
     m "Excuse me"
 
     show jaden normal
     with moveinleft
+    
     j "Okay, what a small talk."
     j "Anyway, I would like to ask you for your opinion."
     j "What do you plan to do in your position?"

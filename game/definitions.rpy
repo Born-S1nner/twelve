@@ -17,6 +17,7 @@ define tm_1 = False
 define tm_2 = False
 define tm_3 = False
 define tm_4 = False
+define tm_5 = False
 
 #Three-type questions
 define q1_anwsered = False
