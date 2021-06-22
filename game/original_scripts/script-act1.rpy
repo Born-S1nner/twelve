@@ -33,11 +33,15 @@ label act1:
     u "Just hit me with the truth."
     w "ho, I like a determined person who's ready for anything."
     w "Let's begin."
-    w "What is your name?"
-    $ persistent.player_name = renpy.input("Type your name:", length=32)
-    $ persistent.player_name = persistent.player_name.strip()
-    if persistent.player_name == "":
-        $ persistent.player_name = "Omar"
+
+    $ name = renpy.input("What is your name?:", length=32)
+    $ name = name.strip()
+    $ persistent.player_name = name
+    if name == "":
+        $ name = "Omar"
+    else:
+        $ name = persistent.player_name
+    
     m "My name is [name]"
     w "Well [name]."
     w "Welcome to the Tweleve."

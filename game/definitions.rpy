@@ -18,7 +18,7 @@ default day_six_respect_threshold_full = 6
 default day_six_respect_threshold = 3
 
 default total_respect = 0
-default current_total_respect = 0
+default current_total_respect = 4
 
 #Times you have betray their back
 define tm_1 = False
@@ -36,10 +36,10 @@ default passed = 4
 default test_score = 0
 
 #Characters
-default persistent.player_name = ""
-default name = persistent.player_name
-define u = Character("Unknown")
+default name = ""
 define m = Character("[name]")
+
+define u = Character("Unknown")
 define w = Character("???", color="#ffffff")
 define j = Character("Jaden", color="#009900")
 define a = Character("Andriod", color="#2eb8b8")

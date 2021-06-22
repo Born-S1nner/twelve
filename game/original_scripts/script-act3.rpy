@@ -434,7 +434,7 @@ label act3:
         hide bobby model
         show randy model
         m "{b}{i}Then, there is Randy.{/i}{/b}"
-        m "{b}{i}The Silent reptile that can destroy a planet with just one word.{/i}{/b}"\
+        m "{b}{i}The Silent reptile that can destroy a planet with just one word.{/i}{/b}"
         hide randy model
         show vod normal
         m "{b}{i}Vod is another member that I've met.{/i}{/b}"

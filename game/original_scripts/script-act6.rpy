@@ -155,12 +155,11 @@ label act6:
     m "{b}{i}It's been a week since I joined the Tweleve.{/i}{/b}"
     m "{b}{i}{/i}{/b}"
     if total_respect != current_total_respect:
-        traitor_ending = true
+        $ traitor_ending = True
     else:
-        else world_endgoal == destroyers_points:
-            destroyer_ending = True
-        
-        elif world_endgoal == pacifier_points:
-            pacifier_ending = True
+        if world_endgoal <= destroyers_points:
+            $ destroyer_ending = True
+        elif world_endgoal <= pacifier_points:
+            $ pacifier_ending = True
         else:
-            middle_ground_ending = True
+            $ middle_ground_ending = True

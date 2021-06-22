@@ -3,34 +3,28 @@
 While running game code:
   File "game/script.rpy", line 3, in script call
     call act1
-  File "game/original_scripts/script-act1.rpy", line 42, in script
-    w "Well [playername]."
-KeyError: u'playername'
+  File "game/original_scripts/script-act1.rpy", line 38, in script
+    $ name = pname.strip()
+  File "game/original_scripts/script-act1.rpy", line 38, in <module>
+    $ name = pname.strip()
+NameError: name 'pname' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 3, in script call
     call act1
-  File "game/original_scripts/script-act1.rpy", line 42, in script
-    w "Well [playername]."
-  File "renpy/ast.py", line 715, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1393, in say
-    who(what, *args, **kwargs)
-  File "renpy/character.py", line 1190, in __call__
-    what = what_pattern.replace("[what]", sub(what, translate=True))
-  File "renpy/character.py", line 1179, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-KeyError: u'playername'
+  File "game/original_scripts/script-act1.rpy", line 38, in script
+    $ name = pname.strip()
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/original_scripts/script-act1.rpy", line 38, in <module>
+    $ name = pname.strip()
+NameError: name 'pname' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Tweleve 1.0
-Sat Jun 19 17:28:20 2021
+Tue Jun 22 01:44:51 2021

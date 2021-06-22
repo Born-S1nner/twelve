@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/definitions.rpy", line 33: expected statement.
-    dfine u = Character("Unknown")
-            ^
+File "game/script.rpy", line 18: choice menuitem expects a non-empty block.
+    "No":
+         ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Sat Jun 19 17:25:23 2021
+Tue Jun 22 01:26:15 2021
