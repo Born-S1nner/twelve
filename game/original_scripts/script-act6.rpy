@@ -152,4 +152,15 @@ label act6:
 #            $ day_six_respect_meter -= 1
 
     scene bg office
-    m "Another day of me"
+    m "{b}{i}It's been a week since I joined the Tweleve.{/i}{/b}"
+    m "{b}{i}{/i}{/b}"
+    if total_respect != current_total_respect:
+        traitor_ending = true
+    else:
+        else world_endgoal == destroyers_points:
+            destroyer_ending = True
+        
+        elif world_endgoal == pacifier_points:
+            pacifier_ending = True
+        else:
+            middle_ground_ending = True

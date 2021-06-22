@@ -4,11 +4,9 @@ label start:
     if quick_death_ending:
         jump ending
     call act2
-    if quick_death_ending:
-        jump ending
+    
     call act3
-    if quick_death_ending:
-        jump ending
+    
     call act6
     if quick_death_ending:
         jump ending

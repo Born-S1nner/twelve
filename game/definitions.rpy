@@ -17,6 +17,9 @@ default day_six_respect_meter = 0
 default day_six_respect_threshold_full = 6
 default day_six_respect_threshold = 3
 
+default total_respect = 0
+default current_total_respect = 0
+
 #Times you have betray their back
 define tm_1 = False
 define tm_2 = False
@@ -53,7 +56,7 @@ define g = Character("Giddion", color="#99cc00")
 # what determines your side on the argument(destroyer or pacifier)
 define destroyers_points = 0
 define pacifier_points = 0
-define world_endgoal = 3
+define world_endgoal = 4
 
 ## Multiple endings
 # gameover
