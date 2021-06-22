@@ -120,16 +120,30 @@ label act6:
     show jaden happy
     j "It's settle then. Let's get working!"
 
-#invade property for the last time
-#    menu:
-#        "":
-#            $ day_six_respect_meter += 1
-#        "":
-#            $ day_six_respect_meter -= 1
+    scene bg facility
+    m "{i}{b}Guess that reduce the number of planets that are corrupted by evil.{/b}{/i}"
+    m "{i}{b}Hope that resolves majority of the problems in the universe.{/b}{/i}"
+    m "{i}{b}Oh, the door is still open.{/b}{/i}"
+    m "{i}{b}Not sure if I should enter the room this time.{/b}{/i}"
+    menu:
+        "Enter the room":
+           $ traitor_points += 1
+           jump inspect4
+        "Continue walking":
+           jump walk_away
 
-    scene bg office
-    m "{b}{i}It's been a week since I joined the Tweleve.{/i}{/b}"
-    m "{b}{i}{/i}{/b}"
+    label inspect4:
+        m "{i}{b}Here goes nothing.{/b}{/i}"
+        jump return_office04
+
+    label walk_away:
+       m "{i}{b}Maybe next time?{/b}{/i}"
+        jump return_office04
+
+    label return_office04:
+        scene bg office
+        m "{b}{i}{/i}{/b}"
+    
     if traitor_points != current_total_respect:
         $ traitor_ending = True
     else:

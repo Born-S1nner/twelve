@@ -1,14 +1,8 @@
 # Definitions.rpy
-
 # This section defines stuff for your mod!
 # Use this as a starting point if you would like to override with your own.
 
 #define if you are a traitor
-
-default day_six_respect_meter = 0
-default day_six_respect_threshold_full = 6
-default day_six_respect_threshold = 3
-
 default traitor_points = 0
 default current_total_respect = 1
 
