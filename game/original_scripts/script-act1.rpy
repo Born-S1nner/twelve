@@ -84,7 +84,6 @@ label act1:
         "I accept":
             j "Good, we are on the role."    
             j "Let me show you around this place."
-            $ day_one_respect_meter += 1
             hide jaden happy
             with moveoutleft
     return

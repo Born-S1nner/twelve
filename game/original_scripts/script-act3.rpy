@@ -84,10 +84,8 @@ label act3:
     
     menu:
         "Confront Vod":
-            $ day_two_respect_meter -= 1
             v "Are you trying to stand up against me!"
         "Step back":
-            $ day_two_respect_meter += 1
             v "You look more patheic than a weasel."
             v "I'mma show you why weaklings don't belong to the Tweleve."
     
@@ -193,7 +191,6 @@ label act3:
         "We were just talking about you":
             hide giddion silly
             show giddion happy
-            $ day_two_respect_meter += 1
             g "I see that at least you are willing to acknowledge me."
             g "Praise on you mortal!" with hpunch
             hide giddion happy
@@ -201,7 +198,6 @@ label act3:
         "No one said anything":
             hide giddion silly
             show giddion angry
-            $ day_two_respect_meter -= 1
             g "Don't lie in front of my face!" with hpunch
             g "I heard you mention my name!"
             hide giddion angry
@@ -287,21 +283,19 @@ label act3:
     hide jaden normal
     menu:
         "Destroy the plants that are deemed evil.":
-            $ day_two_respect_meter += 1
             $ destroyers_points += 1
             m "This universe is being consumed by evil and we must stop it."
             m "We will do what we can to end this evil once and for all."
             m "Even if it mean wiping down colonies and planets."
         
         "Save the planets from the evil idealist.":
-            $ day_two_respect_meter += 1
             $ pacifier_points += 1
             m "This universe is being under attack by evil and we must stop it."
             m "We will do what we can to end this evil once and for all."
             m "Even if it means protecting a planet with our bare hands."
         
         "Um.. yes": 
-            $ day_two_respect_meter -= 1   
+            pass
 
     if pacifier_points < destroyers_points:
         show giddion happy
@@ -365,9 +359,9 @@ label act3:
     hide jaden normal
     menu:
         "That's right":
-            $ day_two_respect_meter += 1
+            pass
         "It depends":
-            $ day_two_respect_meter -= 1
+            pass
     show jaden happy
     j "Let's settle down and continue on with the meeting."
     
@@ -386,10 +380,8 @@ label act3:
     scene bg roundtable
     menu:
         "talk to them":
-            $ day_six_respect_meter += 1
             jump talk2
         "ignore them":
-            $ day_six_respect_meter -= 1
             jump privacy
     label talk2:
         scene bg roundtable
@@ -456,19 +448,18 @@ label act3:
         m "{b}{i}Dude's hyper and energetic.{/i}{/b}"
         hide giddion silly
         m "{b}{i}I said it before, these guys are on a different level.{/i}{/b}"
-        "{i}Thump{/i}"
-        "{i}Flutter{/i}"
+        "{i}Thump{/i}" with vpunch
+        "{i}Flutter{/i}" with vpunch
         m "{b}{i}What was that?{/i}{/b}"
         m "{b}{i}It came from that room.{/i}{/b}"
         m "{b}{i}Is it right to check out the noise?{/i}{/b}"
     menu:
         "Check it out":
-            $ day_six_respect_meter += 1
+            $ traitor_points += 1
             m "{b}{i}I'm just checking out the noise.{/i}{/b}"
             m "{b}{i}That's all I'm doing.{/i}{/b}"
             jump inspect
         "Leave":
-            $ day_six_respect_meter -= 1
             m "{b}{i}Problably best to not get involved.{/i}{/b}"
             jump continue_forward
 
@@ -478,6 +469,7 @@ label act3:
         m "{b}{i}What is this place?{/i}{/b}"
         m "{b}{i}It's compiled by folders and paper.{/i}{/b}"
         m "{b}{i}What's this paper?{/i}{/b}"
+        show paper01
         m "{b}{i}Oh my god.{/i}{/b}"
         m "{b}{i}I must stay silent for the moment.{/i}{/b}"
         m "{b}{i}I will do something about it.{/i}{/b}"

@@ -59,7 +59,6 @@ label act2:
 
     menu:
         "Talk with Android":
-            $ day_one_respect_meter += 1
             m "I actually want to learn more about you."
 
             scene bg awaken facility
@@ -179,39 +178,29 @@ label act2:
 
     menu:
         "No":
-            $ day_one_respect_meter -= 1
-            jump choke
+            hide morgana silly
+            show morgana angry
+            mo "I see your not the type to take a joke."
+            m "It's not that, I just-"
+            mo "No need to explain yourself."
+            mo "I should be apologizing for getting into someone's space."
+
         "What do you mean?":
-            $ day_one_respect_meter += 1
-            jump joke
+            mo "Let's just say I can make person feel like it's their first time?"
+            m "No please no, I wasn't th-thinking of doing a-anything to you." with hpunch
+            mo "haha, don't worry I was just joking around."
+            mo "It's always funny to tease a good hearted person."
+            m "Ah, I see. Good one."
 
-    label choke:
-        hide morgana silly
-        show morgana angry
-        mo "I see your not the type to take a joke."
-        m "It's not that, I just-"
-        mo "No need to explain yourself."
-        mo "I should be apologizing for getting into someone's space."
-        jump end_act2
+    hide morgana happy
+    hide morgana angry
+    show morgana normal
 
-    label joke:
-        mo "Let's just say I can make person feel like it's their first time?"
-        m "No please no, I wasn't th-thinking of doing a-anything to you." with hpunch
-        mo "haha, don't worry I was just joking around."
-        mo "It's always funny to tease a good hearted person."
-        m "Ah, I see. Good one."
-        jump end_act2
-
-    label end_act2:
-        hide morgana happy
-        hide morgana angry
-        show morgana normal
-
-        mo "Anyway, we should meet up with jaden for your first day."
-        m "Yes, let's go."
-        hide morgana normal
-        with moveoutright
-        m "Good job me."
+    mo "Anyway, we should meet up with jaden for your first day."
+    m "Yes, let's go."
+    hide morgana normal
+    with moveoutright
+    m "Good job me."
 
     scene bg deepship
     show morgana happy at right
@@ -378,11 +367,11 @@ label act2:
 
     menu:
         "Revenge":
-            $ day_one_respect_meter += 1
+            pass
         "Live a new life":
-            $ day_one_respect_meter -= 1
+            pass
         "Kill yourself":
-            $ day_one_respect_meter -= 1
+            pass
 
     j "Okay okay, let's not get too deep into what ifs."
     k "I have to resupply my equipments for the next journey."
@@ -411,11 +400,11 @@ label act2:
     scene bg deepship
     show jaden happy
     pause
-    m "I wonder if it's a good idea to ask a question?"
+    m "{i}{b}I wonder if it's a good idea to ask a question?{/b}{/i}"
     
     menu:
         "ask a question":
-            m "Fuck it, I'm gonna do it."
+            m "{i}{b}Fuck it, I'm gonna do it.{/b}{/i}"
             m "Who is Sally?"
         
             hide jaden happy
@@ -424,9 +413,8 @@ label act2:
             j "what do you mean?"
 
         "remain silent":
-            $ day_one_respect_meter += 1
-            m "I don't want to bother Jaden nor sound nosey."
-            m "It's best to remain si-"
+            m "{i}{b}I don't want to bother Jaden nor sound nosey.{/b}{/i}"
+            m "{i}{b}It's best to remain si-{/b}{/i}"
 
             hide jaden happy
             show jaden normal
@@ -504,7 +492,6 @@ label act2:
 
     menu:
         "How tall are you?":
-            $ day_one_respect_meter -= 1
             hide sally silly
             show sally angry
 
@@ -517,7 +504,8 @@ label act2:
             j "He is just a little curious, almost too curious that someone got his tongue."
 
         "What have you inveted so far?":
-            $ day_one_respect_meter += 1
+            hide sally silly
+            show sally happy
             s "Well, I did build this ship by stratch."
             s "I also made Android mobile around the universe, create anti-gravity, build anti-black hole, started a new physic laws..."
             

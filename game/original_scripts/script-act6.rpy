@@ -1,26 +1,5 @@
 label act6:
 
-#    menu:
-#        "":
-#            $ day_six_respect_meter += 1
-#        "":
-#            $ day_six_respect_meter -= 1
-#    menu:
-#        "":
-#            $ day_six_respect_meter += 1
-#        "":
-#            $ day_six_respect_meter -= 1
-#    menu:
-#        "":
-#            $ day_six_respect_meter += 1
-#        "":
-#            $ day_six_respect_meter -= 1
-#    menu:
-#        "":
-#            $ day_six_respect_meter += 1
-#        "":
-#            $ day_six_respect_meter -= 1
-
     scene bg roundtable
     show jaden normal
     j "For a long time, we have battle with the forces of evil."
@@ -83,8 +62,6 @@ label act6:
     hide jaden normal
     menu:
         "we drag the evil atoms elsewhere":
-            $ day_six_respect_meter += 1
-
             m "we take those evil atoms and complied them into the planet."
             m "The evil atoms are only dangerous when they need a host to take."
             m "Afterwhich, they can't spread "
@@ -96,7 +73,6 @@ label act6:
             m "But we coul-"
 
         "we find a cure to surpress the evil atoms":
-            $ day_six_respect_meter -= 1
             m "Find something that can eliminate the traits of evil."
             m "It could be a vaccine that can prevent anyone that could be affected."
             show kira model
@@ -154,7 +130,7 @@ label act6:
     scene bg office
     m "{b}{i}It's been a week since I joined the Tweleve.{/i}{/b}"
     m "{b}{i}{/i}{/b}"
-    if total_respect != current_total_respect:
+    if traitor_points != current_total_respect:
         $ traitor_ending = True
     else:
         if world_endgoal <= destroyers_points:

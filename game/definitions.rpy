@@ -3,22 +3,14 @@
 # This section defines stuff for your mod!
 # Use this as a starting point if you would like to override with your own.
 
-#define respect in this game
-#total RP per day of your impresssion with the Tweleve
-default day_one_respect_meter = 0
-default day_one_respect_threshold_full = 6
-default day_one_respect_threshold = 3
-
-default day_two_respect_meter = 0
-default day_two_respect_threshold_full = 6
-default day_two_respect_threshold = 3
+#define if you are a traitor
 
 default day_six_respect_meter = 0
 default day_six_respect_threshold_full = 6
 default day_six_respect_threshold = 3
 
-default total_respect = 0
-default current_total_respect = 4
+default traitor_points = 0
+default current_total_respect = 1
 
 #Times you have betray their back
 define tm_1 = False
