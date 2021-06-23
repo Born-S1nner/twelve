@@ -56,3 +56,19 @@ default traitor_ending = False
 default destroyer_ending = False
 # side with the pacifiers
 default pacifier_ending = False
+
+#python 
+init python:
+  def pause(time=None):
+    global _windows_hidden
+    if not time:
+      _windows_hidden = True
+      renpy.ui.saybehavior(afm=" ")
+      renpy.ui.interact(mouse='pause', type='pause', roll_forward=None)
+      _windows_hidden = False
+      return
+    if time <= 0:
+      return
+    _windows_hidden = True
+    renpy.pause(time)
+    _windows_hidden = False

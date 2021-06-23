@@ -468,7 +468,7 @@ label act3:
         m "{b}{i}What is this place?{/i}{/b}"
         m "{b}{i}It's compiled by folders and paper.{/i}{/b}"
         m "{b}{i}What's this paper?{/i}{/b}"
-        show paper01
+        call showdoc (doc_1)
         m "{b}{i}Oh my god.{/i}{/b}"
         m "{b}{i}I must stay silent for the moment.{/i}{/b}"
         m "{b}{i}I will do something about it.{/i}{/b}"

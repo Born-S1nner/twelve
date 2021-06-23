@@ -1,8 +1,8 @@
 label act5:
   a "What would you like to do today."
-  menu:
-    "Do the Homework":
-    "Go around the facility":
+  #menu:
+  #  "Do the Homework":
+  #  "Go around the facility":
 
   menu:
     "Enter the room":
@@ -12,7 +12,7 @@ label act5:
       m "{i}{b}Maybe next time?{/b}{/i}"
       jump return_office3
 
-  label inspect5:
+  label inspect3:
     m "{i}{b}Here goes nothing.{/b}{/i}"
     
     scene bg secret
@@ -20,3 +20,4 @@ label act5:
     jump return_office3
 
   label return_office3:
+    pass
