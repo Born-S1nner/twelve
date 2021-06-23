@@ -379,7 +379,8 @@ label act3:
         "talk to them":
             jump talk2
         "ignore them":
-            jump privacy
+            jump ignore
+
     label talk2:
         scene bg roundtable
         show morgana happy at left
@@ -411,9 +412,9 @@ label act3:
         hide nova normal
         with moveoutleft
         m "{b}{i}Great.{/i}{/b}"
-        jump privacy
+        jump ignore
 
-    label privacy:
+    label ignore:
         scene bg facility
         m "{b}{i}Can't believe I'm part of the Tweleve.{/i}{/b}"
         m "{b}{i}I met so many faces in that meeting.{/i}{/b}"
@@ -450,6 +451,7 @@ label act3:
         m "{b}{i}What was that?{/i}{/b}"
         m "{b}{i}It came from that room.{/i}{/b}"
         m "{b}{i}Is it right to check out the noise?{/i}{/b}"
+        
     menu:
         "Check it out":
             $ traitor_points += 1

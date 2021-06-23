@@ -128,19 +128,17 @@ label act7:
     menu:
         "Enter the room":
            $ traitor_points += 1
-           jump inspect4
+           jump inspect5
+
         "Continue walking":
-           jump walk_away
+           m "{i}{b}Maybe next time?{/b}{/i}"
+           jump return_office5
 
-    label inspect4:
+    label inspect5:
         m "{i}{b}Here goes nothing.{/b}{/i}"
-        jump return_office04
+        jump return_office5
 
-    label walk_away:
-       m "{i}{b}Maybe next time?{/b}{/i}"
-        jump return_office04
-
-    label return_office04:
+    label return_office5:
         scene bg office
         m "{b}{i}{/i}{/b}"
     

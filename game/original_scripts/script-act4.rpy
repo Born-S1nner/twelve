@@ -1,15 +1,16 @@
-label act6:
+label act4:
+
   menu:
     "Enter the room":
-      jump inspect4
+      jump inspect2
 
     "Contine walking":
       m "{i}{b}Maybe next time?{/b}{/i}"
-      jump return_office4
+      jump return_office2
 
-  label inspect5:
+  label inspect4:
     m "{i}{b}Here goes nothing.{/b}{/i}"
-    
-    jump return_office4
 
-  label return_office4:
+    jump return_office2
+
+  label return_office2:
