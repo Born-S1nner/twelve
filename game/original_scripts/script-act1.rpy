@@ -4,6 +4,11 @@ label act1:
     scene bg deep
     with fade
     "..."
+    call showdoc (doc_1)
+    call showdoc (doc_2)
+    call showdoc (doc_3)
+    call showdoc (doc_4)
+    call showdoc (doc_5)
     u "This is space, the place where humanity wish to explore."
     u "To us humans, space holds great potential to expand our knowledge."
     u "However..."

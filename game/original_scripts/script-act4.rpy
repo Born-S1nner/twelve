@@ -70,8 +70,8 @@ label act4:
     m "{i}{b}Guess the room has been cleaned before me.{/b}{/i}"
     m "{i}{b}There isn't much to look around except for files and folders.{/b}{/i}"
     m "{i}{b}Maybe I should look at one of the paper in the files.{/b}{/i}"
-    
-    show paper02
+    m "{b}{i}Oh, let's look at this paper.{/i}{/b}"
+    call showdoc (doc_2)
     
     m "{i}{b}Was that how the Tweleve was formed!{/b}{/i}"
     m "{i}{b}I thought they did it out of sheer goodness.{/b}{/i}"

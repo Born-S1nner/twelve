@@ -136,7 +136,7 @@ label act7:
 
     label inspect5:
         m "{i}{b}Here goes nothing.{/b}{/i}"
-        
+        call showdoc (doc_5)
         scene bg secret
         
         jump return_office5
