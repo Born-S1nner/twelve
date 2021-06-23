@@ -35,21 +35,51 @@ label act4:
   a "What would you like to do today."
   menu:
     "Do the Homework":
+      jump homework1
     "Go around the facility":
+      jump explore1
 
+  label homework1:
+    m "Guess I'll have to do the homework from Jaden."
+    m "Android! What's the homework?"
+    a "Your first homework involves planet "
+
+# heading back
+  if tm_1:
+    m "{i}{b}Is that the room where I found that document{/b}{/i}"
+  else:
+    m "{i}{b}Is that the room where I heard some noise coming from?{/b}{/i}"
+  m "{i}{b}It is!{/b}{/i}"
+  m "{i}{b}That room is still open.{/b}{/i}"
+  m "{i}{b}Wonder what I should do?{/b}{/i}"
+  
   menu:
     "Enter the room":
+      $ traitor_points += 1
       jump inspect2
 
     "Contine walking":
-      m "{i}{b}Maybe next time?{/b}{/i}"
+      m "{i}{b}There's no need for me to enter the room.{/b}{/i}"
+      m "{i}{b}Maybe I'll do it some other time.{/b}{/i}"
       jump return_office2
 
-  label inspect4:
+  label inspect2:
     m "{i}{b}Here goes nothing.{/b}{/i}"
     
     scene bg secret
-
+    m "{i}{b}Guess the room has been cleaned before me.{/b}{/i}"
+    m "{i}{b}There isn't much to look around except for files and folders.{/b}{/i}"
+    m "{i}{b}Maybe I should look at one of the paper in the files.{/b}{/i}"
+    
+    show paper02
+    
+    m "{i}{b}Was that how the Tweleve was formed!{/b}{/i}"
+    m "{i}{b}I thought they did it out of sheer goodness.{/b}{/i}"
+    m "{i}{b}It was just a way to avoid a battle between them.{/b}{/i}"
+    m "{i}{b}It's not so bad, but what will happen when they get bored.{/b}{/i}"
+    m "{i}{b}Being the strongest doesn't mean peaceful truce.{/b}{/i}"
+    m "{i}{b}The Tweleve could break up if they want to.{/b}{/i}"
+    m "{i}{b}Just best hope that day doesn't come.{/b}{/i}"
     jump return_office2
 
   label return_office2:
