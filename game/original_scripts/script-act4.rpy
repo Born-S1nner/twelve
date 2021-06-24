@@ -33,18 +33,22 @@ label act4:
   m "{b}{i}Afterall, he has other things to focus on.{/i}{/b}"
   m "{b}{i}I should be stong to fend for myself.{/i}{/b}"
   a "What would you like to do today."
+  m "Guess I'll have to do the homework from Jaden."
+  m "Android! What's the homework?"
+  a "Your first homework involves planet VanGulf."
+  a "A small planet with the population of 2,000 people."
+  a "I could give you all the details about the planet, but Jaden wants you to ask the experts yourself."
   menu:
-    "Do the Homework":
-      jump homework1
+    "Ask for help":
+      jump help1
     "Go around the facility":
-      jump explore1
+      m "Can't make that decision right now."
+      m "I'll just gonna go out and think about myself."
+      a "Okay, good luck."
+      m "Thanks."
+      jump hallway2
 
-  label homework1:
-    m "Guess I'll have to do the homework from Jaden."
-    m "Android! What's the homework?"
-    a "Your first homework involves planet VanGulf."
-    a "A small planet with the population of 2,000 people."
-    a "I could give you all the details about the planet, but Jaden wants you to ask the experts yourself."
+  label help1:
     m "Who are the experts to VanGulf?"
     a "The experts would be Bobby, Morgana and Kira."
     m "{b}{i}Great, I got two opposing sides to determine the faith of this planet.{/i}{/b}}"
@@ -55,7 +59,7 @@ label act4:
         m "{b}{i}Bobby is the most talkative member compare to silent Kira.{/i}{/b}}"
         m "{b}{i}He would probably know more about Vangulf.{/i}{/b}}"
         m "Take me to Bobby's location."
-        a "Okay. I'll shall inform of your arrival."
+        a "Okay. I'll shall inform him of your arrival."
         jump bobby_res
 
       "Ask Kira":
@@ -63,14 +67,14 @@ label act4:
         m "{b}{i}Kira appears as the smartest and logical member compare to Bobby.{/i}{/b}}"
         m "{b}{i}He would advise me about the current conditions of VanGulf{/i}{/b}}"
         m "Take me to Kira's Location"
-        a "Okay. I'll shall inform of your arrival."
+        a "Okay. I'll shall inform him of your arrival."
         jump kira_res
       
       "Ask Morgana":
         m "{b}{i}Morgana is unbiased and is quite intrested with other people.{/i}{/b}}"
         m "{b}{i}She might give me some clear perspective of VanGulf{/i}{/b}}"
         m "Take me to Morgana's Location"
-        a "Okay. I'll shall inform of your arrival."
+        a "Okay. I'll shall inform her of your arrival."
         jump morgana_res        
 
 label bobby_res:
@@ -80,6 +84,7 @@ label bobby_res:
   m "Hey Bobby!"
   show bobby model
   b "Oh, hey [name]!"
+  jump return_office2
 
 label kira_res:
   scene bg facility
@@ -89,17 +94,31 @@ label kira_res:
   show kira model
   k "I prefer if you greet me properly, [name]."
   m "Sorry about that."
+  jump return_office2
 
-label kira_res:
+label morgana_res:
   scene bg facility
-  m "{b}{i}If I remember correctly, Morgana should be right around here.{/i}{/b}"
-  m "{b}{i}Oh, there she is.{/i}{/b}"
+  if tm_2:
+    m "{b}{i}Hope no one saw mein the room.{/i}{/b}"
+    m "{b}{i}Wait, I hear someone.{/i}{/b}"
+    m "{b}{i}Is that Morgana?{/i}{/b}"
+    m "{b}{i}I should approach her before I look suspicous next to the room.{/i}{/b}"
+  else:
+    m "{b}{i}If I remember correctly, Morgana should be right around here.{/i}{/b}"
+    m "{b}{i}Oh, there she is.{/i}{/b}"
   m "Um, M-Morgana!"
   show morgana normal
-  k "Oh, if it isn't [name]."
-  m "Yea, got some situation that I want you to help."
+  mo "Oh, if it isn't [name]."
+  m "Yea, got some situation that I want you to help me with."
+  mo "Okay, let me hear it."
+  if tm_2:
+    jump return_office2
+  else: 
+    jump hallway2
 
 # heading back
+label hallway2:
+  ""
   if tm_1:
     m "{i}{b}Is that the room where I found that document{/b}{/i}"
   else:
@@ -116,9 +135,10 @@ label kira_res:
     "Contine walking":
       m "{i}{b}There's no need for me to enter the room.{/b}{/i}"
       m "{i}{b}Maybe I'll do it some other time.{/b}{/i}"
-      jump return_office2
+      jump morgana_res
 
   label inspect2:
+    $ tm_2 = True
     m "{i}{b}Here goes nothing.{/b}{/i}"
     
     scene bg secret
@@ -135,6 +155,7 @@ label kira_res:
     m "{i}{b}Being the strongest doesn't mean peaceful truce.{/b}{/i}"
     m "{i}{b}The Tweleve could break up if they want to.{/b}{/i}"
     m "{i}{b}Just best hope that day doesn't come.{/b}{/i}"
-    jump return_office2
+    jump morgana_res
 
-  label return_office2:
+label return_office2:
+  scene bg office
