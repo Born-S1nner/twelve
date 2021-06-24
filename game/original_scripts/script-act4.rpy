@@ -84,7 +84,40 @@ label bobby_res:
   m "Hey Bobby!"
   show bobby model
   b "Oh, hey [name]!"
-  jump return_office2
+  b "What brings you here?"
+  m "Just wanted to ask you about VanGulf."
+  b "Oh.. well then, ask me anything"
+  
+  label bh_questions:
+    menu:
+      "?" if q1_anwsered == False:
+          $ q1_anwsered = True
+          jump bh_a1
+      "?" if q2_anwsered == False:
+          $ q2_anwsered = True
+          jump bh_a2
+      "?" if q3_anwsered == False:
+          $ q3_anwsered = True
+          jump bh_a3
+      "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+          jump bh_done
+
+  label bh_a1:
+  
+    jump bh_questions
+        
+  label bh_a2:
+        
+    jump bh_questions
+
+  label bh_a3:
+        
+    jump bh_questions
+
+  label bh_done:
+    $ homework_1 = True
+    m "That should be it."
+    jump return_office2
 
 label kira_res:
   scene bg facility
@@ -94,7 +127,37 @@ label kira_res:
   show kira model
   k "I prefer if you greet me properly, [name]."
   m "Sorry about that."
-  jump return_office2
+  
+  label kh_questions:
+    menu:
+      "?" if q1_anwsered == False:
+          $ q1_anwsered = True
+          jump kh_a1
+      "?" if q2_anwsered == False:
+          $ q2_anwsered = True
+          jump kh_a2
+      "?" if q3_anwsered == False:
+          $ q3_anwsered = True
+          jump kh_a3
+      "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+          jump kh_done
+
+  label kh_a1:
+  
+    jump kh_questions
+        
+  label kh_a2:
+        
+    jump kh_questions
+
+  label kh_a3:
+        
+    jump kh_questions
+
+  label kh_done:
+    m "That should be it."
+    $ homework_1 = True
+    jump return_office2
 
 label morgana_res:
   scene bg facility
@@ -109,20 +172,50 @@ label morgana_res:
   m "Um, M-Morgana!"
   show morgana normal
   mo "Oh, if it isn't [name]."
-  m "Yea, got some situation that I want you to help me with."
+  m "Yea, got some situation with VanGulf that I want you to help me."
   mo "Okay, let me hear it."
-  if tm_2:
-    jump return_office2
-  else: 
-    jump hallway2
+  
+  label mh_questions:
+    menu:
+      "?" if q1_anwsered == False:
+          $ q1_anwsered = True
+          jump mh_a1
+      "?" if q2_anwsered == False:
+          $ q2_anwsered = True
+          jump mh_a2
+      "?" if q3_anwsered == False:
+          $ q3_anwsered = True
+          jump mh_a3
+      "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+          jump mh_done
+
+  label mh_a1:
+  
+    jump mh_questions
+        
+  label mh_a2:
+        
+    jump mh_questions
+
+  label mh_a3:
+        
+    jump mh_questions
+
+  label mh_done:
+    m "That should be it."
+    if tm_2:
+      jump return_office2
+    else: 
+      jump hallway2
 
 # heading back
 label hallway2:
-  ""
+  m "Huh!"
   if tm_1:
     m "{i}{b}Is that the room where I found that document{/b}{/i}"
   else:
     m "{i}{b}Is that the room where I heard some noise coming from?{/b}{/i}"
+  
   m "{i}{b}It is!{/b}{/i}"
   m "{i}{b}That room is still open.{/b}{/i}"
   m "{i}{b}Wonder what I should do?{/b}{/i}"
@@ -135,7 +228,10 @@ label hallway2:
     "Contine walking":
       m "{i}{b}There's no need for me to enter the room.{/b}{/i}"
       m "{i}{b}Maybe I'll do it some other time.{/b}{/i}"
-      jump morgana_res
+      if homework_1:
+        jump return_office2
+      else: 
+        jump morgana_res
 
   label inspect2:
     $ tm_2 = True
@@ -159,3 +255,9 @@ label hallway2:
 
 label return_office2:
   scene bg office
+  
+  
+  $ q1_anwsered = False
+  $ q2_anwsered = False
+  $ q3_anwsered = False
+  return
