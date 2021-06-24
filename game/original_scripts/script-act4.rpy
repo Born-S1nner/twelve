@@ -98,9 +98,9 @@ label bobby_res:
           b "I met a lot of people and they're great people."
           b "You should visit VanGulf sometime."
           m "Sounds cool to me."
-          
-          jump bh_a1
 
+          jump bh_questions
+          
       "Is VanGulf a modern society?" if q2_anwsered == False:
           $ q2_anwsered = True
 
@@ -109,8 +109,7 @@ label bobby_res:
           m "A base?"
           b "Yeah, like a teleportation setting."
           m "R-Right..."
-
-          jump bh_a2
+          jump bh_questions
 
       "What is VanGulf's enviroment's condition?" if q3_anwsered == False:
           $ q3_anwsered = True
@@ -120,33 +119,20 @@ label bobby_res:
           m "Slime ball?"
           b "Slime balls are one of the natural creature you find there."
           b "They are harmless as a cloud."
-
-          jump bh_a3
+          jump bh_questions
 
       "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
           m "I guess I got what I needed for the planet."
           b "Okay."
           b "Hope you decide to keep the planet."
+          hide bobby model
+          with moveoutright
+          pause
           m "We'll see about that."
+          
+          $ homework_1 = True
+          jump return_office2
 
-          jump bh_done
-
-  label bh_a1:
-  
-    jump bh_questions
-        
-  label bh_a2:
-        
-    jump bh_questions
-
-  label bh_a3:
-        
-    jump bh_questions
-
-  label bh_done:
-    $ homework_1 = True
-    m "That should be it."
-    jump return_office2
 
 label kira_res:
   scene bg facility
@@ -159,34 +145,45 @@ label kira_res:
   
   label kh_questions:
     menu:
-      "?" if q1_anwsered == False:
-          $ q1_anwsered = True
-          jump kh_a1
-      "?" if q2_anwsered == False:
+      "What are the people in VanGulf like?" if q1_anwsered == False:
+        k "Those sick creatures are sick and prideful of themselves."
+        m "I assume you met one of them before?"
+        k "Yes and I hate every one of them."
+        m "Right..."
+
+        $ q1_anwsered = True
+        jump kh_a1
+      
+      "Is VanGulf a modern society?" if q2_anwsered == False:
+          
+          k "They are ignorant people that think the World revolves around them."
+          k "Those fools don't even believe in advancing."
+          m "Okay..."
+
           $ q2_anwsered = True
           jump kh_a2
-      "?" if q3_anwsered == False:
+
+      "What is VanGulf's enviroment's condition?" if q3_anwsered == False:
+          
+          k "The land is untamed with only wildlife as the main residents."
+          k "However, some of the people like to reside there and taint the forest with their hands."
+          m "I see..."
+
           $ q3_anwsered = True
           jump kh_a3
+          
       "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
-          jump kh_done
+          m "That should be it."
+          k "Hope you understand where I'm coming from."
+          m "I'll shall determine the outcome."
+          k "Good."
+          
+          hide kira model
+          with moveoutright
+          m "{b}{i}Scary.{/i}{/b}"
 
-  label kh_a1:
-  
-    jump kh_questions
-        
-  label kh_a2:
-        
-    jump kh_questions
-
-  label kh_a3:
-        
-    jump kh_questions
-
-  label kh_done:
-    m "That should be it."
-    $ homework_1 = True
-    jump return_office2
+          $ homework_1 = True
+          jump return_office2
 
 label morgana_res:
   scene bg facility
@@ -205,37 +202,55 @@ label morgana_res:
   mo "Okay, let me hear it."
   
   label mh_questions:
+    show morgana normal
     menu:
-      "?" if q1_anwsered == False:
+      "What are the people in VanGulf like?" if q1_anwsered == False:
+          mo "Some are okay, some taste good, and some are really good in bed."
+          hide morgana normal
+          show morgana silly
+
+          mo "I like their people living there."
+          m "Didn't need to know that much."
+          mo "That's funny of you."
+
+          hide morgana silly
           $ q1_anwsered = True
           jump mh_a1
-      "?" if q2_anwsered == False:
+
+      "Is VanGulf a modern society?" if q2_anwsered == False:
+          hide morgana normal
+          show morgana sad
+          mo "I don't think they care about advancements."
+          mo "If anything, they are probably stuck in the dark age forever."
+          m "Oh my."
+
           $ q2_anwsered = True
           jump mh_a2
-      "?" if q3_anwsered == False:
+      
+      "What is VanGulf's enviroment's condition?" if q3_anwsered == False:
+          hide morgana normal
+          show morgana happy
+          mo "VanGulf has the most beautiful forest by my book."
+          mo "Although, I prefer to live in the city."
+          m "Of course you do."
+
           $ q3_anwsered = True
           jump mh_a3
+
       "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
-          jump mh_done
+          m "THat should be enough about VanGulf."
+          hide morgana normal
+          show morgana silly
+          mo "Don't over-work yourself to hard, sweetie."
+          m "Thanks, Morgana."
+          hide morgana silly
+          with moveoutright
+          m "{b}{i}That was something{/i}{/b}"
+          if tm_2:
+            jump return_office2
+          else: 
+            jump hallway2
 
-  label mh_a1:
-  
-    jump mh_questions
-        
-  label mh_a2:
-        
-    jump mh_questions
-
-  label mh_a3:
-        
-    jump mh_questions
-
-  label mh_done:
-    m "That should be it."
-    if tm_2:
-      jump return_office2
-    else: 
-      jump hallway2
 
 # heading back
 label hallway2:
