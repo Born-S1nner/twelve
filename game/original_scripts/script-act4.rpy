@@ -90,16 +90,45 @@ label bobby_res:
   
   label bh_questions:
     menu:
-      "?" if q1_anwsered == False:
+      "What are the people in VanGulf like?" if q1_anwsered == False:
           $ q1_anwsered = True
+          
+          b "The people are well-cultured abd well-prepared."
+          m "Have you met one of them before."
+          b "I met a lot of people and they're great people."
+          b "You should visit VanGulf sometime."
+          m "Sounds cool to me."
+          
           jump bh_a1
-      "?" if q2_anwsered == False:
+
+      "Is VanGulf a modern society?" if q2_anwsered == False:
           $ q2_anwsered = True
+
+          b "They don't tend to think about advancing as they are comfortable with what they have."
+          b "If anything, VanGulf would make a great place to set a base."
+          m "A base?"
+          b "Yeah, like a teleportation setting."
+          m "R-Right..."
+
           jump bh_a2
-      "?" if q3_anwsered == False:
+
+      "What is VanGulf's enviroment's condition?" if q3_anwsered == False:
           $ q3_anwsered = True
+          b "The forest is in perfect conditions and nature has preserve it's beauty."
+          m "Have you visited before?"
+          b "Yes! I enjoy running there as a slime ball."
+          m "Slime ball?"
+          b "Slime balls are one of the natural creature you find there."
+          b "They are harmless as a cloud."
+
           jump bh_a3
+
       "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+          m "I guess I got what I needed for the planet."
+          b "Okay."
+          b "Hope you decide to keep the planet."
+          m "We'll see about that."
+
           jump bh_done
 
   label bh_a1:
