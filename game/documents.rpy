@@ -22,17 +22,28 @@ gaurantee, but anything is bettter than nothing."""
     time = "**/**/****",
     title = "12 Foundation",
     text = """\
-Do you know what walks on two legs and think about the universe, humans. 
-I have taken interest in looking how this specie tries to make sense on the 
-universe. The other guys don’t find my view interesting, so I meddle with the 
-human world to get a glimpse of their lives. Before I know it, I am their 
-leader and ruler of their kind. How can the last specie of the universe could 
-be so ignorant to put me, the destroyer of all life, in charge? Let me 
-clarify myself to those that do listen. I am part of a group called the 12. 
-There are twelve of us from each species that are deemed too powerful for the 
-universe. We all could fight a pointless battle, but we choose to work together 
-to eliminate all nuisance in our universe. From there, we destroyed all life 
-that are deemed too dangerous to be left unchecked."""
+Do you know what walks on two legs and 
+think about the universe, humans. I 
+have taken interest in looking how this 
+specie tries to make sense on the 
+universe. The other guys don’t find my 
+view interesting, so I meddle with the 
+human world to get a glimpse of their 
+lives. Before I know it, I am their 
+leader and ruler of their kind. How can the 
+last specie of the universe could 
+be so ignorant to put me, the destroyer of 
+all life, in charge? Let me 
+clarify myself to those that do listen. 
+I am part of a group called the 12. 
+There are twelve of us from each species 
+that are deemed too powerful for the 
+universe. We all could fight a pointless 
+battle, but we choose to work together 
+to eliminate all nuisance in our universe. 
+From there, we destroyed all life 
+that are deemed too dangerous to be left 
+unchecked."""
   )
   doc_3 = Docs(
     time = "**/**/****",
@@ -54,26 +65,38 @@ Tweleve strongest beings in the universe to join me."""
 Something went wrong with our project. I might have created something despicable 
 to the universe. The vary same substance to find the cure to death has begun to 
 backfire. Anyone that absorb the potion would commit the henious act of evil. No 
-one should be allow to touch this substance. I must find a way to dispose this 
-thing."""
+one should be allow to touch this substance. I must find a way to dispose 
+this thing."""
   )
   doc_5 = Docs(
     time = "**/**/****",
     title = "Operation Retirement",
     text = """\
-Earth is initial place for retirement to enjoy our celebration of completing our 
-mission. If there is anything to be happy, it’s that we don’t have to go to war 
-amongst each other. Everyone in the group has got bored of fighting in 
-battlefields. I don’t blame since we always win even with our hands tied. The 
-only threat that we encountered was trying to retrieve some ore from a black 
-hole. If anyone wants to know what it’s like to be superior, well it sucks. So 
-much hype of being a “god” kinda ruined the whole conquest in space. That is way 
-we have to rely on Earth to give us the excitement that we crave for ages. Earth 
-is big enough for all of us to reside. The humans that reside in this world are 
-something else to describe. They all seemed to be divided or something as they 
-are not unified as one. Such a shame that they’re not going with their 
-disagreements and segregation. Since the last these creatures are dumb and 
-ignorant, we decided to reside with them until the star explode."""
+Earth is initial place for retirement to enjoy
+our celebration of completing our mission. 
+If there is anything to be happy, it’s that 
+we don’t have to go to war amongst each
+other. Everyone in the group has got bored
+of fighting in battlefields. I don’t blame
+since we always win even with our hands
+tied. The only threat that we encountered
+was trying to retrieve some ore from a
+black hole. If anyone wants to know what
+it’s like to be superior, well it sucks. So
+much hype of being a “god” kinda ruined
+the whole conquest in space. That is
+way we have to rely on Earth to give us
+the excitement that we crave for ages.
+Earth is big enough for all of us to reside.
+The humans that reside in this world are
+something else to describe. They all
+seemed to be divided or something as
+they are not unified as one. Such a shame
+that they’re not going with their
+disagreementsand segregation.
+Since the last these creatures are dumb
+and ignorant, we decided to reside
+with them until the star explode."""
   )
 
 image paper = "images/bg/paper.jpg"

@@ -42,7 +42,35 @@ label act4:
   label homework1:
     m "Guess I'll have to do the homework from Jaden."
     m "Android! What's the homework?"
-    a "Your first homework involves planet "
+    a "Your first homework involves planet VanGulf."
+    a "A small planet with the population of 2,000 people."
+    a "I could give you all the details about the planet, but Jaden wants you to ask the experts yourself."
+    m "Who are the experts to VanGulf?"
+    a "The experts would be Bobby and Kira."
+    m "{b}{i}Great, I got two opposing sides to determine the faith of this planet.{/i}{/b}}"
+    m "{b}{i}I should choose one person to get some info about VanGulf.{/i}{/b}}"
+    menu :
+      "Ask Bobby":
+        $ pacifier_points += 1
+        m "{b}{i}Bobby is the most talkative member compare to silent Kira.{/i}{/b}}"
+        m "{b}{i}He would probably know more about Vangulf.{/i}{/b}}"
+        m "Take me to Bobby's location."
+        a "Okay. I'll shall inform of your arrival."
+        jump bobby_res
+
+      "Ask Kira"
+        $ destroyers_points += 1
+        m "{b}{i}Kira appears as the smartest and logical member compare to Bobby.{/i}{/b}}"
+        m "{b}{i}He would advise me about the current conditions of VanGulf{/i}{/b}}"
+        m "Take me to Kira's Location"
+        a "Okay. I'll shall inform of your arrival."
+        jump kira_res
+
+label bobby_res:
+  pass
+
+label kira_res:
+  pass
 
 # heading back
   if tm_1:
