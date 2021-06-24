@@ -130,6 +130,7 @@ label bobby_res:
           pause
           m "We'll see about that."
           
+          $ h1_s = True
           $ homework_1 = True
           jump return_office2
 
@@ -181,7 +182,8 @@ label kira_res:
           hide kira model
           with moveoutright
           m "{b}{i}Scary.{/i}{/b}"
-
+          
+          $ h1_d = True
           $ homework_1 = True
           jump return_office2
 
@@ -246,6 +248,8 @@ label morgana_res:
           hide morgana silly
           with moveoutright
           m "{b}{i}That was something{/i}{/b}"
+          
+          $ h1_m = True
           if tm_2:
             jump return_office2
           else: 
@@ -299,8 +303,19 @@ label hallway2:
 
 label return_office2:
   scene bg office
+  a "Have you got you're anwser yet?"
+  m "Yes and I know what I'm gonna do now."
+  a "what is it?"
+  if h1_s:
+    m "I'm gonna save VanGulf for later projects."
+  elif h1_d:
+    m "I'm gonna destroy VanGulf for the good of the universe."
+  elif h1_m:
+    m "I'mma keep it around for awhile and determine their fate afterwards."
   
-  
+  m "Make sure to tell that to Jaden."
+  a "Will Do, [name]."
+
   $ q1_anwsered = False
   $ q2_anwsered = False
   $ q3_anwsered = False

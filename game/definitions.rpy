@@ -15,6 +15,9 @@ define tm_5 = False
 
 # If you get your homework done
 define homework_1 = False
+define h1_s = False
+define h1_d = False
+define h1_m = False
 #Three-type questions
 define q1_anwsered = False
 define q2_anwsered = False
