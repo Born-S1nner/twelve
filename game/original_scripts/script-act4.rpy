@@ -46,7 +46,7 @@ label act4:
     a "A small planet with the population of 2,000 people."
     a "I could give you all the details about the planet, but Jaden wants you to ask the experts yourself."
     m "Who are the experts to VanGulf?"
-    a "The experts would be Bobby and Kira."
+    a "The experts would be Bobby, Morgana and Kira."
     m "{b}{i}Great, I got two opposing sides to determine the faith of this planet.{/i}{/b}}"
     m "{b}{i}I should choose one person to get some info about VanGulf.{/i}{/b}}"
     menu :
@@ -58,19 +58,46 @@ label act4:
         a "Okay. I'll shall inform of your arrival."
         jump bobby_res
 
-      "Ask Kira"
+      "Ask Kira":
         $ destroyers_points += 1
         m "{b}{i}Kira appears as the smartest and logical member compare to Bobby.{/i}{/b}}"
         m "{b}{i}He would advise me about the current conditions of VanGulf{/i}{/b}}"
         m "Take me to Kira's Location"
         a "Okay. I'll shall inform of your arrival."
         jump kira_res
+      
+      "Ask Morgana":
+        m "{b}{i}Morgana is unbiased and is quite intrested with other people.{/i}{/b}}"
+        m "{b}{i}She might give me some clear perspective of VanGulf{/i}{/b}}"
+        m "Take me to Morgana's Location"
+        a "Okay. I'll shall inform of your arrival."
+        jump morgana_res        
 
 label bobby_res:
-  pass
+  scene bg facility
+  m "{b}{i}If I remember correctly, Bobby should be around here.{/i}{/b}"
+  m "{b}{i}Oh, there he is.{/i}{/b}"
+  m "Hey Bobby!"
+  show bobby model
+  b "Oh, hey [name]!"
 
 label kira_res:
-  pass
+  scene bg facility
+  m "{b}{i}If I remember correctly, Kira should be right around here.{/i}{/b}"
+  m "{b}{i}Oh, there he is.{/i}{/b}"
+  m "Yo, Kira!"
+  show kira model
+  k "I prefer if you greet me properly, [name]."
+  m "Sorry about that."
+
+label kira_res:
+  scene bg facility
+  m "{b}{i}If I remember correctly, Morgana should be right around here.{/i}{/b}"
+  m "{b}{i}Oh, there she is.{/i}{/b}"
+  m "Um, M-Morgana!"
+  show morgana normal
+  k "Oh, if it isn't [name]."
+  m "Yea, got some situation that I want you to help."
 
 # heading back
   if tm_1:
