@@ -43,7 +43,7 @@ label act4:
       jump help1
     "Go around the facility":
       m "Can't make that decision right now."
-      m "I'll just gonna go out and think about myself."
+      m "I'll just gonna go out and think about it myself."
       a "Okay, good luck."
       m "Thanks."
       jump hallway2
