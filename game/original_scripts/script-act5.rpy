@@ -37,10 +37,47 @@ label act5:
         m "I got enough off Genisi"
 
         $ h2_m = True
+        $ homework_2 = True
         if tm_3:
           jump return_office2
         else: 
           jump hallway2
+
+  label sally_res:
+    menu:
+      "" if q1_anwsered == False:
+        jump sally_res
+
+      "" if q2_anwsered == False:
+        jump sally_res
+
+      "" if q3_anwsered == False:
+        jump sally_res
+      
+      "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+        m "I got enough off Genisi"
+
+        $ h2_m = True
+        $ homework_2 = True
+        jump hallway3
+        
+  label giddion_res:
+    menu:
+      "" if q1_anwsered == False:
+        jump giddion_res
+
+      "" if q2_anwsered == False:
+        jump giddion_res
+
+      "" if q3_anwsered == False:
+        jump giddion_res
+      
+      "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+        m "I got enough off Genisi"
+
+        $ h2_m = True
+        $ homework_2 = True
+        jump hallway3
 
   label hallway3:
     menu:

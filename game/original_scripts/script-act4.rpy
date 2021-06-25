@@ -250,6 +250,7 @@ label morgana_res:
           m "{b}{i}That was something{/i}{/b}"
           
           $ h1_m = True
+          $ homework_1 = True
           if tm_2:
             jump return_office2
           else: 
