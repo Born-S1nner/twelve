@@ -5,15 +5,22 @@ label act5:
   "{i}Ring, ring, ring!{/i}" with vpunch
   scene bg office
   with fade
-
-  a "What do you suggest to do?"
+  
+  m " The same ringtone still?"
+  a "Can't do anything about it."
+  m "Your suppose to be an AI."
+  a "And your suppose to be up right now."
+  m "Far point."
+  m "What do we got this time?"
+  a "There is a planet name Genisi that Jaden would like you to decide."
+  a "Like the last homework, would you like some help from the experts?"
   menu:
     "Ask for help":
       jump help2
 
     "Go around the facility":
-      m "Can't make that decision right now."
-      m "I'll just gonna go out and think about it myself."
+      m "Maybe I can figure this out myself?"
+      m "I'm just hang outside the office and think about it myself."
       a "Okay, good luck."
       m "Thanks."
       jump hallway3
@@ -136,8 +143,9 @@ label act5:
           hide sally silly
           with moveoutright
           m "Enjoy the trip."
-          $ h2_m = True
+          $ h2_s = True
           $ homework_2 = True
+          $ pacifier_points += 1
           jump hallway3
         
   label giddion_res:
@@ -201,17 +209,31 @@ label act5:
           hide giddion angry
           with moveoutright
           m "{b}{i}Genisi are not going to have a good time.{/i}{/b}"
-          $ h2_m = True
+          $ h2_d = True
           $ homework_2 = True
+          $ destroyers_points += 1
           jump hallway3
 
   label hallway3:
+    m "hmm!"
+    m "{i}{b}That room is still open.{/b}{/i}"
+    if tm_2 or tm_1:
+      m "{i}{b}Maybe, I'll find somthing more inside.{/b}{/i}"
+    else:
+      m "{i}{b}Maybe, I'll find somthing interesting there.{/b}{/i}"
+
+    m "{i}{b}No, No.{/b}{/i}"
+    m "{i}{b}I shouldn't be snooping around in where my nose doesn't belong.{/b}{/i}"
+    m "{i}{b}Then again, I'm a member of the Tweleve...{/b}{/i}"
+  
     menu:
       "Enter the room":
+        m "{i}{b}Just a peak won't hurt.{/b}{/i}"
         $ tm_3 = True
         jump inspect3
 
       "Contine walking":
+        m "{i}{b}Nah, I can't keep thinking about that stuff.{/b}{/i}"
         m "{i}{b}Maybe next time?{/b}{/i}"
         if homework_2:
           jump return_office3
@@ -219,11 +241,13 @@ label act5:
           jump nova_res
 
     label inspect3:
-      m "{i}{b}Here goes nothing.{/b}{/i}"
       scene bg secret
-
+      m "{i}{b}If I look clearly...{/b}{/i}"
+      m "{i}{b}Ah! Here's something!{/b}{/i}"
       call showdoc (doc_3)
-
+      
+      m "{i}{b}So that's how the Tweleve was formed.{/b}{/i}"
+      m "{i}{b}Better leave before someone see me here.{/b}{/i}"
       if homework_2:
         jump return_office3
       else: 
@@ -231,20 +255,20 @@ label act5:
 
   label return_office3:
     scene bg office
-  a "Have you got you're anwser yet?"
-  m "Yes and I know what I'm gonna do now."
-  a "what is it?"
-  if h2_s:
-    m ""
-  elif h2_d:
-    m ""
-  elif h2_m:
-    m ""
-  
-  m "Make sure to tell that to Jaden."
-  a "Will Do, [name]."
+    a "Have you got you're anwser yet?"
+    m "Yes and I know what I'm gonna do now."
+    a "what is it?"
+    if h2_s:
+      m "Let Genisi be safe for now?"
+    elif h2_d:
+      m "Have Giddion destroy Genisi."
+    elif h2_m:
+      m "Keep an eye on Genisi fo any advancements."
 
-  $ q1_anwsered = False
-  $ q2_anwsered = False
-  $ q3_anwsered = False
-  return
+    m "Make sure to tell that to Jaden."
+    a "Will Do, [name]."
+
+    $ q1_anwsered = False
+    $ q2_anwsered = False
+    $ q3_anwsered = False
+    return

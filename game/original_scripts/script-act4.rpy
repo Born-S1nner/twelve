@@ -132,6 +132,7 @@ label bobby_res:
           
           $ h1_s = True
           $ homework_1 = True
+          $ pacifier_points += 1
           jump return_office2
 
 
@@ -185,6 +186,7 @@ label kira_res:
           
           $ h1_d = True
           $ homework_1 = True
+          $ destroyers_points += 1
           jump return_office2
 
 label morgana_res:
@@ -261,7 +263,7 @@ label morgana_res:
 label hallway2:
   m "Huh!"
   if tm_1:
-    m "{i}{b}Is that the room where I found that document{/b}{/i}"
+    m "{i}{b}Is that the room where I found that document?{/b}{/i}"
   else:
     m "{i}{b}Is that the room where I heard some noise coming from?{/b}{/i}"
   
