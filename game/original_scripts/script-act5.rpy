@@ -22,21 +22,49 @@ label act5:
       "Nova":
         jump nova_res
   
+  label nova_res:
+    menu:
+      "" if q1_anwsered == False:
+        jump nova_res
+
+      "" if q2_anwsered == False:
+        jump nova_res
+
+      "" if q3_anwsered == False:
+        jump nova_res
+      
+      "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
+        m "I got enough off Genisi"
+
+        $ h2_m = True
+        if tm_3:
+          jump return_office2
+        else: 
+          jump hallway2
+
   label hallway3:
     menu:
       "Enter the room":
+        $ tm_3 = True
         jump inspect3
 
       "Contine walking":
         m "{i}{b}Maybe next time?{/b}{/i}"
-        jump return_office3
+        if homework_2:
+          jump return_office3
+        else: 
+          jump nova_res
 
     label inspect3:
       m "{i}{b}Here goes nothing.{/b}{/i}"
-      call showdoc (doc_3)
       scene bg secret
 
-      jump return_office3
+      call showdoc (doc_3)
+
+      if homework_2:
+        jump return_office3
+      else: 
+        jump nova_res
 
   label return_office3:
     scene bg office

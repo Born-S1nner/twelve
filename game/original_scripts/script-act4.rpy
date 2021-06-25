@@ -299,7 +299,10 @@ label hallway2:
     m "{i}{b}Being the strongest doesn't mean peaceful truce.{/b}{/i}"
     m "{i}{b}The Tweleve could break up if they want to.{/b}{/i}"
     m "{i}{b}Just best hope that day doesn't come.{/b}{/i}"
-    jump morgana_res
+    if homework_1:
+      jump return_office2
+    else: 
+      jump morgana_res
 
 label return_office2:
   scene bg office
