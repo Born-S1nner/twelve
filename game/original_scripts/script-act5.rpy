@@ -58,25 +58,38 @@ label act5:
       show nova happy
       menu:
         "What do you personally think about Genisi?" if q1_anwsered == False:
+          hide nova happy
+          show nova normal
+          
           n "Personally, I believe that Genisi is a intelligent planet blinded by knowledge."
           n "So long as they don't expand, they are harmless creatures."
           m "Okay..."
 
+          hide nova normal
           jump nova_questions
 
         "What would Genisi's future be like if left untouch?" if q2_anwsered == False:
+          hide nova happy
+          show nova normal
+          
           n "It would be a mental breakdown for them."
           m "Why is that?"
           n "They are not prepare to see the truth."
-          m "Reasonable...
-          "
+          m "Reasonable..."
+          
+          hide nova normal
           jump nova_questions
 
         "What good use would Genisi be to the Tweleve?" if q3_anwsered == False:
+          hide nova happy
+          show nova normal
+
           n "We could see how far can civilization go."
           n "If they succeed, that's cool."
           n "If they don't, that's a shame." 
           m "Riiight."
+
+          hide nova normal
           jump nova_questions
 
         "Let's wrap it up."if q1_anwsered == True or q2_anwsered == True or q3_anwsered == True:
@@ -259,7 +272,7 @@ label act5:
     m "Yes and I know what I'm gonna do now."
     a "what is it?"
     if h2_s:
-      m "Let Genisi be safe for now?"
+      m "Let Genisi be safe for now."
     elif h2_d:
       m "Have Giddion destroy Genisi."
     elif h2_m:
