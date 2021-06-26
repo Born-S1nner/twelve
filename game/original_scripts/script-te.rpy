@@ -33,7 +33,7 @@ label te:
   if tm_4:
     j "You enter the room the fifth day and snoop into the documents about the project phoniex incident."
   if tm_5:
-    j "You enter the room the sixth day and snoop into the documents about other members' personal files."
+    j "You enter the room the fifth day and snoop into the documents about project retirement"
 
   j "Do I need to clarify your actions?"
   m "No, I mean th-"
