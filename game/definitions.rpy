@@ -24,6 +24,11 @@ define h2_s = False
 define h2_d = False
 define h2_m = False
 
+define homework_3 = False
+define h3_s = False
+define h3_d = False
+define h3_m = False
+
 #Three-type questions
 define q1_anwsered = False
 define q2_anwsered = False
