@@ -113,6 +113,81 @@ Today is my 90th birthday and the Tweleve have decided to throw a surprise party
 
     """
   )
+  doc_r = Docs(
+    time = "**/**/****",
+    title = "Randy's voice",
+    text = """\
+
+    """
+  )
+  doc_s = Docs(
+    time = "**/**/****",
+    title = "Sally's intelligence",
+    text = """\
+
+    """
+  )
+  doc_k = Docs(
+    time = "**/**/****",
+    title = "Kira's revenge",
+    text = """\
+
+    """
+  )
+  doc_g = Docs(
+    time = "**/**/****",
+    title = "Giddion's throne",
+    text = """\
+
+    """
+  )
+  doc_b = Docs(
+    time = "**/**/****",
+    title = "Bobby's lunch",
+    text = """\
+
+    """
+  )
+  doc_t = Docs(
+    time = "**/**/****",
+    title = "Tony's isolation",
+    text = """\
+
+    """
+  )
+  doc_v = Docs(
+    time = "**/**/****",
+    title = "Vod's fury",
+    text = """\
+
+    """
+  )
+  doc_n = Docs(
+    time = "**/**/****",
+    title = "Nova's space",
+    text = """\
+
+    """
+  )
+  doc_a = Docs(
+    time = "**/**/****",
+    title = "Android's wish",
+    text = """\
+
+    """
+  )
+  doc_o = Docs(
+    time = "**/**/****",
+    title = "Subject [name]",
+    text = """\
+aowiergfoaeipvrnfawo;imcfoawiuPARALLELvroaincuo
+aw8noaw84ncCLONEvaw84y3vtaw39p48tv9p834wvtpa
+3333333333333333333333333333333333333333
+qcpnawe8urvwaeo4vtnua3o4u9nvt3a94uct0394
+nucf012121oiwrunfvowieruvncoaweunREDDoaw
+ieuvnowEARTHe8urcvwe938w4vtp9a3w8
+    """
+  )
 
 image paper = "images/bg/paper.jpg"
 transform paper_in:
