@@ -75,6 +75,7 @@ label act6:
 
     $ h3_m = True
     $ homework_3 = True
+    $ middle_points += 1
     if tm_4:
       jump return_office2
     else: 

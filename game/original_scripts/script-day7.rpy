@@ -116,6 +116,9 @@ label act7:
         "Destroy them":
           m "We can't risk the possibility of leaving one evil atom alive."
           $ destroyers_points +=1
+        "Let them be.":
+          m "The fate of the universe is in our hands."
+          $ middle_points +=1
 
     show jaden happy
     j "It's settle then. Let's get working!"
@@ -148,9 +151,9 @@ label act7:
     if traitor_points != current_total_respect:
         $ traitor_ending = True
     else:
-        if world_endgoal <= destroyers_points:
+        if world_endgoal < destroyers_points:
             $ destroyer_ending = True
-        elif world_endgoal <= pacifier_points:
+        elif world_endgoal < pacifier_points:
             $ pacifier_ending = True
         else:
             $ middle_ground_ending = True

@@ -59,7 +59,8 @@ define g = Character("Giddion", color="#99cc00")
 # what determines your side on the argument(destroyer or pacifier)
 define destroyers_points = 0
 define pacifier_points = 0
-define world_endgoal = 4
+define middle_points = 0
+define world_endgoal = 2
 
 ## Multiple endings
 # gameover

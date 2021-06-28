@@ -253,6 +253,7 @@ label morgana_res:
           
           $ h1_m = True
           $ homework_1 = True
+          $ middle_points += 1
           if tm_2:
             jump return_office2
           else: 

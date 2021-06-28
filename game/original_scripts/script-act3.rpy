@@ -292,7 +292,7 @@ label act3:
             m "Even if it means protecting a planet with our bare hands."
         
         "Um.. yes": 
-            pass
+            $ middle_points += 1
 
     if pacifier_points < destroyers_points:
         show giddion happy
