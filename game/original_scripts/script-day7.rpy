@@ -1,7 +1,39 @@
-label act7:
+
+label act7: 
+    scene bg deep
+    with fade
+    pause
+    j "Wakey, wakey..."
+    j "It's time for a big day..."
+    j "..."
+    j "{b}WAKE UP!!!{/b}" with vpunch
+    scene bg office
+    with fade
+    
+    m "WAHHH!"
+    m "Who was that?"
+    show jaden silly
+    with movinleft
+    j "Hahaha."
+    j "It's me, Jaden."
+    m "Jaden? Why are you doing here?"
+    m "I though that you were on a business trip."
+    hide jaden silly
+    show jaden normal
+    j "I was, but something came up that is more important."
+    j "There is a meeting today and I want you to show up there."
+    j "I'll talk everything else there."
+    m "Wait, what's with the rush?"
+    j "See you then."
+    hide jaden normal
+    with moveoutright
+    m "Jaden is back I guess."
+    a "You should prepare for the meeting."
+    m "Alright, I'll head there."
 
     scene bg roundtable
     show jaden normal
+    
     j "For a long time, we have battle with the forces of evil."
     j "While we can't wipe out the entire evil, we can put a stop to corruption."
     j "Moragana and Nova has some intel about it."
@@ -118,6 +150,7 @@ label act7:
           $ destroyers_points +=1
         "Let them be.":
           m "The fate of the universe is in our hands."
+          m "We shall defeat evil."
           $ middle_points +=1
 
     show jaden happy
@@ -126,7 +159,7 @@ label act7:
     scene bg facility
     m "{i}{b}Guess that reduce the number of planets that are corrupted by evil.{/b}{/i}"
     m "{i}{b}Hope that resolves majority of the problems in the universe.{/b}{/i}"
-    m "{i}{b}Oh, the door is still open.{/b}{/i}"
+    m "{i}{b}Oh, the door is still open from that room.{/b}{/i}"
     m "{i}{b}Not sure if I should enter the room this time.{/b}{/i}"
     menu:
         "Enter the room":
@@ -139,7 +172,7 @@ label act7:
 
     label inspect5:
         m "{i}{b}Here goes nothing.{/b}{/i}"
-        call showdoc (doc_5)
+        
         scene bg secret
         
         jump return_office5

@@ -52,4 +52,5 @@ label te:
   j "Take him away Morgana."
   mo "{b}blow{/i}" with vpunch
   mo "Good bye, [name]."
+  "You recieved the Traitor's ending."
   
