@@ -179,11 +179,45 @@ label act7:
 
         label mapbook:
             call screen bookshelf
+
         label docj:
-        
             call showdoc(doc_j)
             jump mapbook
-        
+        label docm:
+            call showdoc(doc_m)
+            jump mapbook
+        label docs:
+            call showdoc(doc_s)
+            jump mapbook
+        label docr:
+            call showdoc(doc_r)
+            jump mapbook
+        label doct:
+            call showdoc(doc_t)
+            jump mapbook
+        label dock:
+            call showdoc(doc_k)
+            jump mapbook
+        label docg:
+            call showdoc(doc_g)
+            jump mapbook
+        label docb:
+            call showdoc(doc_b)
+            jump mapbook
+        label docv:
+            call showdoc(doc_v)
+            jump mapbook
+        label docn:
+            call showdoc(doc_n)
+            jump mapbook
+        label doca:
+            call showdoc(doc_a)
+            jump mapbook
+        label doco:
+            call showdoc(doc_o)
+            jump mapbook
+
+
         jump return_office5
 
     label return_office5:
