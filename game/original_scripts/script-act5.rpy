@@ -126,8 +126,8 @@ label act5:
     m "Alright..."
     
     label sally_question:
+      show sally happy
       menu:
-        show sally happy
         "What do you personally think about Genisi?" if q1_anwsered == False:
           s "It's a planet full of smart people."
           s "They like to expand their mind and knowledge."

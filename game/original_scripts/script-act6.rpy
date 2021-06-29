@@ -39,7 +39,7 @@ label act6:
     "{i}Thump.{/i}" with vpunch
     "{i}Thump.{/i}" with vpunch
     "{i}Thump.{/i}" with vpunch
-    if tm_4
+    if tm_4:
       m "{b}{i}Shit, it's tony.{/i}{/b}"
       m "{b}{i}Better act cool.{/i}{/b}"
     else:
@@ -166,7 +166,7 @@ label act6:
           v "I better expect to see Libra in one piece."
           m "Don't worry, I'll get sent to Jaden and the final ordeal will be set."
           v "Hmp."
-          hide 
+          hide vod normal
           with moveoutright
           m "{b}{i}Is he acting like a bully or something?{/i}{/b}"
           $ pacifier_points += 1
@@ -196,7 +196,7 @@ label act6:
       "File 1":
         call showdoc (doc_4)
       "File 2":
-        cal showdoc (doc_5)
+        call showdoc (doc_5)
     
     m "{i}{b}Not much to understand at this point.{/b}{/i}"
     m "{i}{b}Might need something to give behind the context.{/b}{/i}"
@@ -208,7 +208,7 @@ label act6:
       jump tony_res
 
   label return_office4:
-    scene show bg office
+    scene bg office
     a "Did you find a solution?"
     m "Yes, I believe..."
     if h3_s:

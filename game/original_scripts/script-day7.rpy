@@ -174,6 +174,15 @@ label act7:
         m "{i}{b}Here goes nothing.{/b}{/i}"
         
         scene bg secret
+        m "{i}{b}There is that row of books on that bookself.{/b}{/i}"
+        m "{i}{b}Let me read them while I can.{/b}{/i}"
+
+        label mapbook:
+            call screen bookshelf
+        label docj:
+        
+            call showdoc(doc_j)
+            jump mapbook
         
         jump return_office5
 
