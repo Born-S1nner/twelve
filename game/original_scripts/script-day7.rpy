@@ -183,53 +183,55 @@ label act7:
         label docj:
             call showdoc(doc_j)
             jump mapbook
+        label doca:
+            call showdoc(doc_a)
+            jump mapbook
         label docm:
             call showdoc(doc_m)
-            jump mapbook
-        label docs:
-            call showdoc(doc_s)
-            jump mapbook
-        label docr:
-            call showdoc(doc_r)
-            jump mapbook
-        label doct:
-            call showdoc(doc_t)
             jump mapbook
         label dock:
             call showdoc(doc_k)
             jump mapbook
-        label docg:
-            call showdoc(doc_g)
-            jump mapbook
-        label docb:
-            call showdoc(doc_b)
-            jump mapbook
-        label docv:
-            call showdoc(doc_v)
-            jump mapbook
-        label docn:
-            call showdoc(doc_n)
-            jump mapbook
-        label doca:
-            call showdoc(doc_a)
-            jump mapbook
-        label doco:
-            call showdoc(doc_o)
-            jump mapbook
+        #label docs:
+        #    call showdoc(doc_s)
+        #    jump mapbook
+        #label docr:
+        #    call showdoc(doc_r)
+        #    jump mapbook
+        #label doct:
+        #    call showdoc(doc_t)
+        #    jump mapbook
+        #label docg:
+        #    call showdoc(doc_g)
+        #    jump mapbook
+        #label docb:
+        #    call showdoc(doc_b)
+        #    jump mapbook
+        #label docv:
+        #    call showdoc(doc_v)
+        #    jump mapbook
+        #label docn:
+        #    call showdoc(doc_n)
+        #    jump mapbook
+        #label doco:
+        #    call showdoc(doc_o)
+        #    jump mapbook
 
-
-        jump return_office5
+        label back_office:
+            jump return_office5
 
     label return_office5:
         scene bg office
-        m "{b}{i}{/i}{/b}"
-    
-    if traitor_points != current_total_respect:
-        $ traitor_ending = True
-    else:
-        if world_endgoal < destroyers_points:
-            $ destroyer_ending = True
-        elif world_endgoal < pacifier_points:
-            $ pacifier_ending = True
+        m "{b}{i}What a day.{/i}{/b}"
+        m "{b}{i}Gonna see what's up for tommorrow.{/i}{/b}"
+        m "{b}{i}Hope things go well with the evil nebula.{/i}{/b}"
+        
+        if traitor_points != current_total_respect:
+            $ traitor_ending = True
         else:
-            $ middle_ground_ending = True
+            if world_endgoal < destroyers_points:
+                $ destroyer_ending = True
+            elif world_endgoal < pacifier_points:
+                $ pacifier_ending = True
+            else:
+                $ middle_ground_ending = True

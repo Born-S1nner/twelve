@@ -106,6 +106,13 @@ with them until the star explode."""
 Today is my 90th birthday and the Tweleve have decided to throw a surprise party. If I'm going to be honest with you, I never felt so happy to be alive. Back when I was still ruling Earth, everyone wished that I was gone. And so, I left and departed Earth without looking back. I even gifted them the Scroll and my blood line to look after them while I'm gone. I feel so fortunate to come across every member of the Tweleve. Every one of us have been rejected or taken advantage by society. We came from a shitty past that still haunts us til this day. However, we carry those sorrows and grief with pride and marched forward to the future. I, Jaden the Jade Emperor, will not let go of the Tweleve. There will be a future for the Tweleve.
     """
   )
+  doc_a = Docs(
+    time = "**/**/****",
+    title = "Android's wish",
+    text = """\
+
+    """
+  )
   doc_m = Docs(
     time = "**/**/****",
     title = "Morgana's entitlement",
@@ -113,6 +120,14 @@ Today is my 90th birthday and the Tweleve have decided to throw a surprise party
 
     """
   )
+  doc_k = Docs(
+    time = "**/**/****",
+    title = "Kira's revenge",
+    text = """\
+
+    """
+  )
+  
   doc_r = Docs(
     time = "**/**/****",
     title = "Randy's voice",
@@ -123,13 +138,6 @@ Today is my 90th birthday and the Tweleve have decided to throw a surprise party
   doc_s = Docs(
     time = "**/**/****",
     title = "Sally's intelligence",
-    text = """\
-
-    """
-  )
-  doc_k = Docs(
-    time = "**/**/****",
-    title = "Kira's revenge",
     text = """\
 
     """
@@ -165,13 +173,6 @@ Today is my 90th birthday and the Tweleve have decided to throw a surprise party
   doc_n = Docs(
     time = "**/**/****",
     title = "Nova's space",
-    text = """\
-
-    """
-  )
-  doc_a = Docs(
-    time = "**/**/****",
-    title = "Android's wish",
     text = """\
 
     """
