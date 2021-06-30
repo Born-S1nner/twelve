@@ -43,6 +43,7 @@ label te:
   hide jaden angry
   show jaden sad
   j "{i}sigh{/i}"
+  j "If only you didn't nose around on places where you don't belong, we wouldn't be here."
   j "I didn't want to believe that you would betray our back."
   j "You are the first member to went against the code and betray us."
   j "I believe that your actions must align with your punishment."
@@ -52,5 +53,5 @@ label te:
   j "Take him away Morgana."
   mo "{b}blow{/i}" with vpunch
   mo "Good bye, [name]."
-  "You recieved the Traitor's ending."
+  "You recieved the Traitor's ending for going to places where you don't belong."
   

@@ -292,7 +292,7 @@ label act3:
             m "Even if it means protecting a planet with our bare hands."
         
         "Um.. yes": 
-            $ middle_points += 1
+            pass
 
     if pacifier_points < destroyers_points:
         show giddion happy
@@ -377,6 +377,7 @@ label act3:
     scene bg roundtable
     menu:
         "talk to them":
+            $ middle_points += 1
             jump talk2
         "ignore them":
             jump ignore

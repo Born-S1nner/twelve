@@ -26,7 +26,7 @@ label start:
     #            call pe
     #        elif destroyer_ending:
     #            call de
-    #        else middle_ground_ending:
-    #            call mge
+            else middle_ground_ending:
+                call mge
         ":end"
         return
