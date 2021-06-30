@@ -10,4 +10,4 @@ screen bookshelf:
     imagebutton auto "images/bg/book/book3_%s.png" xpos 198 ypos 226 focus_mask True action Jump("docm")
     imagebutton auto "images/bg/book/book4_%s.png" xpos 229 ypos 228 focus_mask True action Jump("dock")
     
-    #imagebutton auto "_%s.png" xpos  ypos  focus_mask True action Jump("back_office")
+    imagebutton auto "images/bg/book/leave_%s.png" xpos 1054 ypos 13 focus_mask True action Jump("back_office")

@@ -204,6 +204,7 @@ label act7:
         #label docg:
         #    call showdoc(doc_g)
         #    jump mapbook
+
         #label docb:
         #    call showdoc(doc_b)
         #    jump mapbook
@@ -213,6 +214,7 @@ label act7:
         #label docn:
         #    call showdoc(doc_n)
         #    jump mapbook
+        
         #label doco:
         #    call showdoc(doc_o)
         #    jump mapbook
@@ -229,9 +231,9 @@ label act7:
         if traitor_points != current_total_respect:
             $ traitor_ending = True
         else:
-            if world_endgoal < destroyers_points:
+            if world_endgoal < destroyers_points and middle_points < destroyers_points:
                 $ destroyer_ending = True
-            elif world_endgoal < pacifier_points:
+            elif world_endgoal < pacifier_points and middle_points < pacifier_points:
                 $ pacifier_ending = True
             else:
                 $ middle_ground_ending = True
