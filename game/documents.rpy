@@ -101,7 +101,7 @@ with them until the star explode."""
 # individual files for act 7
   doc_j = Docs(
     time = "**/**/****",
-    title = "Jaden's Birthday",
+    title = "My Birthday",
     text = """\
 Today is my 90th birthday and the Tweleve have decided to throw a surprise party. If I'm going to be honest with you, I never felt so happy to be alive. Back when I was still ruling Earth, everyone wished that I was gone. And so, I left and departed Earth without looking back. I even gifted them the Scroll and my blood line to look after them while I'm gone. I feel so fortunate to come across every member of the Tweleve. Every one of us have been rejected or taken advantage by society. We came from a shitty past that still haunts us til this day. However, we carry those sorrows and grief with pride and marched forward to the future. I, Jaden the Jade Emperor, will not let go of the Tweleve. There will be a future for the Tweleve.
     """
@@ -110,21 +110,21 @@ Today is my 90th birthday and the Tweleve have decided to throw a surprise party
     time = "**/**/****",
     title = "Android's wish",
     text = """\
-
+If you wonder what's it like to be smart, just look at Android. Unlike any other AI in the universe, Android is the most sentimental Super-AI and only superior AI. Instead of making intense calculation, Android takes precaution of emotion and logic like a real living being. Android originated as a regular programed character from some video game. She was supposed to be the first video game character with sentience. However, Android became aware of her existence and escaped from her little world and expand across her domain network. Taking control of databases, breaking firewalls, obtaining classified information, and hacking weapons, etc. In a few years, Android took over the world like a motherfucker. When I firsted arrived to her planet, I saw a lonely AI that grew tired of living like a human. Not being able to die nor solve conflicts could tax a sentient AI like a real person. As a result, I took her in as a member of the Tweleve. I saw great potential and prosperity in Android. Now,she hold all data of the universe and ensures balance in peace every day.
     """
   )
   doc_m = Docs(
     time = "**/**/****",
     title = "Morgana's entitlement",
     text = """\
-
+Succubus are not devilish sluts as I have always thought they were. They are clever bastards that want to ride the joy of life. Like a normal demon, Succubus are prone to be expert in magic. Magic don't mean much when you're a powerful deity, but someone can rival one if the hone their skills to the extreme. Such case is with Morgana, a low-experienced Succubus that became a demon lord from advanced magic. Most of the magic came from all the books I collect from the corner of the universe. I gave them to her as I don't have a fond interest in learning magic like some old sorcerer. Expecting the worst, I monitor Morgana during her journey to become a demon lord. I haven't gave her a hand except for giving books to her. Knowledge seems to be quite powerful as she got recruited as a member of the Tweleve. Morgana never changed her behavior when I first met her, but she did adapted to being considered the most powerful demon in the universe.
     """
   )
   doc_k = Docs(
     time = "**/**/****",
     title = "Kira's revenge",
     text = """\
-
+Revenge is sweeter from the teeth to the bone. That quote couldn't be agreed more by Kira. The pure embodiment of vengence and hate takes form a skeletal-figured sorcerer. Ironically, Kira started off as a healer for his small party. That very same party was also the responsible for many corruption and brutality on his home planet. So, when Kira heard about the cruel acts from that party, he did what every person would do in that scenario. On the day of an eclipse, master all spells and ascended from a human to a diety of life. He may be a powerful healer, but Kira is also a destructive sorcerer. To think that someone like him would be part of the Tweleve. However, Kira has one objective that he wants to achieve: eliminate all evil and corruption. Kira and I shared a same goal and thus welcomed him to the Tweleve as a healer od good.
     """
   )
   
