@@ -192,27 +192,27 @@ label act7:
         label dock:
             call showdoc(doc_k)
             jump mapbook
-        #label docs:
-        #    call showdoc(doc_s)
-        #    jump mapbook
-        #label docr:
-        #    call showdoc(doc_r)
-        #    jump mapbook
-        #label doct:
-        #    call showdoc(doc_t)
-        #    jump mapbook
-        #label docg:
-        #    call showdoc(doc_g)
-        #    jump mapbook
+        label docs:
+            call showdoc(doc_s)
+            jump mapbook
+        label docb:
+            call showdoc(doc_b)
+            jump mapbook
+        label docr:
+            call showdoc(doc_r)
+            jump mapbook
+        label doct:
+            call showdoc(doc_t)
+            jump mapbook
 
-        #label docb:
-        #    call showdoc(doc_b)
-        #    jump mapbook
         #label docv:
         #    call showdoc(doc_v)
         #    jump mapbook
         #label docn:
         #    call showdoc(doc_n)
+        #    jump mapbook
+        #label docg:
+        #    call showdoc(doc_g)
         #    jump mapbook
         
         #label doco:
