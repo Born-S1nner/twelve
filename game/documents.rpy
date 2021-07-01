@@ -128,37 +128,38 @@ Revenge is sweeter from the teeth to the bone. That quote couldn't be agreed mor
     """
   )
   
-  doc_r = Docs(
-    time = "**/**/****",
-    title = "Randy's voice",
-    text = """\
-
-    """
-  )
   doc_s = Docs(
     time = "**/**/****",
     title = "Sally's intelligence",
     text = """\
-
-    """
-  )
-  doc_g = Docs(
-    time = "**/**/****",
-    title = "Giddion's throne",
-    text = """\
-
+Ingenuity and intelligence is the key to success. I went to great lengths to grab all knowledge across the universe. From the mistic arts of magic to advance technology, I gather what I can find. That is whe I came across the Dwarf Gnome named Sally Sulzberger on planet Tesarock. She has conquered the world with an army of robots and tanks. I had Android hack her units, only for the robots to be destroyed by detonanted bombs. Competing agaisnt her was like playing a hard game of chess. I started taking it serious and faced in front of her face. Sally was a young girl, not reaching her 90 years yet. Originally, I wanted to kill Sally for her dangerous inteligence. However, I saw great used for her ability to be creative and innovative. I propose a deal that if Sally could build a spaceship, I would consider her position in the universe. I thought it would take three years to build a sercure spaceship, but Sally manage to finish her invention in just three months. As a result, Sally was nominated as a member of the Tweleve.
     """
   )
   doc_b = Docs(
     time = "**/**/****",
     title = "Bobby's lunch",
     text = """\
-
+A happy pool of slime can also be a dangerous one. Bobby isn't a regular slime that you encounter in some planets. Kira encountered Bobby on planet Nexus, where it was being consumed as a whole by Bobby. Everything that Bobby swallows gets melted by the acidic subtance of his body. Bobby can change his acidity based on his level of mood. Kira could've anailated Bobby if he wasn't feeling gloomy that day. It was a surprised to see Kira taking charge of Bobby. Bobby provided to be a useful slime to take down rouge planets that damage nearby planets without any collateral damage. From there, Bobby earned his plave as a member of the Tweleve. You could say that Bobby eating a side dish of justice.
+    """
+  )
+  doc_r = Docs(
+    time = "**/**/****",
+    title = "Randy's voice",
+    text = """\
+Are you a monster or are you normal? I asked that question to Randy when I first met him. He were in planet Marco that was recently destroyed by Randy's voice. Being a dangerous reptile, Randy was casted outside of his society as a spwan of havoc. Unfortunately, Randy took those assumptions very seriously and unleashed his scream. The scream was so loud that I heard it from across the galaxy. I check up pn the source of sound because sound doesn't travel in space quite easily. I notice Randy standing on the chuck of his home planet. I could've ended his life there, but I felt that I needed to hear him out first. Randy didn't grew up easily in his home planet. Being seen as a monster, Randy had to hide in the caves to avoid damaging anyone with his voice. Of course, not every person were happy to let Randy be alive. Randy only screamed as his last ditch effort to save himself. I told him that he only did what was good for himself. Randy wasn't content with his actions, but I reassured him by asking him that question. Once Randy was treated abd aided, he joined the Tweleve to pay his respect.
     """
   )
   doc_t = Docs(
     time = "**/**/****",
     title = "Tony's isolation",
+    text = """\
+Imagine living your entire existence in a isolated island. That was Tony before he joined the Tweleve, but he was chilling in some random asteroid. Being bombarded by debris and stuff, Tony grew resilience against all impact of space. I havn't figure out how or where Tony originated to where he is. No golem could be isolated from their creators and roam around the universe on their own. I wasn't like Tony was regular golem either. Tony could control terrain and landscape at his will. He is one with the solid elements that he encounters in space. I knew that if someone could keep check in the universe, it would be Tony. In case I haven't find the solution to death, I will let Tony take the wheel with Android.
+    """
+  )
+
+  doc_g = Docs(
+    time = "**/**/****",
+    title = "Giddion's throne",
     text = """\
 
     """
