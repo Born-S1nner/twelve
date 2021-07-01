@@ -15,4 +15,9 @@ screen bookshelf:
     imagebutton auto "images/bg/book/book7_%s.png" xpos 322 ypos 236 focus_mask True action Jump("docr")
     imagebutton auto "images/bg/book/book8_%s.png" xpos 355 ypos 233 focus_mask True action Jump("doct")
     
+    imagebutton auto "images/bg/book/book9_%s.png" xpos 384 ypos 229 focus_mask True action Jump("docn")
+    imagebutton auto "images/bg/book/book10_%s.png" xpos 418 ypos 227 focus_mask True action Jump("docv")
+    imagebutton auto "images/bg/book/book11_%s.png" xpos 464 ypos 231 focus_mask True action Jump("docg")
+    imagebutton auto "images/bg/book/book12_%s.png" xpos 503 ypos 226 focus_mask True action Jump("doco")
+
     imagebutton auto "images/bg/book/leave_%s.png" xpos 1054 ypos 13 focus_mask True action Jump("back_office")
