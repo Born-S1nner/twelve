@@ -1,10 +1,10 @@
-label mge:
+label pe:
   scene bg office
   m "{i}{b}I guess this marks a week working under the Tweleve.{/b}{/i}"
-  m "{i}{b}I have tried my best to upset both sides.{/b}{/i}"
-  m "{b}{i}If they want to argue with me, they should first reconsider evaluating themselves.{/i}{/b}"
-  m "{b}{i}Not everything in life is fair, but we could make it better by stepping out their box.{/i}{/b}"
-  m "{b}{i}Having different perspective gives you the chance to make wiser decisions.{/i}{/b}"
+  m "{i}{b}Not sure I made the right choice to side with the Pacifiers.{/b}{/i}"
+  m "{b}{i}It's not everyday where I want to wake up and destroy some planets.{/i}{/b}"
+  m "{b}{i}I can't make the final judgement to every living being with a soul.{/i}{/b}"
+  m "{b}{i}What if I end up taking someone's normal life.{/i}{/b}"
   m "{i}sigh{/i}"
   a "[name], Jaden would like to see you at the meeting room."
   m "Of course, I'll be there."
@@ -32,18 +32,31 @@ label mge:
   j "It's not over yet, we still got work to do."
   
   hide jaden silly
-  
   "{i}VROOOOMMM{/i}"
+
+  show bobby model at right
+  with moveinleft
+  show sally silly
+  with moveinleft
+  show vod normal at left
+  with moveinleft
+
+  b "Heard the news about your test."
+  s "Congradulation!"
+  m "Thanks everyone."
   
-  show morgana happy at right
-  with moveinleft
-  show nova happy
-  with moveinleft
-  show tony model at left
-  with moveinleft
+  hide sally silly
+  show sally happy
   
-  mo "Heard that you past the test."
-  n "It'll be great to work with you."
-  t "..."
-  m "Glad to hear your praises."
-  "You recieved the Middle Ground's ending for not picking sides."
+  s "Vod, you got to show some respect to [name]."
+  v "..."
+  v "Fine!"
+
+  hide vod normal
+  show vod silly at left
+
+  v "Thanks for hearing me out."
+  m "You're welcome, Vod."
+  m "Good to be working with y'all guys."
+
+  "You recieved the Pacifier's ending for not picking a fight."

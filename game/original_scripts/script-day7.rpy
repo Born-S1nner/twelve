@@ -204,25 +204,24 @@ label act7:
         label doct:
             call showdoc(doc_t)
             jump mapbook
-
-        #label docv:
-        #    call showdoc(doc_v)
-        #    jump mapbook
-        #label docn:
-        #    call showdoc(doc_n)
-        #    jump mapbook
-        #label docg:
-        #    call showdoc(doc_g)
-        #    jump mapbook
-        
-        #label doco:
-        #    call showdoc(doc_o)
-        #    jump mapbook
+        label docv:
+            call showdoc(doc_v)
+            jump mapbook
+        label docn:
+            call showdoc(doc_n)
+            jump mapbook
+        label docg:
+            call showdoc(doc_g)
+            jump mapbook
+        label doco:
+            call showdoc(doc_o)
+            jump mapbook
 
         label back_office:
             jump return_office5
 
     label return_office5:
+        m "Guess that will be it."
         scene bg office
         m "{b}{i}What a day.{/i}{/b}"
         m "{b}{i}Gonna see what's up for tommorrow.{/i}{/b}"
