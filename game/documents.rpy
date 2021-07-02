@@ -157,25 +157,25 @@ Imagine living your entire existence in a isolated island. That was Tony before 
     """
   )
 
-  doc_g = Docs(
-    time = "**/**/****",
-    title = "Giddion's throne",
-    text = """\
-
-    """
-  )
   doc_v = Docs(
     time = "**/**/****",
     title = "Vod's fury",
     text = """\
-
+Is it a Loin, a Tiger, or a cheetah? All I know is that it's a beast from the wild. Vod and I have met on planet Savannah, where the people have taken intrest in hunting animals. Vod was just a baby cub being sold as next meal. What the sellers didn't know was that Vod wasn't a regular animal. Vod had the heart of the beast, a organ that makes a person turn into a wild beast. Their skin can deflect bullets, their teeths can break ironbars into two, their claws can shred metal like paper, and their strength rivals that of a deity. There is only one being in the universe that holds the heart of the wild. So, Vod had a choice to become someone's meal or become someone's hero. Vod used that mindset to escape from his captures. From there, I took care of Vod and made him the strongest member of the Tweleve.
     """
   )
   doc_n = Docs(
     time = "**/**/****",
     title = "Nova's space",
     text = """\
-
+I could relate to Nova as powerful beings ensuring balance in the universe. Nova has watch the universe expand and saw worlds building into a place for living society. If one wonders why the universe is so beautiful yet absent, it's because of Nova. Nova is the creator of black holes, which she made with the purpose of disposing debris and rouge stars. There was a time when Nova visited a planet for the first time. She saw many types of people on that planet. It wasn't until Nova learned about corruption that she wiped the planet out of it's existence. Nova could be a dangerous deity in the universe, but she is also kind enough to care about others. I met Nova surrounding herself by the stars. Her real form was a gaint star with the color undescribable to me. I told her about the Tweleve and she seemed intrested to join. I'm not saying that Nova would betray us, but Nova could switch sides anytime she wants. However, Nova grew comfort around the Tweleve and decides to stay for as long as she could.
+    """
+  )
+  doc_g = Docs(
+    time = "**/**/****",
+    title = "Giddion's throne",
+    text = """\
+For those that believe in dragons, I'll tell you why you wouldn't want one. There was one a dragon that had five heads. Each five heads represented the five types of forces: gravitational, frictional, magnetic, strong, and weak. This dragon had an important task in the universe, yet he felt like he was underestimated. As a result, hte dragn went on a rampage and destroyed every planet he finds. The rampage continued on until he stumble upon the Jade Emperor. Not thinking much, the dragon charged towards the Jade Emperor like he normally would. However, the Jade Emperor apprehended the dragon with ease. The dragon has never seen such a great opponent. After a long battle, the Jade Emperor came out victorious against the dragon. Instead of killing the dragon like he expected, the Jade Emperor gave the dragon a chance to redeem himself. Knowing that his life would cut short. the dragon left his throne and took on the name as Giddion.
     """
   )
   doc_o = Docs(
