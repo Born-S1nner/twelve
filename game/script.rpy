@@ -24,8 +24,8 @@ label start:
                 call te
             elif pacifier_ending:
                 call pe
-    #        elif destroyer_ending:
-    #            call de
+            elif destroyer_ending:
+                call de
             else middle_ground_ending:
                 call mge
         ":end"

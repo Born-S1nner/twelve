@@ -222,6 +222,7 @@ label act7:
 
     label return_office5:
         m "Guess that will be it."
+        m "Should start heading out before I get caught."
         scene bg office
         m "{b}{i}What a day.{/i}{/b}"
         m "{b}{i}Gonna see what's up for tommorrow.{/i}{/b}"
