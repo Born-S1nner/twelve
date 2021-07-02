@@ -29,4 +29,5 @@ label start:
             elif middle_ground_ending:
                 call mge
         ":end"
+        call credit
         return

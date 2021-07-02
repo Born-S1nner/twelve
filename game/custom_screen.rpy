@@ -1,8 +1,5 @@
 screen bookshelf:
-
-  #Jaden's book
   imagemap:
-    
     ground "images/bg/bg secret.png"
     
     imagebutton auto "images/bg/book/book1_%s.png" xpos 138 ypos 228 focus_mask True action Jump("docj")
@@ -21,3 +18,12 @@ screen bookshelf:
     imagebutton auto "images/bg/book/book12_%s.png" xpos 503 ypos 226 focus_mask True action Jump("doco")
 
     imagebutton auto "images/bg/book/leave_%s.png" xpos 1054 ypos 13 focus_mask True action Jump("back_office")
+
+screen bookshelf01:
+  imagemap:
+    ground "images/bg/bg secret.png"
+
+    imagebutton auto "images/bg/book/paper1_%s.png" xpos  ypos  focus_mask True action Jump("doc1")
+
+    imagebutton auto "images/bg/book/leave_%s.png" xpos 1054 ypos 13 focus_mask True action Jump("off_paper01")
+
