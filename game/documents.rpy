@@ -190,6 +190,20 @@ nucf012121oiwrunfvowieruvncoaweunREDDoaw
 ieuvnowEARTHe8urcvwe938w4vtp9a3w8
     """
   )
+  docpromo = Docs(
+    time = "**/**/2010",
+    title = "",
+    text = """\
+Three guys have worked on this project to give you entertainment.
+Welcome to World Destiny Studio.(hope that's still available.)
+
+Character-Artist: DeadGhoul21, S1nner
+Background-Artist: DeadGhoul21
+Script-writer: DeadGhoul21, S1nner, Buss
+Coder: Buss, S1nner
+Audio Producer: currently unavilable to avoid copyrights
+    """
+  )
 
 image paper = "images/bg/paper.jpg"
 transform paper_in:
