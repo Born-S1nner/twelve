@@ -190,7 +190,7 @@ nucf012121oiwrunfvowieruvncoaweunREDDoaw
 ieuvnowEARTHe8urcvwe938w4vtp9a3w8
     """
   )
-  docpromo = Docs(
+  doc_promo = Docs(
     time = "**/**/2010",
     title = "About us",
     text = """\

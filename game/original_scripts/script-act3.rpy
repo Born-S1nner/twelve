@@ -471,10 +471,19 @@ label act3:
         m "{b}{i}What's this paper?{/i}{/b}"
         label room1:
             call screen bookshelf01
-        label doc1
-            call showdoc (doc_1)
+        label docpromo_1:
+            call showdoc (doc_promo)
             jump room1
-        label off_paper01
+        label note_DG21_1:
+            call showdoc (doc_DG21)
+            jump room1
+        label note_S1_1:
+            call showdoc (doc_S1)
+            jump room1
+        label note_buss_1:
+            call showdoc (doc_buss)
+            jump room1
+        label off_paper01:
             m "{b}{i}Oh my god.{/i}{/b}"
             m "{b}{i}I must stay silent for the moment.{/i}{/b}"
             m "{b}{i}I will do something about it.{/i}{/b}"

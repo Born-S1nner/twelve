@@ -14,15 +14,3 @@ label credit:
   "Also there is a man in YouTube who I'm connected with."
   "Goes by the name S1nner, he can tell you about the upcoming projects that we have worked togeher."
   "Can't wait to see you again in another world."
-label docpromo:
-  call showdoc (doc_1)
-    jump rbs
-label note_DG21:
-  call showdoc (doc_DG21)
-    jump rbs
-label note_S1:
-  call showdoc (doc_S1)
-    jump rbs
-label note_buss:
-  call showdoc (doc_buss)
-    jump rbs
