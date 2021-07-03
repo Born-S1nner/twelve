@@ -192,16 +192,39 @@ ieuvnowEARTHe8urcvwe938w4vtp9a3w8
   )
   docpromo = Docs(
     time = "**/**/2010",
-    title = "",
+    title = "About us",
     text = """\
 Three guys have worked on this project to give you entertainment.
 Welcome to World Destiny Studio.(hope that's still available.)
+We want to share our dreams and minds for the world to see.
+Let us build the monuments of the internet.
 
 Character-Artist: DeadGhoul21, S1nner
 Background-Artist: DeadGhoul21
 Script-writer: DeadGhoul21, S1nner, Buss
 Coder: Buss, S1nner
 Audio Producer: currently unavilable to avoid copyrights
+    """
+  )
+  doc_DG21 = Docs(
+    time = "**/**/2016",
+    title = "Dream",
+    text = """\
+When I was a little kid, I had a dreams that felt so real that I have to wake up in shock. From there, I took those inspirations and started drawing for myself. Little did I know that I was building life and world with my own hands. I wouldn;t say that I'm God because I wasn't. Instead, I'm a king of my imagination to rule what I have on my palms. Seeing that I can use my talent to make a living, I take great passion in creating characters.
+    """
+  )
+  doc_S1 = Docs(
+    time = "**/**/2020",
+    title = "Fame",
+    text = """\
+Money and Fame isn't everything. Just ask a popular YouTuber and they will make up lies or something. Because of the internet, people are rushing in to ensure they get a fair share of spotlight in society. I'm not those type of guys; I like the dark where I grew up. Nobody know who I was and what I was capable of. It's perfect like this cause mystery is the key ingredient to thrill and suspension. I will come out of the closet once the pieces are set.
+    """
+  )
+  doc_buss = Docs(
+    time = "**/**/2021",
+    title = "Work",
+    text = """\
+From part-time jobs to investments, I look for every way to make money. When you got people you care about, they make you want to do anything you can to support them. Sometimes, that passion can change your image and people get scare of you for no reason. You can't tell them everything because you're scare of what they might do to you. If you want something, you got to have the power to get it. That was a qoute from my teacher after asking him how to succeed in life.
     """
   )
 

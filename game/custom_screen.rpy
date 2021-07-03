@@ -17,6 +17,11 @@ screen bookshelf:
     imagebutton auto "images/bg/book/book11_%s.png" xpos 464 ypos 231 focus_mask True action Jump("docg")
     imagebutton auto "images/bg/book/book12_%s.png" xpos 503 ypos 226 focus_mask True action Jump("doco")
 
+    imagebutton auto "images/bg/book/promo_%s.png" xpos  ypos  focus_mask True action Jump("docpromo")
+    imagebutton auto "images/bg/book/shelf1_%s.png" xpos  ypos  focus_mask True action Jump("note_DG21")
+    imagebutton auto "images/bg/book/shelf2_%s.png" xpos  ypos  focus_mask True action Jump("note_S1")
+    imagebutton auto "images/bg/book/shelf3_%s.png" xpos  ypos  focus_mask True action Jump("note_buss")
+
     imagebutton auto "images/bg/book/leave_%s.png" xpos 1054 ypos 13 focus_mask True action Jump("back_office")
 
 screen bookshelf01:
@@ -24,7 +29,11 @@ screen bookshelf01:
     ground "images/bg/bg secret.png"
 
     imagebutton auto "images/bg/book/paper1_%s.png" xpos 805 ypos 605 focus_mask True action Jump("doc1")
+
     imagebutton auto "images/bg/book/promo_%s.png" xpos  ypos  focus_mask True action Jump("docpromo")
+    imagebutton auto "images/bg/book/shelf1_%s.png" xpos  ypos  focus_mask True action Jump("note_DG21")
+    imagebutton auto "images/bg/book/shelf2_%s.png" xpos  ypos  focus_mask True action Jump("note_S1")
+    imagebutton auto "images/bg/book/shelf3_%s.png" xpos  ypos  focus_mask True action Jump("note_buss")
 
     imagebutton auto "images/bg/book/leave_%s.png" xpos 1054 ypos 13 focus_mask True action Jump("off_paper01")
 

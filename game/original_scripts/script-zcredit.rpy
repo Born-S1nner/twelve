@@ -17,3 +17,12 @@ label credit:
 label docpromo:
   call showdoc (doc_1)
     jump rbs
+label note_DG21:
+  call showdoc (doc_DG21)
+    jump rbs
+label note_S1:
+  call showdoc (doc_S1)
+    jump rbs
+label note_buss:
+  call showdoc (doc_buss)
+    jump rbs
