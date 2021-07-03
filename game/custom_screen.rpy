@@ -23,7 +23,7 @@ screen bookshelf01:
   imagemap:
     ground "images/bg/bg secret.png"
 
-    imagebutton auto "images/bg/book/paper1_%s.png" xpos  ypos  focus_mask True action Jump("doc1")
+    imagebutton auto "images/bg/book/paper1_%s.png" xpos 805 ypos 605 focus_mask True action Jump("doc1")
 
     imagebutton auto "images/bg/book/leave_%s.png" xpos 1054 ypos 13 focus_mask True action Jump("off_paper01")
 
