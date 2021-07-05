@@ -1,5 +1,5 @@
 ﻿
-  
+label start:
     #day 1
     call act1
     if quick_death_ending:

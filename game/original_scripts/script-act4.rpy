@@ -294,19 +294,32 @@ label hallway2:
     m "{i}{b}There isn't much to look around except for files and folders.{/b}{/i}"
     m "{i}{b}Maybe I should look at one of the paper in the files.{/b}{/i}"
     m "{b}{i}Oh, let's look at this paper.{/i}{/b}"
-    call showdoc (doc_2)
-    
-    m "{i}{b}Was that how the Tweleve was formed!{/b}{/i}"
-    m "{i}{b}I thought they did it out of sheer goodness.{/b}{/i}"
-    m "{i}{b}It was just a way to avoid a battle between them.{/b}{/i}"
-    m "{i}{b}It's not so bad, but what will happen when they get bored.{/b}{/i}"
-    m "{i}{b}Being the strongest doesn't mean peaceful truce.{/b}{/i}"
-    m "{i}{b}The Tweleve could break up if they want to.{/b}{/i}"
-    m "{i}{b}Just best hope that day doesn't come.{/b}{/i}"
-    if homework_1:
-      jump return_office2
-    else: 
-      jump morgana_res
+    label room2:
+      call screen bookshelf02
+      label docpromo_2:
+        call showdoc (doc_promo)
+        jump room2
+      label note_DG21_2:
+        call showdoc (doc_DG21)
+        jump room2
+      label note_S1_2:
+        call showdoc (doc_S1)
+        jump room2
+      label note_buss_2:
+        call showdoc (doc_buss)
+        jump room2
+      label off_paper02:
+        m "{i}{b}Was that how the Tweleve was formed!{/b}{/i}"
+        m "{i}{b}I thought they did it out of sheer goodness.{/b}{/i}"
+        m "{i}{b}It was just a way to avoid a battle between them.{/b}{/i}"
+        m "{i}{b}It's not so bad, but what will happen when they get bored.{/b}{/i}"
+        m "{i}{b}Being the strongest doesn't mean peaceful truce.{/b}{/i}"
+        m "{i}{b}The Tweleve could break up if they want to.{/b}{/i}"
+        m "{i}{b}Just best hope that day doesn't come.{/b}{/i}"
+        if homework_1:
+          jump return_office2
+        else: 
+          jump morgana_res
 
 label return_office2:
   scene bg office
